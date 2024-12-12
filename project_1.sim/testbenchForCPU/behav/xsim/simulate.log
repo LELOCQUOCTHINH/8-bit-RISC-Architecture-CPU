@@ -1,274 +1,270 @@
 Time resolution is 1 ps
-timer = 0, clk = 0, clk1 = x, clk2 = x, data_in = xxxxxxxx, execute_instruction_flag = x, stop =   0, pc_out = 00000, LorEinstr = 1, LoIorO = 1, instr_address_test = 00000000, opcode_test = 000, memory_out = 00000000, data_out = 100000000
+timer = 0, clk = 0, clk1 = x, clk2 = x, data_in = xxxxxxxx, execute_instruction_flag = x, stop =   0, pc_out = 000000, LorEinstr = 1, LoIorO = 1, instr_address_test = 000000, opcode_test = 000, memory_out = 00000000, data_out = 100000000
 
-timer = 1000, clk = 1, clk1 = 0, clk2 = 0, data_in = xxxxxxxx, execute_instruction_flag = x, stop =   0, pc_out = 00000, LorEinstr = 1, LoIorO = 1, instr_address_test = 00000000, opcode_test = 000, memory_out = 00000000, data_out = 100000000
+timer = 1000, clk = 1, clk1 = 0, clk2 = 0, data_in = xxxxxxxx, execute_instruction_flag = x, stop =   0, pc_out = 000000, LorEinstr = 1, LoIorO = 1, instr_address_test = 000000, opcode_test = 000, memory_out = 00000000, data_out = 100000000
 
-timer = 1000, clk = 0, clk1 = 0, clk2 = 0, data_in = xxxxxxxx, execute_instruction_flag = x, stop =   0, pc_out = 00000, LorEinstr = 1, LoIorO = 1, instr_address_test = 00000000, opcode_test = 000, memory_out = 00000000, data_out = 100000000
+timer = 1000, clk = 0, clk1 = 0, clk2 = 0, data_in = xxxxxxxx, execute_instruction_flag = x, stop =   0, pc_out = 000000, LorEinstr = 1, LoIorO = 1, instr_address_test = 000000, opcode_test = 000, memory_out = 00000000, data_out = 100000000
 
-timer = 2000, clk = 1, clk1 = 0, clk2 = 0, data_in = xxxxxxxx, execute_instruction_flag = x, stop =   0, pc_out = 00000, LorEinstr = 1, LoIorO = 1, instr_address_test = 00000000, opcode_test = 000, memory_out = 00000000, data_out = 100000000
+timer = 2000, clk = 1, clk1 = 0, clk2 = 0, data_in = xxxxxxxx, execute_instruction_flag = x, stop =   0, pc_out = 000000, LorEinstr = 1, LoIorO = 1, instr_address_test = 000000, opcode_test = 000, memory_out = 00000000, data_out = 100000000
 
-timer = 2000, clk = 0, clk1 = 0, clk2 = 0, data_in = xxxxxxxx, execute_instruction_flag = x, stop =   0, pc_out = 00000, LorEinstr = 1, LoIorO = 1, instr_address_test = 00000000, opcode_test = 000, memory_out = 00000000, data_out = 100000000
+timer = 2000, clk = 0, clk1 = 0, clk2 = 0, data_in = xxxxxxxx, execute_instruction_flag = x, stop =   0, pc_out = 000000, LorEinstr = 1, LoIorO = 1, instr_address_test = 000000, opcode_test = 000, memory_out = 00000000, data_out = 100000000
 
-timer = 3000, clk = 1, clk1 = 0, clk2 = 0, data_in = xxxxxxxx, execute_instruction_flag = x, stop =   0, pc_out = 00000, LorEinstr = 1, LoIorO = 1, instr_address_test = 00000000, opcode_test = 000, memory_out = 00000000, data_out = 100000000
+timer = 3000, clk = 1, clk1 = 0, clk2 = 0, data_in = xxxxxxxx, execute_instruction_flag = x, stop =   0, pc_out = 000000, LorEinstr = 1, LoIorO = 1, instr_address_test = 000000, opcode_test = 000, memory_out = 00000000, data_out = 100000000
 
-timer = 3000, clk = 0, clk1 = 0, clk2 = 0, data_in = 01000000, execute_instruction_flag = 0, stop =   0, pc_out = 00000, LorEinstr = 1, LoIorO = 1, instr_address_test = 00000000, opcode_test = 000, memory_out = 00000000, data_out = 100000000
+timer = 3000, clk = 0, clk1 = 0, clk2 = 0, data_in = 01000000, execute_instruction_flag = 0, stop =   0, pc_out = 000000, LorEinstr = 1, LoIorO = 1, instr_address_test = 000000, opcode_test = 000, memory_out = 00000000, data_out = 100000000
 
-timer = 4000, clk = 1, clk1 = 1, clk2 = 0, data_in = 01000000, execute_instruction_flag = 0, stop =   0, pc_out = 00000, LorEinstr = 1, LoIorO = 1, instr_address_test = 00000000, opcode_test = 000, memory_out = 00000000, data_out = 100000000
+timer = 4000, clk = 1, clk1 = 1, clk2 = 0, data_in = 01000000, execute_instruction_flag = 0, stop =   0, pc_out = 000000, LorEinstr = 1, LoIorO = 1, instr_address_test = 000000, opcode_test = 000, memory_out = 00000000, data_out = 100000000
 
-timer = 4000, clk = 0, clk1 = 1, clk2 = 0, data_in = 01000000, execute_instruction_flag = 0, stop =   0, pc_out = 00000, LorEinstr = 1, LoIorO = 1, instr_address_test = 00000000, opcode_test = 000, memory_out = 00000000, data_out = 100000000
+timer = 4000, clk = 0, clk1 = 1, clk2 = 0, data_in = 01000000, execute_instruction_flag = 0, stop =   0, pc_out = 000000, LorEinstr = 1, LoIorO = 1, instr_address_test = 000000, opcode_test = 000, memory_out = 00000000, data_out = 100000000
 
-timer = 5000, clk = 1, clk1 = 1, clk2 = 1, data_in = 01000000, execute_instruction_flag = 0, stop =   0, pc_out = 00000, LorEinstr = 1, LoIorO = 1, instr_address_test = 00000001, opcode_test = 010, memory_out = 01000000, data_out = 100000000
+timer = 5000, clk = 1, clk1 = 1, clk2 = 1, data_in = 01000000, execute_instruction_flag = 0, stop =   0, pc_out = 000000, LorEinstr = 1, LoIorO = 1, instr_address_test = 000001, opcode_test = 010, memory_out = 01000000, data_out = 100000000
 
-timer = 5000, clk = 0, clk1 = 1, clk2 = 1, data_in = 01000000, execute_instruction_flag = 0, stop =   0, pc_out = 00000, LorEinstr = 1, LoIorO = 1, instr_address_test = 00000001, opcode_test = 010, memory_out = 01000000, data_out = 100000000
+timer = 5000, clk = 0, clk1 = 1, clk2 = 1, data_in = 01000000, execute_instruction_flag = 0, stop =   0, pc_out = 000000, LorEinstr = 1, LoIorO = 1, instr_address_test = 000001, opcode_test = 010, memory_out = 01000000, data_out = 100000000
 
-timer = 6000, clk = 1, clk1 = 0, clk2 = 0, data_in = 01000000, execute_instruction_flag = 0, stop =   0, pc_out = 00000, LorEinstr = 1, LoIorO = 1, instr_address_test = 00000001, opcode_test = 010, memory_out = 01000000, data_out = 100000000
+timer = 6000, clk = 1, clk1 = 0, clk2 = 0, data_in = 01000000, execute_instruction_flag = 0, stop =   0, pc_out = 000000, LorEinstr = 1, LoIorO = 1, instr_address_test = 000001, opcode_test = 010, memory_out = 01000000, data_out = 100000000
 
-timer = 6000, clk = 0, clk1 = 0, clk2 = 0, data_in = 10000001, execute_instruction_flag = 0, stop =   0, pc_out = 00000, LorEinstr = 1, LoIorO = 1, instr_address_test = 00000001, opcode_test = 010, memory_out = 01000000, data_out = 100000000
+timer = 6000, clk = 0, clk1 = 0, clk2 = 0, data_in = 10000001, execute_instruction_flag = 0, stop =   0, pc_out = 000000, LorEinstr = 1, LoIorO = 1, instr_address_test = 000001, opcode_test = 010, memory_out = 01000000, data_out = 100000000
 
-timer = 7000, clk = 1, clk1 = 1, clk2 = 0, data_in = 10000001, execute_instruction_flag = 0, stop =   0, pc_out = 00000, LorEinstr = 1, LoIorO = 1, instr_address_test = 00000001, opcode_test = 010, memory_out = 01000000, data_out = 100000000
+timer = 7000, clk = 1, clk1 = 1, clk2 = 0, data_in = 10000001, execute_instruction_flag = 0, stop =   0, pc_out = 000000, LorEinstr = 1, LoIorO = 1, instr_address_test = 000001, opcode_test = 010, memory_out = 01000000, data_out = 100000000
 
-timer = 7000, clk = 0, clk1 = 1, clk2 = 0, data_in = 10000001, execute_instruction_flag = 0, stop =   0, pc_out = 00000, LorEinstr = 1, LoIorO = 1, instr_address_test = 00000001, opcode_test = 010, memory_out = 01000000, data_out = 100000000
+timer = 7000, clk = 0, clk1 = 1, clk2 = 0, data_in = 10000001, execute_instruction_flag = 0, stop =   0, pc_out = 000000, LorEinstr = 1, LoIorO = 1, instr_address_test = 000001, opcode_test = 010, memory_out = 01000000, data_out = 100000000
 
-timer = 8000, clk = 1, clk1 = 1, clk2 = 1, data_in = 10000001, execute_instruction_flag = 0, stop =   0, pc_out = 00000, LorEinstr = 1, LoIorO = 1, instr_address_test = 00000010, opcode_test = 100, memory_out = 10000001, data_out = 100000000
+timer = 8000, clk = 1, clk1 = 1, clk2 = 1, data_in = 10000001, execute_instruction_flag = 0, stop =   0, pc_out = 000000, LorEinstr = 1, LoIorO = 1, instr_address_test = 000010, opcode_test = 100, memory_out = 10000001, data_out = 100000000
 
-timer = 8000, clk = 0, clk1 = 1, clk2 = 1, data_in = 10000001, execute_instruction_flag = 0, stop =   0, pc_out = 00000, LorEinstr = 1, LoIorO = 1, instr_address_test = 00000010, opcode_test = 100, memory_out = 10000001, data_out = 100000000
+timer = 8000, clk = 0, clk1 = 1, clk2 = 1, data_in = 10000001, execute_instruction_flag = 0, stop =   0, pc_out = 000000, LorEinstr = 1, LoIorO = 1, instr_address_test = 000010, opcode_test = 100, memory_out = 10000001, data_out = 100000000
 
-timer = 9000, clk = 1, clk1 = 0, clk2 = 0, data_in = 10000001, execute_instruction_flag = 0, stop =   0, pc_out = 00000, LorEinstr = 1, LoIorO = 1, instr_address_test = 00000010, opcode_test = 100, memory_out = 10000001, data_out = 100000000
+timer = 9000, clk = 1, clk1 = 0, clk2 = 0, data_in = 10000001, execute_instruction_flag = 0, stop =   0, pc_out = 000000, LorEinstr = 1, LoIorO = 1, instr_address_test = 000010, opcode_test = 100, memory_out = 10000001, data_out = 100000000
 
-timer = 9000, clk = 0, clk1 = 0, clk2 = 0, data_in = 01100010, execute_instruction_flag = 0, stop =   0, pc_out = 00000, LorEinstr = 1, LoIorO = 1, instr_address_test = 00000010, opcode_test = 100, memory_out = 10000001, data_out = 100000000
+timer = 9000, clk = 0, clk1 = 0, clk2 = 0, data_in = 01100010, execute_instruction_flag = 0, stop =   0, pc_out = 000000, LorEinstr = 1, LoIorO = 1, instr_address_test = 000010, opcode_test = 100, memory_out = 10000001, data_out = 100000000
 
-timer = 10000, clk = 1, clk1 = 1, clk2 = 0, data_in = 01100010, execute_instruction_flag = 0, stop =   0, pc_out = 00000, LorEinstr = 1, LoIorO = 1, instr_address_test = 00000010, opcode_test = 100, memory_out = 10000001, data_out = 100000000
+timer = 10000, clk = 1, clk1 = 1, clk2 = 0, data_in = 01100010, execute_instruction_flag = 0, stop =   0, pc_out = 000000, LorEinstr = 1, LoIorO = 1, instr_address_test = 000010, opcode_test = 100, memory_out = 10000001, data_out = 100000000
 
-timer = 10000, clk = 0, clk1 = 1, clk2 = 0, data_in = 01100010, execute_instruction_flag = 0, stop =   0, pc_out = 00000, LorEinstr = 1, LoIorO = 1, instr_address_test = 00000010, opcode_test = 100, memory_out = 10000001, data_out = 100000000
+timer = 10000, clk = 0, clk1 = 1, clk2 = 0, data_in = 01100010, execute_instruction_flag = 0, stop =   0, pc_out = 000000, LorEinstr = 1, LoIorO = 1, instr_address_test = 000010, opcode_test = 100, memory_out = 10000001, data_out = 100000000
 
-timer = 11000, clk = 1, clk1 = 1, clk2 = 1, data_in = 01100010, execute_instruction_flag = 0, stop =   0, pc_out = 00000, LorEinstr = 1, LoIorO = 1, instr_address_test = 00000011, opcode_test = 011, memory_out = 01100010, data_out = 100000000
+timer = 11000, clk = 1, clk1 = 1, clk2 = 1, data_in = 01100010, execute_instruction_flag = 0, stop =   0, pc_out = 000000, LorEinstr = 1, LoIorO = 1, instr_address_test = 000011, opcode_test = 011, memory_out = 01100010, data_out = 100000000
 
-timer = 11000, clk = 0, clk1 = 1, clk2 = 1, data_in = 01100010, execute_instruction_flag = 0, stop =   0, pc_out = 00000, LorEinstr = 1, LoIorO = 1, instr_address_test = 00000011, opcode_test = 011, memory_out = 01100010, data_out = 100000000
+timer = 11000, clk = 0, clk1 = 1, clk2 = 1, data_in = 01100010, execute_instruction_flag = 0, stop =   0, pc_out = 000000, LorEinstr = 1, LoIorO = 1, instr_address_test = 000011, opcode_test = 011, memory_out = 01100010, data_out = 100000000
 
-timer = 12000, clk = 1, clk1 = 0, clk2 = 0, data_in = 01100010, execute_instruction_flag = 0, stop =   0, pc_out = 00000, LorEinstr = 1, LoIorO = 1, instr_address_test = 00000011, opcode_test = 011, memory_out = 01100010, data_out = 100000000
+timer = 12000, clk = 1, clk1 = 0, clk2 = 0, data_in = 01100010, execute_instruction_flag = 0, stop =   0, pc_out = 000000, LorEinstr = 1, LoIorO = 1, instr_address_test = 000011, opcode_test = 011, memory_out = 01100010, data_out = 100000000
 
-timer = 12000, clk = 0, clk1 = 0, clk2 = 0, data_in = 01100011, execute_instruction_flag = 0, stop =   0, pc_out = 00000, LorEinstr = 1, LoIorO = 1, instr_address_test = 00000011, opcode_test = 011, memory_out = 01100010, data_out = 100000000
+timer = 12000, clk = 0, clk1 = 0, clk2 = 0, data_in = 01100011, execute_instruction_flag = 0, stop =   0, pc_out = 000000, LorEinstr = 1, LoIorO = 1, instr_address_test = 000011, opcode_test = 011, memory_out = 01100010, data_out = 100000000
 
-timer = 13000, clk = 1, clk1 = 1, clk2 = 0, data_in = 01100011, execute_instruction_flag = 0, stop =   0, pc_out = 00000, LorEinstr = 1, LoIorO = 1, instr_address_test = 00000011, opcode_test = 011, memory_out = 01100010, data_out = 100000000
+timer = 13000, clk = 1, clk1 = 1, clk2 = 0, data_in = 01100011, execute_instruction_flag = 0, stop =   0, pc_out = 000000, LorEinstr = 1, LoIorO = 1, instr_address_test = 000011, opcode_test = 011, memory_out = 01100010, data_out = 100000000
 
-timer = 13000, clk = 0, clk1 = 1, clk2 = 0, data_in = 01100011, execute_instruction_flag = 0, stop =   0, pc_out = 00000, LorEinstr = 1, LoIorO = 1, instr_address_test = 00000011, opcode_test = 011, memory_out = 01100010, data_out = 100000000
+timer = 13000, clk = 0, clk1 = 1, clk2 = 0, data_in = 01100011, execute_instruction_flag = 0, stop =   0, pc_out = 000000, LorEinstr = 1, LoIorO = 1, instr_address_test = 000011, opcode_test = 011, memory_out = 01100010, data_out = 100000000
 
-timer = 14000, clk = 1, clk1 = 1, clk2 = 1, data_in = 01100011, execute_instruction_flag = 0, stop =   0, pc_out = 00000, LorEinstr = 1, LoIorO = 1, instr_address_test = 00000100, opcode_test = 011, memory_out = 01100011, data_out = 100000000
+timer = 14000, clk = 1, clk1 = 1, clk2 = 1, data_in = 01100011, execute_instruction_flag = 0, stop =   0, pc_out = 000000, LorEinstr = 1, LoIorO = 1, instr_address_test = 000100, opcode_test = 011, memory_out = 01100011, data_out = 100000000
 
-timer = 14000, clk = 0, clk1 = 1, clk2 = 1, data_in = 01100011, execute_instruction_flag = 0, stop =   0, pc_out = 00000, LorEinstr = 1, LoIorO = 1, instr_address_test = 00000100, opcode_test = 011, memory_out = 01100011, data_out = 100000000
+timer = 14000, clk = 0, clk1 = 1, clk2 = 1, data_in = 01100011, execute_instruction_flag = 0, stop =   0, pc_out = 000000, LorEinstr = 1, LoIorO = 1, instr_address_test = 000100, opcode_test = 011, memory_out = 01100011, data_out = 100000000
 
-timer = 15000, clk = 1, clk1 = 0, clk2 = 0, data_in = 01100011, execute_instruction_flag = 0, stop =   0, pc_out = 00000, LorEinstr = 1, LoIorO = 1, instr_address_test = 00000100, opcode_test = 011, memory_out = 01100011, data_out = 100000000
+timer = 15000, clk = 1, clk1 = 0, clk2 = 0, data_in = 01100011, execute_instruction_flag = 0, stop =   0, pc_out = 000000, LorEinstr = 1, LoIorO = 1, instr_address_test = 000100, opcode_test = 011, memory_out = 01100011, data_out = 100000000
 
-timer = 15000, clk = 0, clk1 = 0, clk2 = 0, data_in = 10000100, execute_instruction_flag = 0, stop =   0, pc_out = 00000, LorEinstr = 1, LoIorO = 1, instr_address_test = 00000100, opcode_test = 011, memory_out = 01100011, data_out = 100000000
+timer = 15000, clk = 0, clk1 = 0, clk2 = 0, data_in = 10000100, execute_instruction_flag = 0, stop =   0, pc_out = 000000, LorEinstr = 1, LoIorO = 1, instr_address_test = 000100, opcode_test = 011, memory_out = 01100011, data_out = 100000000
 
-timer = 16000, clk = 1, clk1 = 1, clk2 = 0, data_in = 10000100, execute_instruction_flag = 0, stop =   0, pc_out = 00000, LorEinstr = 1, LoIorO = 1, instr_address_test = 00000100, opcode_test = 011, memory_out = 01100011, data_out = 100000000
+timer = 16000, clk = 1, clk1 = 1, clk2 = 0, data_in = 10000100, execute_instruction_flag = 0, stop =   0, pc_out = 000000, LorEinstr = 1, LoIorO = 1, instr_address_test = 000100, opcode_test = 011, memory_out = 01100011, data_out = 100000000
 
-timer = 16000, clk = 0, clk1 = 1, clk2 = 0, data_in = 10000100, execute_instruction_flag = 0, stop =   0, pc_out = 00000, LorEinstr = 1, LoIorO = 1, instr_address_test = 00000100, opcode_test = 011, memory_out = 01100011, data_out = 100000000
+timer = 16000, clk = 0, clk1 = 1, clk2 = 0, data_in = 10000100, execute_instruction_flag = 0, stop =   0, pc_out = 000000, LorEinstr = 1, LoIorO = 1, instr_address_test = 000100, opcode_test = 011, memory_out = 01100011, data_out = 100000000
 
-timer = 17000, clk = 1, clk1 = 1, clk2 = 1, data_in = 10000100, execute_instruction_flag = 0, stop =   0, pc_out = 00000, LorEinstr = 1, LoIorO = 1, instr_address_test = 00000101, opcode_test = 100, memory_out = 10000100, data_out = 100000000
+timer = 17000, clk = 1, clk1 = 1, clk2 = 1, data_in = 10000100, execute_instruction_flag = 0, stop =   0, pc_out = 000000, LorEinstr = 1, LoIorO = 1, instr_address_test = 000101, opcode_test = 100, memory_out = 10000100, data_out = 100000000
 
-timer = 17000, clk = 0, clk1 = 1, clk2 = 1, data_in = 10000100, execute_instruction_flag = 0, stop =   0, pc_out = 00000, LorEinstr = 1, LoIorO = 1, instr_address_test = 00000101, opcode_test = 100, memory_out = 10000100, data_out = 100000000
+timer = 17000, clk = 0, clk1 = 1, clk2 = 1, data_in = 10000100, execute_instruction_flag = 0, stop =   0, pc_out = 000000, LorEinstr = 1, LoIorO = 1, instr_address_test = 000101, opcode_test = 100, memory_out = 10000100, data_out = 100000000
 
-timer = 18000, clk = 1, clk1 = 0, clk2 = 0, data_in = 10000100, execute_instruction_flag = 0, stop =   0, pc_out = 00000, LorEinstr = 1, LoIorO = 1, instr_address_test = 00000101, opcode_test = 100, memory_out = 10000100, data_out = 100000000
+timer = 18000, clk = 1, clk1 = 0, clk2 = 0, data_in = 10000100, execute_instruction_flag = 0, stop =   0, pc_out = 000000, LorEinstr = 1, LoIorO = 1, instr_address_test = 000101, opcode_test = 100, memory_out = 10000100, data_out = 100000000
 
-timer = 18000, clk = 0, clk1 = 0, clk2 = 0, data_in = 01000101, execute_instruction_flag = 1, stop =   0, pc_out = 00000, LorEinstr = 1, LoIorO = 1, instr_address_test = 00000101, opcode_test = 100, memory_out = 10000100, data_out = 100000000
+timer = 18000, clk = 0, clk1 = 0, clk2 = 0, data_in = 01000101, execute_instruction_flag = 1, stop =   0, pc_out = 000000, LorEinstr = 1, LoIorO = 1, instr_address_test = 000101, opcode_test = 100, memory_out = 10000100, data_out = 100000000
 
-timer = 19000, clk = 1, clk1 = 1, clk2 = 0, data_in = 01000101, execute_instruction_flag = 1, stop =   0, pc_out = 00000, LorEinstr = 0, LoIorO = 1, instr_address_test = 00000101, opcode_test = 100, memory_out = 10000100, data_out = 100000000
+timer = 19000, clk = 1, clk1 = 1, clk2 = 0, data_in = 01000101, execute_instruction_flag = 1, stop =   0, pc_out = 000000, LorEinstr = 0, LoIorO = 1, instr_address_test = 000101, opcode_test = 100, memory_out = 10000100, data_out = 100000000
 
-timer = 19000, clk = 0, clk1 = 1, clk2 = 0, data_in = 01000101, execute_instruction_flag = 1, stop =   0, pc_out = 00000, LorEinstr = 0, LoIorO = 1, instr_address_test = 00000101, opcode_test = 100, memory_out = 10000100, data_out = 100000000
+timer = 19000, clk = 0, clk1 = 1, clk2 = 0, data_in = 01000101, execute_instruction_flag = 1, stop =   0, pc_out = 000000, LorEinstr = 0, LoIorO = 1, instr_address_test = 000101, opcode_test = 100, memory_out = 10000100, data_out = 100000000
 
-timer = 20000, clk = 1, clk1 = 1, clk2 = 1, data_in = 01000101, execute_instruction_flag = 1, stop =   0, pc_out = 00000, LorEinstr = 0, LoIorO = 0, instr_address_test = 00000101, opcode_test = 010, memory_out = 01000000, data_out = 100000000
+timer = 20000, clk = 1, clk1 = 1, clk2 = 1, data_in = 01000101, execute_instruction_flag = 1, stop =   0, pc_out = 000000, LorEinstr = 0, LoIorO = 0, instr_address_test = 000101, opcode_test = 010, memory_out = 01000000, data_out = 100000000
 
-timer = 20000, clk = 0, clk1 = 1, clk2 = 1, data_in = 01000101, execute_instruction_flag = 1, stop =   0, pc_out = 00000, LorEinstr = 0, LoIorO = 0, instr_address_test = 00000101, opcode_test = 010, memory_out = 01000000, data_out = 100000000
+timer = 20000, clk = 0, clk1 = 1, clk2 = 1, data_in = 01000101, execute_instruction_flag = 1, stop =   0, pc_out = 000000, LorEinstr = 0, LoIorO = 0, instr_address_test = 000101, opcode_test = 010, memory_out = 01000000, data_out = 100000000
 
-timer = 21000, clk = 1, clk1 = 0, clk2 = 0, data_in = 01000101, execute_instruction_flag = 1, stop =   0, pc_out = 00000, LorEinstr = 0, LoIorO = 0, instr_address_test = 00000101, opcode_test = 010, memory_out = 01000000, data_out = 100000000
+timer = 21000, clk = 1, clk1 = 0, clk2 = 0, data_in = 01000101, execute_instruction_flag = 1, stop =   0, pc_out = 000000, LorEinstr = 0, LoIorO = 0, instr_address_test = 000101, opcode_test = 010, memory_out = 01000000, data_out = 100000000
 
-timer = 21000, clk = 0, clk1 = 0, clk2 = 0, data_in = 01000101, execute_instruction_flag = 1, stop =   0, pc_out = 00000, LorEinstr = 0, LoIorO = 0, instr_address_test = 00000101, opcode_test = 010, memory_out = 01000000, data_out = 100000000
+timer = 21000, clk = 0, clk1 = 0, clk2 = 0, data_in = 01000101, execute_instruction_flag = 1, stop =   0, pc_out = 000000, LorEinstr = 0, LoIorO = 0, instr_address_test = 000101, opcode_test = 010, memory_out = 01000000, data_out = 100000000
 
-timer = 22000, clk = 1, clk1 = 1, clk2 = 0, data_in = 01000101, execute_instruction_flag = 1, stop =   0, pc_out = 00000, LorEinstr = 1, LoIorO = 0, instr_address_test = 00000101, opcode_test = 010, memory_out = 01000000, data_out = 100000000
+timer = 22000, clk = 1, clk1 = 1, clk2 = 0, data_in = 01000101, execute_instruction_flag = 1, stop =   0, pc_out = 000000, LorEinstr = 1, LoIorO = 0, instr_address_test = 000101, opcode_test = 010, memory_out = 01000000, data_out = 100000000
 
-timer = 22000, clk = 0, clk1 = 1, clk2 = 0, data_in = 01000101, execute_instruction_flag = 1, stop =   0, pc_out = 00000, LorEinstr = 1, LoIorO = 0, instr_address_test = 00000101, opcode_test = 010, memory_out = 01000000, data_out = 100000000
+timer = 22000, clk = 0, clk1 = 1, clk2 = 0, data_in = 01000101, execute_instruction_flag = 1, stop =   0, pc_out = 000000, LorEinstr = 1, LoIorO = 0, instr_address_test = 000101, opcode_test = 010, memory_out = 01000000, data_out = 100000000
 
-timer = 23000, clk = 1, clk1 = 1, clk2 = 1, data_in = 01000101, execute_instruction_flag = 1, stop =   0, pc_out = 00001, LorEinstr = 1, LoIorO = 1, instr_address_test = 00000101, opcode_test = 010, memory_out = 01000000, data_out = 100000000
+timer = 23000, clk = 1, clk1 = 1, clk2 = 1, data_in = 01000101, execute_instruction_flag = 1, stop =   0, pc_out = 000001, LorEinstr = 1, LoIorO = 1, instr_address_test = 000101, opcode_test = 010, memory_out = 01000000, data_out = 100000000
 
-timer = 23000, clk = 0, clk1 = 1, clk2 = 1, data_in = 01000101, execute_instruction_flag = 1, stop =   0, pc_out = 00001, LorEinstr = 1, LoIorO = 1, instr_address_test = 00000101, opcode_test = 010, memory_out = 01000000, data_out = 100000000
+timer = 23000, clk = 0, clk1 = 1, clk2 = 1, data_in = 01000101, execute_instruction_flag = 1, stop =   0, pc_out = 000001, LorEinstr = 1, LoIorO = 1, instr_address_test = 000101, opcode_test = 010, memory_out = 01000000, data_out = 100000000
 
-timer = 24000, clk = 1, clk1 = 0, clk2 = 0, data_in = 01000101, execute_instruction_flag = 1, stop =   0, pc_out = 00001, LorEinstr = 1, LoIorO = 1, instr_address_test = 00000101, opcode_test = 010, memory_out = 01000000, data_out = 100000000
+timer = 24000, clk = 1, clk1 = 0, clk2 = 0, data_in = 01000101, execute_instruction_flag = 1, stop =   0, pc_out = 000001, LorEinstr = 1, LoIorO = 1, instr_address_test = 000101, opcode_test = 010, memory_out = 01000000, data_out = 100000000
 
-timer = 24000, clk = 0, clk1 = 0, clk2 = 0, data_in = 01000101, execute_instruction_flag = 1, stop =   0, pc_out = 00001, LorEinstr = 1, LoIorO = 1, instr_address_test = 00000101, opcode_test = 010, memory_out = 01000000, data_out = 100000000
+timer = 24000, clk = 0, clk1 = 0, clk2 = 0, data_in = 01000101, execute_instruction_flag = 1, stop =   0, pc_out = 000001, LorEinstr = 1, LoIorO = 1, instr_address_test = 000101, opcode_test = 010, memory_out = 01000000, data_out = 100000000
 
-timer = 25000, clk = 1, clk1 = 1, clk2 = 0, data_in = 01000101, execute_instruction_flag = 1, stop =   0, pc_out = 00001, LorEinstr = 0, LoIorO = 1, instr_address_test = 00000101, opcode_test = 010, memory_out = 01000000, data_out = 101000000
+timer = 25000, clk = 1, clk1 = 1, clk2 = 0, data_in = 01000101, execute_instruction_flag = 1, stop =   0, pc_out = 000001, LorEinstr = 0, LoIorO = 1, instr_address_test = 000101, opcode_test = 010, memory_out = 01000000, data_out = 101000000
 
-timer = 25000, clk = 0, clk1 = 1, clk2 = 0, data_in = 01000101, execute_instruction_flag = 1, stop =   0, pc_out = 00001, LorEinstr = 0, LoIorO = 1, instr_address_test = 00000101, opcode_test = 010, memory_out = 01000000, data_out = 101000000
+timer = 25000, clk = 0, clk1 = 1, clk2 = 0, data_in = 01000101, execute_instruction_flag = 1, stop =   0, pc_out = 000001, LorEinstr = 0, LoIorO = 1, instr_address_test = 000101, opcode_test = 010, memory_out = 01000000, data_out = 101000000
 
-timer = 26000, clk = 1, clk1 = 1, clk2 = 1, data_in = 01000101, execute_instruction_flag = 1, stop =   0, pc_out = 00001, LorEinstr = 0, LoIorO = 0, instr_address_test = 00000101, opcode_test = 100, memory_out = 10000001, data_out = 001000000
+timer = 26000, clk = 1, clk1 = 1, clk2 = 1, data_in = 01000101, execute_instruction_flag = 1, stop =   0, pc_out = 000001, LorEinstr = 0, LoIorO = 0, instr_address_test = 000101, opcode_test = 100, memory_out = 10000001, data_out = 001000000
 
-timer = 26000, clk = 0, clk1 = 1, clk2 = 1, data_in = 01000101, execute_instruction_flag = 1, stop =   0, pc_out = 00001, LorEinstr = 0, LoIorO = 0, instr_address_test = 00000101, opcode_test = 100, memory_out = 10000001, data_out = 001000000
+timer = 26000, clk = 0, clk1 = 1, clk2 = 1, data_in = 01000101, execute_instruction_flag = 1, stop =   0, pc_out = 000001, LorEinstr = 0, LoIorO = 0, instr_address_test = 000101, opcode_test = 100, memory_out = 10000001, data_out = 001000000
 
-timer = 27000, clk = 1, clk1 = 0, clk2 = 0, data_in = 01000101, execute_instruction_flag = 1, stop =   0, pc_out = 00001, LorEinstr = 0, LoIorO = 0, instr_address_test = 00000101, opcode_test = 100, memory_out = 10000001, data_out = 001000000
+timer = 27000, clk = 1, clk1 = 0, clk2 = 0, data_in = 01000101, execute_instruction_flag = 1, stop =   0, pc_out = 000001, LorEinstr = 0, LoIorO = 0, instr_address_test = 000101, opcode_test = 100, memory_out = 10000001, data_out = 001000000
 
-timer = 27000, clk = 0, clk1 = 0, clk2 = 0, data_in = 01000101, execute_instruction_flag = 1, stop =   0, pc_out = 00001, LorEinstr = 0, LoIorO = 0, instr_address_test = 00000101, opcode_test = 100, memory_out = 10000001, data_out = 001000000
+timer = 27000, clk = 0, clk1 = 0, clk2 = 0, data_in = 01000101, execute_instruction_flag = 1, stop =   0, pc_out = 000001, LorEinstr = 0, LoIorO = 0, instr_address_test = 000101, opcode_test = 100, memory_out = 10000001, data_out = 001000000
 
-timer = 28000, clk = 1, clk1 = 1, clk2 = 0, data_in = 01000101, execute_instruction_flag = 1, stop =   0, pc_out = 00001, LorEinstr = 1, LoIorO = 0, instr_address_test = 00000101, opcode_test = 100, memory_out = 10000001, data_out = 001000000
+timer = 28000, clk = 1, clk1 = 1, clk2 = 0, data_in = 01000101, execute_instruction_flag = 1, stop =   0, pc_out = 000001, LorEinstr = 1, LoIorO = 0, instr_address_test = 000101, opcode_test = 100, memory_out = 10000001, data_out = 001000000
 
-timer = 28000, clk = 0, clk1 = 1, clk2 = 0, data_in = 01000101, execute_instruction_flag = 1, stop =   0, pc_out = 00001, LorEinstr = 1, LoIorO = 0, instr_address_test = 00000101, opcode_test = 100, memory_out = 10000001, data_out = 001000000
+timer = 28000, clk = 0, clk1 = 1, clk2 = 0, data_in = 01000101, execute_instruction_flag = 1, stop =   0, pc_out = 000001, LorEinstr = 1, LoIorO = 0, instr_address_test = 000101, opcode_test = 100, memory_out = 10000001, data_out = 001000000
 
-timer = 29000, clk = 1, clk1 = 1, clk2 = 1, data_in = 01000101, execute_instruction_flag = 1, stop =   0, pc_out = 00010, LorEinstr = 1, LoIorO = 1, instr_address_test = 00000101, opcode_test = 100, memory_out = 10000001, data_out = 001000000
+timer = 29000, clk = 1, clk1 = 1, clk2 = 1, data_in = 01000101, execute_instruction_flag = 1, stop =   0, pc_out = 000010, LorEinstr = 1, LoIorO = 1, instr_address_test = 000101, opcode_test = 100, memory_out = 10000001, data_out = 001000000
 
-timer = 29000, clk = 0, clk1 = 1, clk2 = 1, data_in = 01000101, execute_instruction_flag = 1, stop =   0, pc_out = 00010, LorEinstr = 1, LoIorO = 1, instr_address_test = 00000101, opcode_test = 100, memory_out = 10000001, data_out = 001000000
+timer = 29000, clk = 0, clk1 = 1, clk2 = 1, data_in = 01000101, execute_instruction_flag = 1, stop =   0, pc_out = 000010, LorEinstr = 1, LoIorO = 1, instr_address_test = 000101, opcode_test = 100, memory_out = 10000001, data_out = 001000000
 
-timer = 30000, clk = 1, clk1 = 0, clk2 = 0, data_in = 01000101, execute_instruction_flag = 1, stop =   0, pc_out = 00010, LorEinstr = 1, LoIorO = 1, instr_address_test = 00000101, opcode_test = 100, memory_out = 10000001, data_out = 001000000
+timer = 30000, clk = 1, clk1 = 0, clk2 = 0, data_in = 01000101, execute_instruction_flag = 1, stop =   0, pc_out = 000010, LorEinstr = 1, LoIorO = 1, instr_address_test = 000101, opcode_test = 100, memory_out = 10000001, data_out = 001000000
 
-timer = 30000, clk = 0, clk1 = 0, clk2 = 0, data_in = 01000101, execute_instruction_flag = 1, stop =   0, pc_out = 00010, LorEinstr = 1, LoIorO = 1, instr_address_test = 00000101, opcode_test = 100, memory_out = 10000001, data_out = 001000000
+timer = 30000, clk = 0, clk1 = 0, clk2 = 0, data_in = 01000101, execute_instruction_flag = 1, stop =   0, pc_out = 000010, LorEinstr = 1, LoIorO = 1, instr_address_test = 000101, opcode_test = 100, memory_out = 10000001, data_out = 001000000
 
-timer = 31000, clk = 1, clk1 = 1, clk2 = 0, data_in = 01000101, execute_instruction_flag = 1, stop =   0, pc_out = 00010, LorEinstr = 0, LoIorO = 1, instr_address_test = 00000101, opcode_test = 100, memory_out = 10000001, data_out = 011000001
+timer = 31000, clk = 1, clk1 = 1, clk2 = 0, data_in = 01000101, execute_instruction_flag = 1, stop =   0, pc_out = 000010, LorEinstr = 0, LoIorO = 1, instr_address_test = 000101, opcode_test = 100, memory_out = 10000001, data_out = 011000001
 
-timer = 31000, clk = 0, clk1 = 1, clk2 = 0, data_in = 01000101, execute_instruction_flag = 1, stop =   0, pc_out = 00010, LorEinstr = 0, LoIorO = 1, instr_address_test = 00000101, opcode_test = 100, memory_out = 10000001, data_out = 011000001
+timer = 31000, clk = 0, clk1 = 1, clk2 = 0, data_in = 01000101, execute_instruction_flag = 1, stop =   0, pc_out = 000010, LorEinstr = 0, LoIorO = 1, instr_address_test = 000101, opcode_test = 100, memory_out = 10000001, data_out = 011000001
 
-timer = 32000, clk = 1, clk1 = 1, clk2 = 1, data_in = 01000101, execute_instruction_flag = 1, stop =   0, pc_out = 00010, LorEinstr = 0, LoIorO = 0, instr_address_test = 00000101, opcode_test = 011, memory_out = 01100010, data_out = 011000001
+timer = 32000, clk = 1, clk1 = 1, clk2 = 1, data_in = 01000101, execute_instruction_flag = 1, stop =   0, pc_out = 000010, LorEinstr = 0, LoIorO = 0, instr_address_test = 000101, opcode_test = 011, memory_out = 01100010, data_out = 011000001
 
-timer = 32000, clk = 0, clk1 = 1, clk2 = 1, data_in = 01000101, execute_instruction_flag = 1, stop =   0, pc_out = 00010, LorEinstr = 0, LoIorO = 0, instr_address_test = 00000101, opcode_test = 011, memory_out = 01100010, data_out = 011000001
+timer = 32000, clk = 0, clk1 = 1, clk2 = 1, data_in = 01000101, execute_instruction_flag = 1, stop =   0, pc_out = 000010, LorEinstr = 0, LoIorO = 0, instr_address_test = 000101, opcode_test = 011, memory_out = 01100010, data_out = 011000001
 
-timer = 33000, clk = 1, clk1 = 0, clk2 = 0, data_in = 01000101, execute_instruction_flag = 1, stop =   0, pc_out = 00010, LorEinstr = 0, LoIorO = 0, instr_address_test = 00000101, opcode_test = 011, memory_out = 01100010, data_out = 011000001
+timer = 33000, clk = 1, clk1 = 0, clk2 = 0, data_in = 01000101, execute_instruction_flag = 1, stop =   0, pc_out = 000010, LorEinstr = 0, LoIorO = 0, instr_address_test = 000101, opcode_test = 011, memory_out = 01100010, data_out = 011000001
 
-timer = 33000, clk = 0, clk1 = 0, clk2 = 0, data_in = 01000101, execute_instruction_flag = 1, stop =   0, pc_out = 00010, LorEinstr = 0, LoIorO = 0, instr_address_test = 00000101, opcode_test = 011, memory_out = 01100010, data_out = 011000001
+timer = 33000, clk = 0, clk1 = 0, clk2 = 0, data_in = 01000101, execute_instruction_flag = 1, stop =   0, pc_out = 000010, LorEinstr = 0, LoIorO = 0, instr_address_test = 000101, opcode_test = 011, memory_out = 01100010, data_out = 011000001
 
-timer = 34000, clk = 1, clk1 = 1, clk2 = 0, data_in = 01000101, execute_instruction_flag = 1, stop =   0, pc_out = 00010, LorEinstr = 1, LoIorO = 0, instr_address_test = 00000101, opcode_test = 011, memory_out = 01100010, data_out = 011000001
+timer = 34000, clk = 1, clk1 = 1, clk2 = 0, data_in = 01000101, execute_instruction_flag = 1, stop =   0, pc_out = 000010, LorEinstr = 1, LoIorO = 0, instr_address_test = 000101, opcode_test = 011, memory_out = 01100010, data_out = 011000001
 
-timer = 34000, clk = 0, clk1 = 1, clk2 = 0, data_in = 01000101, execute_instruction_flag = 1, stop =   0, pc_out = 00010, LorEinstr = 1, LoIorO = 0, instr_address_test = 00000101, opcode_test = 011, memory_out = 01100010, data_out = 011000001
+timer = 34000, clk = 0, clk1 = 1, clk2 = 0, data_in = 01000101, execute_instruction_flag = 1, stop =   0, pc_out = 000010, LorEinstr = 1, LoIorO = 0, instr_address_test = 000101, opcode_test = 011, memory_out = 01100010, data_out = 011000001
 
-timer = 35000, clk = 1, clk1 = 1, clk2 = 1, data_in = 01000101, execute_instruction_flag = 1, stop =   0, pc_out = 00011, LorEinstr = 1, LoIorO = 1, instr_address_test = 00000101, opcode_test = 011, memory_out = 01100010, data_out = 011000001
+timer = 35000, clk = 1, clk1 = 1, clk2 = 1, data_in = 01000101, execute_instruction_flag = 1, stop =   0, pc_out = 000011, LorEinstr = 1, LoIorO = 1, instr_address_test = 000101, opcode_test = 011, memory_out = 01100010, data_out = 011000001
 
-timer = 35000, clk = 0, clk1 = 1, clk2 = 1, data_in = 01000101, execute_instruction_flag = 1, stop =   0, pc_out = 00011, LorEinstr = 1, LoIorO = 1, instr_address_test = 00000101, opcode_test = 011, memory_out = 01100010, data_out = 011000001
+timer = 35000, clk = 0, clk1 = 1, clk2 = 1, data_in = 01000101, execute_instruction_flag = 1, stop =   0, pc_out = 000011, LorEinstr = 1, LoIorO = 1, instr_address_test = 000101, opcode_test = 011, memory_out = 01100010, data_out = 011000001
 
-timer = 36000, clk = 1, clk1 = 0, clk2 = 0, data_in = 01000101, execute_instruction_flag = 1, stop =   0, pc_out = 00011, LorEinstr = 1, LoIorO = 1, instr_address_test = 00000101, opcode_test = 011, memory_out = 01100010, data_out = 011000001
+timer = 36000, clk = 1, clk1 = 0, clk2 = 0, data_in = 01000101, execute_instruction_flag = 1, stop =   0, pc_out = 000011, LorEinstr = 1, LoIorO = 1, instr_address_test = 000101, opcode_test = 011, memory_out = 01100010, data_out = 011000001
 
-timer = 36000, clk = 0, clk1 = 0, clk2 = 0, data_in = 01000101, execute_instruction_flag = 1, stop =   0, pc_out = 00011, LorEinstr = 1, LoIorO = 1, instr_address_test = 00000101, opcode_test = 011, memory_out = 01100010, data_out = 011000001
+timer = 36000, clk = 0, clk1 = 0, clk2 = 0, data_in = 01000101, execute_instruction_flag = 1, stop =   0, pc_out = 000011, LorEinstr = 1, LoIorO = 1, instr_address_test = 000101, opcode_test = 011, memory_out = 01100010, data_out = 011000001
 
-timer = 37000, clk = 1, clk1 = 1, clk2 = 0, data_in = 01000101, execute_instruction_flag = 1, stop =   0, pc_out = 00011, LorEinstr = 0, LoIorO = 1, instr_address_test = 00000101, opcode_test = 011, memory_out = 01100010, data_out = 001000000
+timer = 37000, clk = 1, clk1 = 1, clk2 = 0, data_in = 01000101, execute_instruction_flag = 1, stop =   0, pc_out = 000011, LorEinstr = 0, LoIorO = 1, instr_address_test = 000101, opcode_test = 011, memory_out = 01100010, data_out = 001000000
 
-timer = 37000, clk = 0, clk1 = 1, clk2 = 0, data_in = 01000101, execute_instruction_flag = 1, stop =   0, pc_out = 00011, LorEinstr = 0, LoIorO = 1, instr_address_test = 00000101, opcode_test = 011, memory_out = 01100010, data_out = 001000000
+timer = 37000, clk = 0, clk1 = 1, clk2 = 0, data_in = 01000101, execute_instruction_flag = 1, stop =   0, pc_out = 000011, LorEinstr = 0, LoIorO = 1, instr_address_test = 000101, opcode_test = 011, memory_out = 01100010, data_out = 001000000
 
-timer = 38000, clk = 1, clk1 = 1, clk2 = 1, data_in = 01000101, execute_instruction_flag = 1, stop =   0, pc_out = 00011, LorEinstr = 0, LoIorO = 0, instr_address_test = 00000101, opcode_test = 011, memory_out = 01100011, data_out = 001000000
+timer = 38000, clk = 1, clk1 = 1, clk2 = 1, data_in = 01000101, execute_instruction_flag = 1, stop =   0, pc_out = 000011, LorEinstr = 0, LoIorO = 0, instr_address_test = 000101, opcode_test = 011, memory_out = 01100011, data_out = 001000000
 
-timer = 38000, clk = 0, clk1 = 1, clk2 = 1, data_in = 01000101, execute_instruction_flag = 1, stop =   0, pc_out = 00011, LorEinstr = 0, LoIorO = 0, instr_address_test = 00000101, opcode_test = 011, memory_out = 01100011, data_out = 001000000
+timer = 38000, clk = 0, clk1 = 1, clk2 = 1, data_in = 01000101, execute_instruction_flag = 1, stop =   0, pc_out = 000011, LorEinstr = 0, LoIorO = 0, instr_address_test = 000101, opcode_test = 011, memory_out = 01100011, data_out = 001000000
 
-timer = 39000, clk = 1, clk1 = 0, clk2 = 0, data_in = 01000101, execute_instruction_flag = 1, stop =   0, pc_out = 00011, LorEinstr = 0, LoIorO = 0, instr_address_test = 00000101, opcode_test = 011, memory_out = 01100011, data_out = 001000000
+timer = 39000, clk = 1, clk1 = 0, clk2 = 0, data_in = 01000101, execute_instruction_flag = 1, stop =   0, pc_out = 000011, LorEinstr = 0, LoIorO = 0, instr_address_test = 000101, opcode_test = 011, memory_out = 01100011, data_out = 001000000
 
-timer = 39000, clk = 0, clk1 = 0, clk2 = 0, data_in = 01000101, execute_instruction_flag = 1, stop =   0, pc_out = 00011, LorEinstr = 0, LoIorO = 0, instr_address_test = 00000101, opcode_test = 011, memory_out = 01100011, data_out = 001000000
+timer = 39000, clk = 0, clk1 = 0, clk2 = 0, data_in = 01000101, execute_instruction_flag = 1, stop =   0, pc_out = 000011, LorEinstr = 0, LoIorO = 0, instr_address_test = 000101, opcode_test = 011, memory_out = 01100011, data_out = 001000000
 
-timer = 40000, clk = 1, clk1 = 1, clk2 = 0, data_in = 01000101, execute_instruction_flag = 1, stop =   0, pc_out = 00011, LorEinstr = 1, LoIorO = 0, instr_address_test = 00000101, opcode_test = 011, memory_out = 01100011, data_out = 001000000
+timer = 40000, clk = 1, clk1 = 1, clk2 = 0, data_in = 01000101, execute_instruction_flag = 1, stop =   0, pc_out = 000011, LorEinstr = 1, LoIorO = 0, instr_address_test = 000101, opcode_test = 011, memory_out = 01100011, data_out = 001000000
 
-timer = 40000, clk = 0, clk1 = 1, clk2 = 0, data_in = 01000101, execute_instruction_flag = 1, stop =   0, pc_out = 00011, LorEinstr = 1, LoIorO = 0, instr_address_test = 00000101, opcode_test = 011, memory_out = 01100011, data_out = 001000000
+timer = 40000, clk = 0, clk1 = 1, clk2 = 0, data_in = 01000101, execute_instruction_flag = 1, stop =   0, pc_out = 000011, LorEinstr = 1, LoIorO = 0, instr_address_test = 000101, opcode_test = 011, memory_out = 01100011, data_out = 001000000
 
-timer = 41000, clk = 1, clk1 = 1, clk2 = 1, data_in = 01000101, execute_instruction_flag = 1, stop =   0, pc_out = 00100, LorEinstr = 1, LoIorO = 1, instr_address_test = 00000101, opcode_test = 011, memory_out = 01100011, data_out = 001000000
+timer = 41000, clk = 1, clk1 = 1, clk2 = 1, data_in = 01000101, execute_instruction_flag = 1, stop =   0, pc_out = 000100, LorEinstr = 1, LoIorO = 1, instr_address_test = 000101, opcode_test = 011, memory_out = 01100011, data_out = 001000000
 
-timer = 41000, clk = 0, clk1 = 1, clk2 = 1, data_in = 01000101, execute_instruction_flag = 1, stop =   0, pc_out = 00100, LorEinstr = 1, LoIorO = 1, instr_address_test = 00000101, opcode_test = 011, memory_out = 01100011, data_out = 001000000
+timer = 41000, clk = 0, clk1 = 1, clk2 = 1, data_in = 01000101, execute_instruction_flag = 1, stop =   0, pc_out = 000100, LorEinstr = 1, LoIorO = 1, instr_address_test = 000101, opcode_test = 011, memory_out = 01100011, data_out = 001000000
 
-timer = 42000, clk = 1, clk1 = 0, clk2 = 0, data_in = 01000101, execute_instruction_flag = 1, stop =   0, pc_out = 00100, LorEinstr = 1, LoIorO = 1, instr_address_test = 00000101, opcode_test = 011, memory_out = 01100011, data_out = 001000000
+timer = 42000, clk = 1, clk1 = 0, clk2 = 0, data_in = 01000101, execute_instruction_flag = 1, stop =   0, pc_out = 000100, LorEinstr = 1, LoIorO = 1, instr_address_test = 000101, opcode_test = 011, memory_out = 01100011, data_out = 001000000
 
-timer = 42000, clk = 0, clk1 = 0, clk2 = 0, data_in = 01000101, execute_instruction_flag = 1, stop =   0, pc_out = 00100, LorEinstr = 1, LoIorO = 1, instr_address_test = 00000101, opcode_test = 011, memory_out = 01100011, data_out = 001000000
+timer = 42000, clk = 0, clk1 = 0, clk2 = 0, data_in = 01000101, execute_instruction_flag = 1, stop =   0, pc_out = 000100, LorEinstr = 1, LoIorO = 1, instr_address_test = 000101, opcode_test = 011, memory_out = 01100011, data_out = 001000000
 
-timer = 43000, clk = 1, clk1 = 1, clk2 = 0, data_in = 01000101, execute_instruction_flag = 1, stop =   0, pc_out = 00100, LorEinstr = 0, LoIorO = 1, instr_address_test = 00000101, opcode_test = 011, memory_out = 01100011, data_out = 001000000
+timer = 43000, clk = 1, clk1 = 1, clk2 = 0, data_in = 01000101, execute_instruction_flag = 1, stop =   0, pc_out = 000100, LorEinstr = 0, LoIorO = 1, instr_address_test = 000101, opcode_test = 011, memory_out = 01100011, data_out = 001000000
 
-timer = 43000, clk = 0, clk1 = 1, clk2 = 0, data_in = 01000101, execute_instruction_flag = 1, stop =   0, pc_out = 00100, LorEinstr = 0, LoIorO = 1, instr_address_test = 00000101, opcode_test = 011, memory_out = 01100011, data_out = 001000000
+timer = 43000, clk = 0, clk1 = 1, clk2 = 0, data_in = 01000101, execute_instruction_flag = 1, stop =   0, pc_out = 000100, LorEinstr = 0, LoIorO = 1, instr_address_test = 000101, opcode_test = 011, memory_out = 01100011, data_out = 001000000
 
-timer = 44000, clk = 1, clk1 = 1, clk2 = 1, data_in = 01000101, execute_instruction_flag = 1, stop =   0, pc_out = 00100, LorEinstr = 0, LoIorO = 0, instr_address_test = 00000101, opcode_test = 100, memory_out = 10000100, data_out = 001000000
+timer = 44000, clk = 1, clk1 = 1, clk2 = 1, data_in = 01000101, execute_instruction_flag = 1, stop =   0, pc_out = 000100, LorEinstr = 0, LoIorO = 0, instr_address_test = 000101, opcode_test = 100, memory_out = 10000100, data_out = 001000000
 
-timer = 44000, clk = 0, clk1 = 1, clk2 = 1, data_in = 01000101, execute_instruction_flag = 1, stop =   0, pc_out = 00100, LorEinstr = 0, LoIorO = 0, instr_address_test = 00000101, opcode_test = 100, memory_out = 10000100, data_out = 001000000
+timer = 44000, clk = 0, clk1 = 1, clk2 = 1, data_in = 01000101, execute_instruction_flag = 1, stop =   0, pc_out = 000100, LorEinstr = 0, LoIorO = 0, instr_address_test = 000101, opcode_test = 100, memory_out = 10000100, data_out = 001000000
 
-timer = 45000, clk = 1, clk1 = 0, clk2 = 0, data_in = 01000101, execute_instruction_flag = 1, stop =   0, pc_out = 00100, LorEinstr = 0, LoIorO = 0, instr_address_test = 00000101, opcode_test = 100, memory_out = 10000100, data_out = 001000000
+timer = 45000, clk = 1, clk1 = 0, clk2 = 0, data_in = 01000101, execute_instruction_flag = 1, stop =   0, pc_out = 000100, LorEinstr = 0, LoIorO = 0, instr_address_test = 000101, opcode_test = 100, memory_out = 10000100, data_out = 001000000
 
-timer = 45000, clk = 0, clk1 = 0, clk2 = 0, data_in = 01000101, execute_instruction_flag = 1, stop =   0, pc_out = 00100, LorEinstr = 0, LoIorO = 0, instr_address_test = 00000101, opcode_test = 100, memory_out = 10000100, data_out = 001000000
+timer = 45000, clk = 0, clk1 = 0, clk2 = 0, data_in = 01000101, execute_instruction_flag = 1, stop =   0, pc_out = 000100, LorEinstr = 0, LoIorO = 0, instr_address_test = 000101, opcode_test = 100, memory_out = 10000100, data_out = 001000000
 
-timer = 46000, clk = 1, clk1 = 1, clk2 = 0, data_in = 01000101, execute_instruction_flag = 1, stop =   0, pc_out = 00100, LorEinstr = 1, LoIorO = 0, instr_address_test = 00000101, opcode_test = 100, memory_out = 10000100, data_out = 001000000
+timer = 46000, clk = 1, clk1 = 1, clk2 = 0, data_in = 01000101, execute_instruction_flag = 1, stop =   0, pc_out = 000100, LorEinstr = 1, LoIorO = 0, instr_address_test = 000101, opcode_test = 100, memory_out = 10000100, data_out = 001000000
 
-timer = 46000, clk = 0, clk1 = 1, clk2 = 0, data_in = 01000101, execute_instruction_flag = 1, stop =   0, pc_out = 00100, LorEinstr = 1, LoIorO = 0, instr_address_test = 00000101, opcode_test = 100, memory_out = 10000100, data_out = 001000000
+timer = 46000, clk = 0, clk1 = 1, clk2 = 0, data_in = 01000101, execute_instruction_flag = 1, stop =   0, pc_out = 000100, LorEinstr = 1, LoIorO = 0, instr_address_test = 000101, opcode_test = 100, memory_out = 10000100, data_out = 001000000
 
-timer = 47000, clk = 1, clk1 = 1, clk2 = 1, data_in = 01000101, execute_instruction_flag = 1, stop =   0, pc_out = 00101, LorEinstr = 1, LoIorO = 1, instr_address_test = 00000101, opcode_test = 100, memory_out = 10000100, data_out = 001000000
+timer = 47000, clk = 1, clk1 = 1, clk2 = 1, data_in = 01000101, execute_instruction_flag = 1, stop =   0, pc_out = 000101, LorEinstr = 1, LoIorO = 1, instr_address_test = 000101, opcode_test = 100, memory_out = 10000100, data_out = 001000000
 
-timer = 47000, clk = 0, clk1 = 1, clk2 = 1, data_in = 01000101, execute_instruction_flag = 1, stop =   0, pc_out = 00101, LorEinstr = 1, LoIorO = 1, instr_address_test = 00000101, opcode_test = 100, memory_out = 10000100, data_out = 001000000
+timer = 47000, clk = 0, clk1 = 1, clk2 = 1, data_in = 01000101, execute_instruction_flag = 1, stop =   0, pc_out = 000101, LorEinstr = 1, LoIorO = 1, instr_address_test = 000101, opcode_test = 100, memory_out = 10000100, data_out = 001000000
 
-timer = 48000, clk = 1, clk1 = 0, clk2 = 0, data_in = 01000101, execute_instruction_flag = 1, stop =   0, pc_out = 00101, LorEinstr = 1, LoIorO = 1, instr_address_test = 00000101, opcode_test = 100, memory_out = 10000100, data_out = 001000000
+timer = 48000, clk = 1, clk1 = 0, clk2 = 0, data_in = 01000101, execute_instruction_flag = 1, stop =   0, pc_out = 000101, LorEinstr = 1, LoIorO = 1, instr_address_test = 000101, opcode_test = 100, memory_out = 10000100, data_out = 001000000
 
-timer = 48000, clk = 0, clk1 = 0, clk2 = 0, data_in = 01000101, execute_instruction_flag = 1, stop =   0, pc_out = 00101, LorEinstr = 1, LoIorO = 1, instr_address_test = 00000101, opcode_test = 100, memory_out = 10000100, data_out = 001000000
+timer = 48000, clk = 0, clk1 = 0, clk2 = 0, data_in = 01000101, execute_instruction_flag = 1, stop =   0, pc_out = 000101, LorEinstr = 1, LoIorO = 1, instr_address_test = 000101, opcode_test = 100, memory_out = 10000100, data_out = 001000000
 
-timer = 49000, clk = 1, clk1 = 1, clk2 = 0, data_in = 01000101, execute_instruction_flag = 1, stop =   0, pc_out = 00101, LorEinstr = 0, LoIorO = 1, instr_address_test = 00000101, opcode_test = 100, memory_out = 10000100, data_out = 011000100
+timer = 49000, clk = 1, clk1 = 1, clk2 = 0, data_in = 01000101, execute_instruction_flag = 1, stop =   1, pc_out = 000101, LorEinstr = 1, LoIorO = 1, instr_address_test = 000101, opcode_test = 100, memory_out = 10000100, data_out = 011000100
 
-timer = 49000, clk = 0, clk1 = 1, clk2 = 0, data_in = 01000101, execute_instruction_flag = 1, stop =   0, pc_out = 00101, LorEinstr = 0, LoIorO = 1, instr_address_test = 00000101, opcode_test = 100, memory_out = 10000100, data_out = 011000100
+timer = 49000, clk = 0, clk1 = 1, clk2 = 0, data_in = 01000101, execute_instruction_flag = 1, stop =   1, pc_out = 000101, LorEinstr = 1, LoIorO = 1, instr_address_test = 000101, opcode_test = 100, memory_out = 10000100, data_out = 011000100
 
-timer = 50000, clk = 1, clk1 = 1, clk2 = 1, data_in = 01000101, execute_instruction_flag = 1, stop =   0, pc_out = 00101, LorEinstr = 0, LoIorO = 0, instr_address_test = 00000101, opcode_test = xxx, memory_out = xxxxxxxx, data_out = 011000100
+timer = 50000, clk = 1, clk1 = 0, clk2 = 0, data_in = 01000101, execute_instruction_flag = 1, stop =   1, pc_out = 000101, LorEinstr = 1, LoIorO = 1, instr_address_test = 000101, opcode_test = 100, memory_out = 10000100, data_out = 011000100
 
-timer = 50000, clk = 0, clk1 = 1, clk2 = 1, data_in = 01000101, execute_instruction_flag = 1, stop =   0, pc_out = 00101, LorEinstr = 0, LoIorO = 0, instr_address_test = 00000101, opcode_test = xxx, memory_out = xxxxxxxx, data_out = 011000100
+timer = 50000, clk = 0, clk1 = 0, clk2 = 0, data_in = 01000101, execute_instruction_flag = 1, stop =   1, pc_out = 000101, LorEinstr = 1, LoIorO = 1, instr_address_test = 000101, opcode_test = 100, memory_out = 10000100, data_out = 011000100
 
-timer = 51000, clk = 1, clk1 = 0, clk2 = 0, data_in = 01000101, execute_instruction_flag = 1, stop =   0, pc_out = 00101, LorEinstr = 0, LoIorO = 0, instr_address_test = 00000101, opcode_test = xxx, memory_out = xxxxxxxx, data_out = 011000100
+timer = 51000, clk = 1, clk1 = 0, clk2 = 0, data_in = 01000101, execute_instruction_flag = 1, stop =   1, pc_out = 000101, LorEinstr = 1, LoIorO = 1, instr_address_test = 000101, opcode_test = 100, memory_out = 10000100, data_out = 011000100
 
-timer = 51000, clk = 0, clk1 = 0, clk2 = 0, data_in = 01000101, execute_instruction_flag = 1, stop =   0, pc_out = 00101, LorEinstr = 0, LoIorO = 0, instr_address_test = 00000101, opcode_test = xxx, memory_out = xxxxxxxx, data_out = 011000100
+timer = 51000, clk = 0, clk1 = 0, clk2 = 0, data_in = 01000101, execute_instruction_flag = 1, stop =   1, pc_out = 000101, LorEinstr = 1, LoIorO = 1, instr_address_test = 000101, opcode_test = 100, memory_out = 10000100, data_out = 011000100
 
-timer = 52000, clk = 1, clk1 = 1, clk2 = 0, data_in = 01000101, execute_instruction_flag = 1, stop =   0, pc_out = 00101, LorEinstr = 1, LoIorO = 0, instr_address_test = 00000101, opcode_test = xxx, memory_out = xxxxxxxx, data_out = 011000100
+timer = 52000, clk = 1, clk1 = 0, clk2 = 0, data_in = 01000101, execute_instruction_flag = 1, stop =   1, pc_out = 000101, LorEinstr = 1, LoIorO = 1, instr_address_test = 000101, opcode_test = 100, memory_out = 10000100, data_out = 011000100
 
-timer = 52000, clk = 0, clk1 = 1, clk2 = 0, data_in = 01000101, execute_instruction_flag = 1, stop =   0, pc_out = 00101, LorEinstr = 1, LoIorO = 0, instr_address_test = 00000101, opcode_test = xxx, memory_out = xxxxxxxx, data_out = 011000100
+timer = 52000, clk = 0, clk1 = 0, clk2 = 0, data_in = 01000101, execute_instruction_flag = 1, stop =   1, pc_out = 000101, LorEinstr = 1, LoIorO = 1, instr_address_test = 000101, opcode_test = 100, memory_out = 10000100, data_out = 011000100
 
-timer = 53000, clk = 1, clk1 = 1, clk2 = 1, data_in = 01000101, execute_instruction_flag = 1, stop =   0, pc_out = 00110, LorEinstr = 1, LoIorO = 1, instr_address_test = 00000101, opcode_test = xxx, memory_out = xxxxxxxx, data_out = 011000100
+timer = 53000, clk = 1, clk1 = 0, clk2 = 0, data_in = 01000101, execute_instruction_flag = 1, stop =   1, pc_out = 000101, LorEinstr = 1, LoIorO = 1, instr_address_test = 000101, opcode_test = 100, memory_out = 10000100, data_out = 011000100
 
-timer = 53000, clk = 0, clk1 = 1, clk2 = 1, data_in = 01000101, execute_instruction_flag = 1, stop =   0, pc_out = 00110, LorEinstr = 1, LoIorO = 1, instr_address_test = 00000101, opcode_test = xxx, memory_out = xxxxxxxx, data_out = 011000100
+timer = 53000, clk = 0, clk1 = 0, clk2 = 0, data_in = 01000101, execute_instruction_flag = 1, stop =   1, pc_out = 000101, LorEinstr = 1, LoIorO = 1, instr_address_test = 000101, opcode_test = 100, memory_out = 10000100, data_out = 011000100
 
-timer = 54000, clk = 1, clk1 = 0, clk2 = 0, data_in = 01000101, execute_instruction_flag = 1, stop =   0, pc_out = 00110, LorEinstr = 1, LoIorO = 1, instr_address_test = 00000101, opcode_test = xxx, memory_out = xxxxxxxx, data_out = 011000100
+timer = 54000, clk = 1, clk1 = 0, clk2 = 0, data_in = 01000101, execute_instruction_flag = 1, stop =   1, pc_out = 000101, LorEinstr = 1, LoIorO = 1, instr_address_test = 000101, opcode_test = 100, memory_out = 10000100, data_out = 011000100
 
-timer = 54000, clk = 0, clk1 = 0, clk2 = 0, data_in = 01000101, execute_instruction_flag = 1, stop =   0, pc_out = 00110, LorEinstr = 1, LoIorO = 1, instr_address_test = 00000101, opcode_test = xxx, memory_out = xxxxxxxx, data_out = 011000100
+timer = 54000, clk = 0, clk1 = 0, clk2 = 0, data_in = 01000101, execute_instruction_flag = 1, stop =   1, pc_out = 000101, LorEinstr = 1, LoIorO = 1, instr_address_test = 000101, opcode_test = 100, memory_out = 10000100, data_out = 011000100
 
-timer = 55000, clk = 1, clk1 = 1, clk2 = 0, data_in = 01000101, execute_instruction_flag = 1, stop =   1, pc_out = 00110, LorEinstr = 1, LoIorO = 1, instr_address_test = 00000101, opcode_test = xxx, memory_out = xxxxxxxx, data_out = 011000100
+timer = 55000, clk = 1, clk1 = 0, clk2 = 0, data_in = 01000101, execute_instruction_flag = 1, stop =   1, pc_out = 000101, LorEinstr = 1, LoIorO = 1, instr_address_test = 000101, opcode_test = 100, memory_out = 10000100, data_out = 011000100
 
-timer = 55000, clk = 0, clk1 = 1, clk2 = 0, data_in = 01000101, execute_instruction_flag = 1, stop =   1, pc_out = 00110, LorEinstr = 1, LoIorO = 1, instr_address_test = 00000101, opcode_test = xxx, memory_out = xxxxxxxx, data_out = 011000100
+timer = 55000, clk = 0, clk1 = 0, clk2 = 0, data_in = 01000101, execute_instruction_flag = 1, stop =   1, pc_out = 000101, LorEinstr = 1, LoIorO = 1, instr_address_test = 000101, opcode_test = 100, memory_out = 10000100, data_out = 011000100
 
-timer = 56000, clk = 1, clk1 = 0, clk2 = 0, data_in = 01000101, execute_instruction_flag = 1, stop =   1, pc_out = 00110, LorEinstr = 1, LoIorO = 1, instr_address_test = 00000101, opcode_test = xxx, memory_out = xxxxxxxx, data_out = 011000100
+timer = 56000, clk = 1, clk1 = 0, clk2 = 0, data_in = 01000101, execute_instruction_flag = 1, stop =   1, pc_out = 000101, LorEinstr = 1, LoIorO = 1, instr_address_test = 000101, opcode_test = 100, memory_out = 10000100, data_out = 011000100
 
-timer = 56000, clk = 0, clk1 = 0, clk2 = 0, data_in = 01000101, execute_instruction_flag = 1, stop =   1, pc_out = 00110, LorEinstr = 1, LoIorO = 1, instr_address_test = 00000101, opcode_test = xxx, memory_out = xxxxxxxx, data_out = 011000100
+timer = 56000, clk = 0, clk1 = 0, clk2 = 0, data_in = 01000101, execute_instruction_flag = 1, stop =   1, pc_out = 000101, LorEinstr = 1, LoIorO = 1, instr_address_test = 000101, opcode_test = 100, memory_out = 10000100, data_out = 011000100
 
-timer = 57000, clk = 1, clk1 = 0, clk2 = 0, data_in = 01000101, execute_instruction_flag = 1, stop =   1, pc_out = 00110, LorEinstr = 1, LoIorO = 1, instr_address_test = 00000101, opcode_test = xxx, memory_out = xxxxxxxx, data_out = 011000100
+timer = 57000, clk = 1, clk1 = 0, clk2 = 0, data_in = 01000101, execute_instruction_flag = 1, stop =   1, pc_out = 000101, LorEinstr = 1, LoIorO = 1, instr_address_test = 000101, opcode_test = 100, memory_out = 10000100, data_out = 011000100
 
-timer = 57000, clk = 0, clk1 = 0, clk2 = 0, data_in = 01000101, execute_instruction_flag = 1, stop =   1, pc_out = 00110, LorEinstr = 1, LoIorO = 1, instr_address_test = 00000101, opcode_test = xxx, memory_out = xxxxxxxx, data_out = 011000100
+timer = 57000, clk = 0, clk1 = 0, clk2 = 0, data_in = 01000101, execute_instruction_flag = 1, stop =   1, pc_out = 000101, LorEinstr = 1, LoIorO = 1, instr_address_test = 000101, opcode_test = 100, memory_out = 10000100, data_out = 011000100
 
-timer = 58000, clk = 1, clk1 = 0, clk2 = 0, data_in = 01000101, execute_instruction_flag = 1, stop =   1, pc_out = 00110, LorEinstr = 1, LoIorO = 1, instr_address_test = 00000101, opcode_test = xxx, memory_out = xxxxxxxx, data_out = 011000100
+timer = 58000, clk = 1, clk1 = 0, clk2 = 0, data_in = 01000101, execute_instruction_flag = 1, stop =   1, pc_out = 000101, LorEinstr = 1, LoIorO = 1, instr_address_test = 000101, opcode_test = 100, memory_out = 10000100, data_out = 011000100
 
-timer = 58000, clk = 0, clk1 = 0, clk2 = 0, data_in = 01000101, execute_instruction_flag = 1, stop =   1, pc_out = 00110, LorEinstr = 1, LoIorO = 1, instr_address_test = 00000101, opcode_test = xxx, memory_out = xxxxxxxx, data_out = 011000100
+timer = 58000, clk = 0, clk1 = 0, clk2 = 0, data_in = 01000101, execute_instruction_flag = 1, stop =   1, pc_out = 000101, LorEinstr = 1, LoIorO = 1, instr_address_test = 000101, opcode_test = 100, memory_out = 10000100, data_out = 011000100
 
-timer = 59000, clk = 1, clk1 = 0, clk2 = 0, data_in = 01000101, execute_instruction_flag = 1, stop =   1, pc_out = 00110, LorEinstr = 1, LoIorO = 1, instr_address_test = 00000101, opcode_test = xxx, memory_out = xxxxxxxx, data_out = 011000100
+timer = 59000, clk = 1, clk1 = 0, clk2 = 0, data_in = 01000101, execute_instruction_flag = 1, stop =   1, pc_out = 000101, LorEinstr = 1, LoIorO = 1, instr_address_test = 000101, opcode_test = 100, memory_out = 10000100, data_out = 011000100
 
-timer = 59000, clk = 0, clk1 = 0, clk2 = 0, data_in = 01000101, execute_instruction_flag = 1, stop =   1, pc_out = 00110, LorEinstr = 1, LoIorO = 1, instr_address_test = 00000101, opcode_test = xxx, memory_out = xxxxxxxx, data_out = 011000100
+timer = 59000, clk = 0, clk1 = 0, clk2 = 0, data_in = 01000101, execute_instruction_flag = 1, stop =   1, pc_out = 000101, LorEinstr = 1, LoIorO = 1, instr_address_test = 000101, opcode_test = 100, memory_out = 10000100, data_out = 011000100
 
-timer = 60000, clk = 1, clk1 = 0, clk2 = 0, data_in = 01000101, execute_instruction_flag = 1, stop =   1, pc_out = 00110, LorEinstr = 1, LoIorO = 1, instr_address_test = 00000101, opcode_test = xxx, memory_out = xxxxxxxx, data_out = 011000100
+timer = 60000, clk = 1, clk1 = 0, clk2 = 0, data_in = 01000101, execute_instruction_flag = 1, stop =   1, pc_out = 000101, LorEinstr = 1, LoIorO = 1, instr_address_test = 000101, opcode_test = 100, memory_out = 10000100, data_out = 011000100
 
-timer = 60000, clk = 0, clk1 = 0, clk2 = 0, data_in = 01000101, execute_instruction_flag = 1, stop =   1, pc_out = 00110, LorEinstr = 1, LoIorO = 1, instr_address_test = 00000101, opcode_test = xxx, memory_out = xxxxxxxx, data_out = 011000100
+timer = 60000, clk = 0, clk1 = 0, clk2 = 0, data_in = 01000101, execute_instruction_flag = 1, stop =   1, pc_out = 000101, LorEinstr = 1, LoIorO = 1, instr_address_test = 000101, opcode_test = 100, memory_out = 10000100, data_out = 011000100
 
-timer = 61000, clk = 1, clk1 = 0, clk2 = 0, data_in = 01000101, execute_instruction_flag = 1, stop =   1, pc_out = 00110, LorEinstr = 1, LoIorO = 1, instr_address_test = 00000101, opcode_test = xxx, memory_out = xxxxxxxx, data_out = 011000100
+timer = 61000, clk = 1, clk1 = 0, clk2 = 0, data_in = 01000101, execute_instruction_flag = 1, stop =   1, pc_out = 000101, LorEinstr = 1, LoIorO = 1, instr_address_test = 000101, opcode_test = 100, memory_out = 10000100, data_out = 011000100
 
-timer = 61000, clk = 0, clk1 = 0, clk2 = 0, data_in = 01000101, execute_instruction_flag = 1, stop =   1, pc_out = 00110, LorEinstr = 1, LoIorO = 1, instr_address_test = 00000101, opcode_test = xxx, memory_out = xxxxxxxx, data_out = 011000100
+timer = 61000, clk = 0, clk1 = 0, clk2 = 0, data_in = 01000101, execute_instruction_flag = 1, stop =   1, pc_out = 000101, LorEinstr = 1, LoIorO = 1, instr_address_test = 000101, opcode_test = 100, memory_out = 10000100, data_out = 011000100
 
-timer = 62000, clk = 1, clk1 = 0, clk2 = 0, data_in = 01000101, execute_instruction_flag = 1, stop =   1, pc_out = 00110, LorEinstr = 1, LoIorO = 1, instr_address_test = 00000101, opcode_test = xxx, memory_out = xxxxxxxx, data_out = 011000100
+timer = 62000, clk = 1, clk1 = 0, clk2 = 0, data_in = 01000101, execute_instruction_flag = 1, stop =   1, pc_out = 000101, LorEinstr = 1, LoIorO = 1, instr_address_test = 000101, opcode_test = 100, memory_out = 10000100, data_out = 011000100
 
-timer = 62000, clk = 0, clk1 = 0, clk2 = 0, data_in = 01000101, execute_instruction_flag = 1, stop =   1, pc_out = 00110, LorEinstr = 1, LoIorO = 1, instr_address_test = 00000101, opcode_test = xxx, memory_out = xxxxxxxx, data_out = 011000100
+timer = 62000, clk = 0, clk1 = 0, clk2 = 0, data_in = 01000101, execute_instruction_flag = 1, stop =   1, pc_out = 000101, LorEinstr = 1, LoIorO = 1, instr_address_test = 000101, opcode_test = 100, memory_out = 10000100, data_out = 011000100
 
-timer = 63000, clk = 1, clk1 = 0, clk2 = 0, data_in = 01000101, execute_instruction_flag = 1, stop =   1, pc_out = 00110, LorEinstr = 1, LoIorO = 1, instr_address_test = 00000101, opcode_test = xxx, memory_out = xxxxxxxx, data_out = 011000100
+timer = 63000, clk = 1, clk1 = 0, clk2 = 0, data_in = 01000101, execute_instruction_flag = 1, stop =   1, pc_out = 000101, LorEinstr = 1, LoIorO = 1, instr_address_test = 000101, opcode_test = 100, memory_out = 10000100, data_out = 011000100
 
-timer = 63000, clk = 0, clk1 = 0, clk2 = 0, data_in = 01000101, execute_instruction_flag = 1, stop =   1, pc_out = 00110, LorEinstr = 1, LoIorO = 1, instr_address_test = 00000101, opcode_test = xxx, memory_out = xxxxxxxx, data_out = 011000100
+timer = 63000, clk = 0, clk1 = 0, clk2 = 0, data_in = 01000101, execute_instruction_flag = 1, stop =   1, pc_out = 000101, LorEinstr = 1, LoIorO = 1, instr_address_test = 000101, opcode_test = 100, memory_out = 10000100, data_out = 011000100
 
-timer = 64000, clk = 1, clk1 = 0, clk2 = 0, data_in = 01000101, execute_instruction_flag = 1, stop =   1, pc_out = 00110, LorEinstr = 1, LoIorO = 1, instr_address_test = 00000101, opcode_test = xxx, memory_out = xxxxxxxx, data_out = 011000100
+timer = 64000, clk = 1, clk1 = 0, clk2 = 0, data_in = 01000101, execute_instruction_flag = 1, stop =   1, pc_out = 000101, LorEinstr = 1, LoIorO = 1, instr_address_test = 000101, opcode_test = 100, memory_out = 10000100, data_out = 011000100
 
-timer = 64000, clk = 0, clk1 = 0, clk2 = 0, data_in = 01000101, execute_instruction_flag = 1, stop =   1, pc_out = 00110, LorEinstr = 1, LoIorO = 1, instr_address_test = 00000101, opcode_test = xxx, memory_out = xxxxxxxx, data_out = 011000100
+timer = 64000, clk = 0, clk1 = 0, clk2 = 0, data_in = 01000101, execute_instruction_flag = 1, stop =   1, pc_out = 000101, LorEinstr = 1, LoIorO = 1, instr_address_test = 000101, opcode_test = 100, memory_out = 10000100, data_out = 011000100
 
-timer = 65000, clk = 1, clk1 = 0, clk2 = 0, data_in = 01000101, execute_instruction_flag = 1, stop =   1, pc_out = 00110, LorEinstr = 1, LoIorO = 1, instr_address_test = 00000101, opcode_test = xxx, memory_out = xxxxxxxx, data_out = 011000100
+timer = 65000, clk = 1, clk1 = 0, clk2 = 0, data_in = 01000101, execute_instruction_flag = 1, stop =   1, pc_out = 000101, LorEinstr = 1, LoIorO = 1, instr_address_test = 000101, opcode_test = 100, memory_out = 10000100, data_out = 011000100
 
-timer = 65000, clk = 0, clk1 = 0, clk2 = 0, data_in = 01000101, execute_instruction_flag = 1, stop =   1, pc_out = 00110, LorEinstr = 1, LoIorO = 1, instr_address_test = 00000101, opcode_test = xxx, memory_out = xxxxxxxx, data_out = 011000100
+timer = 65000, clk = 0, clk1 = 0, clk2 = 0, data_in = 01000101, execute_instruction_flag = 1, stop =   1, pc_out = 000101, LorEinstr = 1, LoIorO = 1, instr_address_test = 000101, opcode_test = 100, memory_out = 10000100, data_out = 011000100
 
-timer = 66000, clk = 1, clk1 = 0, clk2 = 0, data_in = 01000101, execute_instruction_flag = 1, stop =   1, pc_out = 00110, LorEinstr = 1, LoIorO = 1, instr_address_test = 00000101, opcode_test = xxx, memory_out = xxxxxxxx, data_out = 011000100
+timer = 66000, clk = 1, clk1 = 0, clk2 = 0, data_in = 01000101, execute_instruction_flag = 1, stop =   1, pc_out = 000101, LorEinstr = 1, LoIorO = 1, instr_address_test = 000101, opcode_test = 100, memory_out = 10000100, data_out = 011000100
 
-timer = 66000, clk = 0, clk1 = 0, clk2 = 0, data_in = 01000101, execute_instruction_flag = 1, stop =   1, pc_out = 00110, LorEinstr = 1, LoIorO = 1, instr_address_test = 00000101, opcode_test = xxx, memory_out = xxxxxxxx, data_out = 011000100
+timer = 66000, clk = 0, clk1 = 0, clk2 = 0, data_in = 01000101, execute_instruction_flag = 1, stop =   1, pc_out = 000101, LorEinstr = 1, LoIorO = 1, instr_address_test = 000101, opcode_test = 100, memory_out = 10000100, data_out = 011000100
 
-timer = 67000, clk = 1, clk1 = 0, clk2 = 0, data_in = 01000101, execute_instruction_flag = 1, stop =   1, pc_out = 00110, LorEinstr = 1, LoIorO = 1, instr_address_test = 00000101, opcode_test = xxx, memory_out = xxxxxxxx, data_out = 011000100
+timer = 67000, clk = 1, clk1 = 0, clk2 = 0, data_in = 01000101, execute_instruction_flag = 1, stop =   1, pc_out = 000101, LorEinstr = 1, LoIorO = 1, instr_address_test = 000101, opcode_test = 100, memory_out = 10000100, data_out = 011000100
 
-timer = 67000, clk = 0, clk1 = 0, clk2 = 0, data_in = 01000101, execute_instruction_flag = 1, stop =   1, pc_out = 00110, LorEinstr = 1, LoIorO = 1, instr_address_test = 00000101, opcode_test = xxx, memory_out = xxxxxxxx, data_out = 011000100
-
-timer = 68000, clk = 1, clk1 = 0, clk2 = 0, data_in = 01000101, execute_instruction_flag = 1, stop =   1, pc_out = 00110, LorEinstr = 1, LoIorO = 1, instr_address_test = 00000101, opcode_test = xxx, memory_out = xxxxxxxx, data_out = 011000100
-
-$stop called at time : 68 ns : File "E:/BKU/year_3/SEMESTER 1/project_HDL/codes/project_1.srcs/sources_1/new/CPU_testbench.v" Line 62
+timer = 67000, clk = 0, clk1 = 0, clk2 = 0, data_in = 01000101, execute_instruction_flag = 1, stop =   1, pc_out = 000101, LorEinstr = 1, LoIorO = 1, instr_address_test = 000101, opcode_test = 100, memory

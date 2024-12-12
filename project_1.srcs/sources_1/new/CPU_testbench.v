@@ -25,8 +25,8 @@ module CPU_testbench();
     reg [7:0] data_in;
     wire [8:0] data_out;
     wire [7:0] memory_test;
-    wire [4:0] instr_address_test;
-    wire [4:0] pc_out_test;
+    wire [5:0] instr_address_test;
+    wire [5:0] pc_out_test;
     wire [2:0] opcode_test;
     wire LoadCorO_test, LorE_test;
     wire clk1, clk2 ;
@@ -36,7 +36,7 @@ module CPU_testbench();
     
     initial
     begin
-    $monitor("timer = %0t, clk = %1b, clk1 = %1b, clk2 = %1b, data_in = %8b, execute_instruction_flag = %1b, stop = %3d, pc_out = %5b, LorEinstr = %1b, LoIorO = %1b, instr_address_test = %8b, opcode_test = %3b, memory_out = %8b, data_out = %9b\n",  
+    $monitor("timer = %0t, clk = %1b, clk1 = %1b, clk2 = %1b, data_in = %8b, execute_instruction_flag = %1b, stop = %3d, pc_out = %6b, LorEinstr = %1b, LoIorO = %1b, instr_address_test = %6b, opcode_test = %3b, memory_out = %8b, data_out = %9b\n",  
     $time, clk, clk1, clk2, data_in, execute_instruction_flag, stop, pc_out_test, LorE_test, LoadCorO_test,instr_address_test, opcode_test, memory_test, data_out);
     end
     

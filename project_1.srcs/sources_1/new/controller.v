@@ -27,8 +27,8 @@ module controller #(parameter WIDTH_REG = 8, //width of register
         output wire empty, //indicate memory out
         output wire [WIDTH_REG - 1 : 0] memory_test,
         output wire [2 : 0] opcode_test,
-        output wire [4: 0] instr_address_test,
-        output wire [4:0] pc_out_test,
+        output wire [5 : 0] instr_address_test,
+        output wire [5 : 0] pc_out_test,
         output wire LorE_test, LoadCorO_test, //load command or execute and load command or operator
         output reg stop,
         input [WIDTH_REG - 1 : 0] data_in,
@@ -53,11 +53,12 @@ module controller #(parameter WIDTH_REG = 8, //width of register
     /* --------------------------------------------------- end local parameter -------------------------*/
     
     wire [WIDTH_ADDRESS_BIT - 1 : 0] address; //address be used for memory
-    reg [WIDTH_ADDRESS_BIT - 1 : 0] instr_address; //address for load instruction
+    wire [WIDTH_ADDRESS_BIT : 0] instr_address; //address for load instruction
     reg [WIDTH_ADDRESS_BIT - 1: 0] operand_address; //address for execute instruction
     reg select; //select between load instructions (0) and execute them (1)
     address_mux_trang #(.WIDTH_ADDRESS_BIT(WIDTH_ADDRESS_BIT))
-    add_mux (.address_out(address), .instr_address(instr_address),
+    add_mux (.address_out(address),
+            .instr_address(instr_address[WIDTH_ADDRESS_BIT - 1 : 0]),
             .operand_address(operand_address), .select(select));
     reg load_or_execute_instrc; //1 is enable instruction register load, 0 is execute instrc
     reg load_instruct_or_operand; //indicate memory be loading instruction or operand to execute
@@ -68,11 +69,11 @@ module controller #(parameter WIDTH_REG = 8, //width of register
     Decoder #(.WIDTH_REG(WIDTH_REG), .OPCODE(OPCODE))
     decoder (.opcode_out(opcode), .address_out(address_decoded),
     .instruction_in(instruction_register));
-    wire [WIDTH_ADDRESS_BIT - 1 : 0] pc_out;//address for next instruct
+    wire [WIDTH_ADDRESS_BIT : 0] pc_out;//address for next instruct
     reg skip; //for skip command 
     reg jump; //for jump command
     reg enable_PC; //enable increase program counter
-    program_counter #(.WIDTH_ADDRESS_BIT(WIDTH_ADDRESS_BIT))
+    program_counter #(.WIDTH_ADDRESS_BIT(WIDTH_ADDRESS_BIT + 1))
     PC (.pc_out(pc_out), .clk(clk2), .reset(reset),
         .enable(enable_PC), .skip(skip), .jump(jump),
                      .jump_address(address_decoded));
@@ -81,9 +82,10 @@ module controller #(parameter WIDTH_REG = 8, //width of register
      reg enable_memory;
      reg [WIDTH_REG - 1 : 0] in_memory;
      memory_trang #(.WIDTH_REG(WIDTH_REG), .WIDTH_ADDRESS(WIDTH_ADDRESS_BIT))
-     memory(.Data_Out(memory_out), .empty(empty),
+     memory(.Data_Out(memory_out), .instr_address(instr_address), .empty(empty),
      .clk(clk2), .enable(enable_memory), .rst(reset), .read_write(read_write_memory),
-     .address(address), .Data_in(in_memory)); 
+     .address(address), .Data_in(in_memory),
+     .load_instruction_flag(load_instruction_flag)); 
      
      wire [WIDTH_REG - 1 : 0] ALU_out;  
      wire [WIDTH_REG - 1 : 0] accumulator;
@@ -151,7 +153,7 @@ module controller #(parameter WIDTH_REG = 8, //width of register
             //load command state
             select <= 1'b1; //choose operand_address in address mux
             enable_load_acc <= 1'b1; //load ALU_out to accumulator
-            if(pc_out > instr_address)
+            if(pc_out >= instr_address)
             begin
                 stop <= 1'b1; //stop because of empty command to execute 
                 enable_memory <= 1'b0; //not enable to manipulate with memory
@@ -161,7 +163,10 @@ module controller #(parameter WIDTH_REG = 8, //width of register
             begin
                 enable_memory <= 1'b1; //enable manipulate with memory
 //                enable_load_IR <= 1'b0; //not enable to load instrct to IR because memory is loading command
-                operand_address <= pc_out;
+                operand_address <= pc_out[WIDTH_ADDRESS_BIT - 1 : 0];
+                //becaus pc_out have width is 6
+                //(used for stop program when compare with instrc_address)
+                //whereas operand_address just 5 so we should assign [4:0]
                 //operand_address = program_counter to load instruction, afterward decode it
                 read_write_memory <= 1'b1; //choose read mode in memory
                 load_or_execute_instrc <= 1'b0; //execute instrct
@@ -232,14 +237,11 @@ module controller #(parameter WIDTH_REG = 8, //width of register
     begin
         if(reset == 1'b1)
         begin
-            instr_address <= 0; //reset instr_address to load command            
             enable_ALU <= 1'b0;
             load_instruct_or_operand <= 1'b1; //run memory to load instruction
         end
         else if(load_instruction_flag == 1'b1) //load instrct
         begin
-            if(instr_address + 1 < 2**WIDTH_ADDRESS_BIT && enable_memory == 1'b1) //>= 32 so exceed 5 bit
-                instr_address <= instr_address + 1;
             enable_ALU <= 1'b0;
             load_instruct_or_operand <= 1'b1; //run memory to load instruction
         end

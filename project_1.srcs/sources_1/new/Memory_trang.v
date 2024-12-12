@@ -25,23 +25,26 @@ module memory_trang#(
     parameter WIDTH_ADDRESS = 5 
 )(
     output reg [WIDTH_REG-1:0] Data_Out,  
+    output reg [WIDTH_ADDRESS : 0] instr_address,
+    //used for address to load instruction and also to stop program
     output reg empty,  
     input clk,        
     input enable,           
     input rst,                   
-    input read_write,            
+    input read_write,
+    input load_instruction_flag,            
     input [WIDTH_ADDRESS-1:0] address,  
     input [WIDTH_REG-1:0] Data_in                
 );
 
     reg [WIDTH_REG-1:0] memory [0:(2**WIDTH_ADDRESS)-1];
-//    reg [WIDTH_ADDRESS : 0] counter_instruction; //used for load instruction to stop program
     always @(posedge clk, posedge rst)
     begin
         if (rst == 1'b1)
         begin
             empty <= 1'b1;
             Data_Out <= 0;
+            instr_address <= 0;
         end 
         else if(enable == 1'b1)
         begin
@@ -50,6 +53,8 @@ module memory_trang#(
                     memory[address] <= Data_in;
                     empty <= 1'b0;
                     Data_Out <= Data_in;
+                    if(load_instruction_flag)
+                        instr_address <= instr_address + 1;
             end 
             else if (read_write&&!empty) //read when not empty
             begin
