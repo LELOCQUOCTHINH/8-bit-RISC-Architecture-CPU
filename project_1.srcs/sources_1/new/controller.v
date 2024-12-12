@@ -26,8 +26,8 @@ module controller #(parameter WIDTH_REG = 8, //width of register
         output wire [WIDTH_REG : 0] data_out, //output of alu result
         output wire empty, //indicate memory out
         output wire [WIDTH_REG - 1 : 0] memory_test,
-        output wire [WIDTH_REG - OPCODE - 1 : 0] operand_address_test,
-        output wire [WIDTH_REG - 1 : 0] IR_test,
+        output wire [2 : 0] opcode_test,
+        output wire [4: 0] instr_address_test,
         output wire [4:0] pc_out_test,
         output wire LorE_test, LoadCorO_test, //load command or execute and load command or operator
         output reg stop,
@@ -99,20 +99,21 @@ module controller #(parameter WIDTH_REG = 8, //width of register
      .opcode(opcode), .address(address), .clk(clk), .reset(reset),
      .enable(enable_ALU), .in_A(accumulator), .in_B(memory_out));
      
-     reg enable_load_IR; //instruction register
-     register #(.WIDTH_REG(WIDTH_REG))
-     Instruction_register(.data_out(instruction_register), .load(enable_load_IR),
-     .rst(reset), .clk(enable_load_IR), .data_in(memory_out)
-     ); //clk and load same because of easy to control
+     assign instruction_register = memory_out;
+//     reg enable_load_IR; //instruction register
+//     register #(.WIDTH_REG(WIDTH_REG))
+//     Instruction_register(.data_out(instruction_register), .load(enable_load_IR),
+//     .rst(reset), .clk(enable_load_IR), .data_in(memory_out)
+//     ); //clk and load same because of easy to control
      
     assign data_out[WIDTH_REG - 1 : 0] = ALU_out;
     assign data_out [WIDTH_REG] = is_zero;    
     assign memory_test = memory_out;    
     assign pc_out_test = pc_out;  
-    assign operand_address_test = operand_address;
+    assign opcode_test = opcode;
     assign LorE_test = load_or_execute_instrc;
     assign LoadCorO_test = load_instruct_or_operand;
-    assign IR_test = instruction_register;
+    assign instr_address_test = instr_address;
     always @(posedge clk, posedge reset)
     begin
         if(reset == 1'b1)
@@ -128,7 +129,7 @@ module controller #(parameter WIDTH_REG = 8, //width of register
             read_write_memory <= 1'b1; //choose read mode in memory because of don't load anything
             enable_PC <= 1'b0;
             enable_load_acc <= 1'b1; //load ALU_out to accumulator
-            enable_load_IR <= 1'b0; //not load command to Instruction Register
+//            enable_load_IR <= 1'b0; //not load command to Instruction Register
         end
         else if(load_instruction_flag == 1'b1) //load instrct
         begin
@@ -143,20 +144,23 @@ module controller #(parameter WIDTH_REG = 8, //width of register
             select <= 1'b0; //choose instr_address in address mux
             in_memory <= data_in; //input of memory = input of user
             read_write_memory <= 1'b0; //choose write mode in memory to load command
-            enable_load_IR <= 1'b0; 
+//            enable_load_IR <= 1'b0; 
         end
         else if(execute_instruction_flag == 1'b1)//execute instrct
         begin
             //load command state
             select <= 1'b1; //choose operand_address in address mux
-            enable_memory <= 1'b1; //enable manipulate with memory
             enable_load_acc <= 1'b1; //load ALU_out to accumulator
             if(pc_out > instr_address)
+            begin
                 stop <= 1'b1; //stop because of empty command to execute 
+                enable_memory <= 1'b0; //not enable to manipulate with memory
+            end
             else if(load_or_execute_instrc == 1'b1)
             //load instrc to instruction register and decode
             begin
-                enable_load_IR <= 1'b0; //not enable to load instrct to IR because memory is loading command
+                enable_memory <= 1'b1; //enable manipulate with memory
+//                enable_load_IR <= 1'b0; //not enable to load instrct to IR because memory is loading command
                 operand_address <= pc_out;
                 //operand_address = program_counter to load instruction, afterward decode it
                 read_write_memory <= 1'b1; //choose read mode in memory
@@ -166,7 +170,8 @@ module controller #(parameter WIDTH_REG = 8, //width of register
             end //end of if(load_or_execute_instrc == 1'b1)
             else if(load_or_execute_instrc == 1'b0) //executing instrc
             begin
-                    enable_load_IR <= 1'b1;
+                    enable_memory <= 1'b1; //enable manipulate with memory
+//                    enable_load_IR <= 1'b1;
                     //enable to load command to IR because memory has loaded it already
                     operand_address <= address_decoded;
                     //choose address in instruction to load data
@@ -223,6 +228,7 @@ module controller #(parameter WIDTH_REG = 8, //width of register
     
     always @(posedge clk2, posedge reset)
     //be used to memory and program counter to load instrct and load data for ALU
+    //and enable ALU to active
     begin
         if(reset == 1'b1)
         begin
@@ -232,14 +238,16 @@ module controller #(parameter WIDTH_REG = 8, //width of register
         end
         else if(load_instruction_flag == 1'b1) //load instrct
         begin
-            if(instr_address + 1 < 2**WIDTH_ADDRESS_BIT) //>= 32 so exceed 5 bit
+            if(instr_address + 1 < 2**WIDTH_ADDRESS_BIT && enable_memory == 1'b1) //>= 32 so exceed 5 bit
                 instr_address <= instr_address + 1;
             enable_ALU <= 1'b0;
             load_instruct_or_operand <= 1'b1; //run memory to load instruction
         end
         else if(execute_instruction_flag == 1'b1)//execute instrct
         begin
-            if(load_instruct_or_operand == 1'b1)//load instrct from memory
+            if(load_instruct_or_operand == 1'b1 //load instrct from memory
+            && read_write_memory == 1'b1) //because it be loading command so just premit read from memory
+            //used for prevent user switch state when not predict
             begin
                 enable_ALU <= 1'b0; //turn off ALU because of be loading command
                 load_instruct_or_operand <= 1'b0;

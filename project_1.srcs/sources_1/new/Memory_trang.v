@@ -35,6 +35,7 @@ module memory_trang#(
 );
 
     reg [WIDTH_REG-1:0] memory [0:(2**WIDTH_ADDRESS)-1];
+//    reg [WIDTH_ADDRESS : 0] counter_instruction; //used for load instruction to stop program
     always @(posedge clk, posedge rst)
     begin
         if (rst == 1'b1)

@@ -1,0 +1,18 @@
+0.7
+2020.2
+Oct 14 2022
+05:20:55
+E:/BKU/year_3/SEMESTER 1/project_HDL/codes/project_1.sim/TB_CPU_right/behav/xsim/glbl.v,1665704903,verilog,,,,glbl,,,,,,,,
+E:/BKU/year_3/SEMESTER 1/project_HDL/codes/project_1.srcs/sources_1/new/ALU_real.v,1733806283,verilog,,E:/BKU/year_3/SEMESTER 1/project_HDL/codes/project_1.srcs/sources_1/new/controller.v,,ALU_real,,,,,,,,
+E:/BKU/year_3/SEMESTER 1/project_HDL/codes/project_1.srcs/sources_1/new/Address_mux_trang.v,1733547146,verilog,,E:/BKU/year_3/SEMESTER 1/project_HDL/codes/project_1.srcs/sources_1/new/Memory_trang.v,,address_mux_trang,,,,,,,,
+E:/BKU/year_3/SEMESTER 1/project_HDL/codes/project_1.srcs/sources_1/new/CPU_righ_TB.v,1733928363,verilog,,,,CPU_testbench_right,,,,,,,,
+E:/BKU/year_3/SEMESTER 1/project_HDL/codes/project_1.srcs/sources_1/new/CPU_testbench.v,1733928072,verilog,,E:/BKU/year_3/SEMESTER 1/project_HDL/codes/project_1.srcs/sources_1/new/clock_gen_TB.v,,CPU_testbench,,,,,,,,
+E:/BKU/year_3/SEMESTER 1/project_HDL/codes/project_1.srcs/sources_1/new/Decoder.v,1733824417,verilog,,E:/BKU/year_3/SEMESTER 1/project_HDL/codes/project_1.srcs/sources_1/new/clock_generator.v,,Decoder,,,,,,,,
+E:/BKU/year_3/SEMESTER 1/project_HDL/codes/project_1.srcs/sources_1/new/Memory_trang.v,1733841338,verilog,,E:/BKU/year_3/SEMESTER 1/project_HDL/codes/project_1.srcs/sources_1/new/program_counter.v,,memory_trang,,,,,,,,
+E:/BKU/year_3/SEMESTER 1/project_HDL/codes/project_1.srcs/sources_1/new/clock_divided.v,1733894075,verilog,,E:/BKU/year_3/SEMESTER 1/project_HDL/codes/project_1.srcs/sources_1/new/CPU_righ_TB.v,,clock_divided,,,,,,,,
+E:/BKU/year_3/SEMESTER 1/project_HDL/codes/project_1.srcs/sources_1/new/clock_gen_TB.v,1733832948,verilog,,E:/BKU/year_3/SEMESTER 1/project_HDL/codes/project_1.srcs/sources_1/new/clock_divided.v,,testbench,,,,,,,,
+E:/BKU/year_3/SEMESTER 1/project_HDL/codes/project_1.srcs/sources_1/new/clock_generator.v,1733912019,verilog,,E:/BKU/year_3/SEMESTER 1/project_HDL/codes/project_1.srcs/sources_1/new/test.v,,clock_generator,,,,,,,,
+E:/BKU/year_3/SEMESTER 1/project_HDL/codes/project_1.srcs/sources_1/new/controller.v,1733895814,verilog,,E:/BKU/year_3/SEMESTER 1/project_HDL/codes/project_1.srcs/sources_1/new/Decoder.v,,controller,,,,,,,,
+E:/BKU/year_3/SEMESTER 1/project_HDL/codes/project_1.srcs/sources_1/new/program_counter.v,1733820757,verilog,,E:/BKU/year_3/SEMESTER 1/project_HDL/codes/project_1.srcs/sources_1/new/register.v,,program_counter,,,,,,,,
+E:/BKU/year_3/SEMESTER 1/project_HDL/codes/project_1.srcs/sources_1/new/register.v,1733739005,verilog,,E:/BKU/year_3/SEMESTER 1/project_HDL/codes/project_1.srcs/sources_1/new/ALU_real.v,,register,,,,,,,,
+E:/BKU/year_3/SEMESTER 1/project_HDL/codes/project_1.srcs/sources_1/new/test.v,1733577428,verilog,,E:/BKU/year_3/SEMESTER 1/project_HDL/codes/project_1.srcs/sources_1/new/CPU_testbench.v,,test,,,,,,,,

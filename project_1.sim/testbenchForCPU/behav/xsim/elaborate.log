@@ -15,6 +15,7 @@ Compiling module xil_defaultlib.memory_trang
 Compiling module xil_defaultlib.register
 Compiling module xil_defaultlib.ALU_real_default
 Compiling module xil_defaultlib.controller_default
+Compiling module xil_defaultlib.clock_generator
 Compiling module xil_defaultlib.CPU_testbench
 Compiling module xil_defaultlib.glbl
 Built simulation snapshot CPU_testbench_behav

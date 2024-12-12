@@ -20,3 +20,5 @@ INFO: [VRFC 10-2263] Analyzing Verilog file "E:/BKU/year_3/SEMESTER 1/project_HD
 INFO: [VRFC 10-311] analyzing module CPU_testbench
 INFO: [VRFC 10-2263] Analyzing Verilog file "E:/BKU/year_3/SEMESTER 1/project_HDL/codes/project_1.srcs/sources_1/new/clock_gen_TB.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module testbench
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/BKU/year_3/SEMESTER 1/project_HDL/codes/project_1.srcs/sources_1/new/clock_divided.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clock_divided
