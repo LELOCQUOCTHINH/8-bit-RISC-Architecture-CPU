@@ -19,7 +19,7 @@
 // 
 //////////////////////////////////////////////////////////////////////////////////
 
-//raw clock is 125MHz so bit width will be 16 because of 125/2 = 62,5 MHz
+//raw clock is 125MHz 
 module clock_generator (
     output reg clk1,       // Faster clock
     output reg clk2,        // Slower clock
@@ -27,7 +27,7 @@ module clock_generator (
     input reset,
     input stop
 );
-    always @(posedge clk_in)
+    always @(posedge clk_in, posedge reset, posedge stop)
     begin
         if(reset || stop)
         begin

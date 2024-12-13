@@ -23,15 +23,27 @@
 module controller #(parameter WIDTH_REG = 8, //width of register
     OPCODE = 3 //width of opcode
     )(
-        output wire [WIDTH_REG : 0] data_out, //output of alu result
-        output wire empty, //indicate memory out
-        output wire [WIDTH_REG - 1 : 0] memory_test,
-        output wire [2 : 0] opcode_test,
-        output wire [5 : 0] instr_address_test,
-        output wire [5 : 0] pc_out_test,
-        output wire LorE_test, LoadCorO_test, //load command or execute and load command or operator
+        output reg [WIDTH_REG - OPCODE - 1: 0] operand_address, //address for execute instruction
+        output reg select, //select between load instructions (0) and execute them (1)
+        output reg load_or_execute_instrc, //1 is enable instruction register load, 0 is execute instrc
+        output reg load_instruct_or_operand, //indicate memory be loading instruction or operand to execute
+        //1 for ALU be running, 0 for memory
+        output reg skip, //for skip command 
+        output reg jump, //for jump command
+        output reg enable_PC, //enable increase program counter
+        output reg read_write_memory,
+        output reg enable_memory,
+        output reg [WIDTH_REG - 1 : 0] in_memory,
+        output reg enable_load_acc,
+        output reg enable_ALU,
         output reg stop,
+        input is_zero,
+        input [WIDTH_REG - 1 : 0] accumulator,
         input [WIDTH_REG - 1 : 0] data_in,
+        input [WIDTH_REG - OPCODE : 0] pc_out,//address for next instruct
+        input [OPCODE - 1 : 0] opcode,
+        input [WIDTH_REG - OPCODE - 1 : 0] address_decoded,//address after decoded
+        input [WIDTH_REG - OPCODE : 0] instr_address, //address for load instruction
         input load_instruction_flag, //indicate phase load instruction
         input execute_instruction_flag, //indicate phase execute instruction
         input reset, //be used for init
@@ -51,71 +63,7 @@ module controller #(parameter WIDTH_REG = 8, //width of register
     localparam JMP = 3'b111;
     
     /* --------------------------------------------------- end local parameter -------------------------*/
-    
-    wire [WIDTH_ADDRESS_BIT - 1 : 0] address; //address be used for memory
-    wire [WIDTH_ADDRESS_BIT : 0] instr_address; //address for load instruction
-    reg [WIDTH_ADDRESS_BIT - 1: 0] operand_address; //address for execute instruction
-    reg select; //select between load instructions (0) and execute them (1)
-    address_mux_trang #(.WIDTH_ADDRESS_BIT(WIDTH_ADDRESS_BIT))
-    add_mux (.address_out(address),
-            .instr_address(instr_address[WIDTH_ADDRESS_BIT - 1 : 0]),
-            .operand_address(operand_address), .select(select));
-    reg load_or_execute_instrc; //1 is enable instruction register load, 0 is execute instrc
-    reg load_instruct_or_operand; //indicate memory be loading instruction or operand to execute
-    //1 for ALU be running, 0 for memory
-    wire [WIDTH_REG - 1 : 0] instruction_register;
-    wire [OPCODE - 1 : 0] opcode;
-    wire [WIDTH_ADDRESS_BIT - 1 : 0] address_decoded;//address after decoded
-    Decoder #(.WIDTH_REG(WIDTH_REG), .OPCODE(OPCODE))
-    decoder (.opcode_out(opcode), .address_out(address_decoded),
-    .instruction_in(instruction_register));
-    wire [WIDTH_ADDRESS_BIT : 0] pc_out;//address for next instruct
-    reg skip; //for skip command 
-    reg jump; //for jump command
-    reg enable_PC; //enable increase program counter
-    program_counter #(.WIDTH_ADDRESS_BIT(WIDTH_ADDRESS_BIT + 1))
-    PC (.pc_out(pc_out), .clk(clk2), .reset(reset),
-        .enable(enable_PC), .skip(skip), .jump(jump),
-                     .jump_address(address_decoded));
-     wire [WIDTH_REG - 1 : 0] memory_out;
-     reg read_write_memory;
-     reg enable_memory;
-     reg [WIDTH_REG - 1 : 0] in_memory;
-     memory_trang #(.WIDTH_REG(WIDTH_REG), .WIDTH_ADDRESS(WIDTH_ADDRESS_BIT))
-     memory(.Data_Out(memory_out), .instr_address(instr_address), .empty(empty),
-     .clk(clk2), .enable(enable_memory), .rst(reset), .read_write(read_write_memory),
-     .address(address), .Data_in(in_memory),
-     .load_instruction_flag(load_instruction_flag)); 
-     
-     wire [WIDTH_REG - 1 : 0] ALU_out;  
-     wire [WIDTH_REG - 1 : 0] accumulator;
-     reg enable_load_acc;
-     register #(.WIDTH_REG(WIDTH_REG))
-     Accumulator(.data_out(accumulator), .load(enable_load_acc),
-     .rst(reset), .clk(clk2), .data_in(ALU_out)
-     );
-     wire is_zero;
-     reg enable_ALU;
-     ALU_real #(.width_bit_opcode(OPCODE), .width_bit_reg(WIDTH_REG))
-     ALU(.ALU_out(ALU_out), .is_zero(is_zero),
-     .opcode(opcode), .address(address), .clk(clk), .reset(reset),
-     .enable(enable_ALU), .in_A(accumulator), .in_B(memory_out));
-     
-     assign instruction_register = memory_out;
-//     reg enable_load_IR; //instruction register
-//     register #(.WIDTH_REG(WIDTH_REG))
-//     Instruction_register(.data_out(instruction_register), .load(enable_load_IR),
-//     .rst(reset), .clk(enable_load_IR), .data_in(memory_out)
-//     ); //clk and load same because of easy to control
-     
-    assign data_out[WIDTH_REG - 1 : 0] = ALU_out;
-    assign data_out [WIDTH_REG] = is_zero;    
-    assign memory_test = memory_out;    
-    assign pc_out_test = pc_out;  
-    assign opcode_test = opcode;
-    assign LorE_test = load_or_execute_instrc;
-    assign LoadCorO_test = load_instruct_or_operand;
-    assign instr_address_test = instr_address;
+
     always @(posedge clk, posedge reset)
     begin
         if(reset == 1'b1)

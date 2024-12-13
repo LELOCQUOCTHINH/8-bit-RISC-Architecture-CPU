@@ -2,10 +2,10 @@
 # Vivado v2022.2 (64-bit)
 # SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
 # IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
-# Start of session at: Wed Dec 11 22:49:44 2024
-# Process ID: 16660
+# Start of session at: Fri Dec 13 20:00:28 2024
+# Process ID: 9232
 # Current directory: E:/BKU/year_3/SEMESTER 1/project_HDL/codes
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent16812 E:\BKU\year_3\SEMESTER 1\project_HDL\codes\project_1.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent20056 E:\BKU\year_3\SEMESTER 1\project_HDL\codes\project_1.xpr
 # Log file: E:/BKU/year_3/SEMESTER 1/project_HDL/codes/vivado.log
 # Journal file: E:/BKU/year_3/SEMESTER 1/project_HDL/codes\vivado.jou
 # Running On: pc, OS: Windows, CPU Frequency: 2688 MHz, CPU Physical cores: 14, Host memory: 16869 MB
@@ -63,6 +63,31 @@ Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/Xilinx/Vivado/2022.2/data/ip'.
-open_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 1181.684 ; gain = 219.098
+open_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1317.148 ; gain = 485.340
+launch_simulation -simset [get_filesets testbenchForCPU ]
+Command: launch_simulation  -simset testbenchForCPU
+INFO: [Vivado 12-12493] Simulation top is 'CPU_testbench'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+WARNING: [Vivado 12-13277] Compiled library path does not exist: ''
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/BKU/year_3/SEMESTER 1/project_HDL/codes/project_1.sim/testbenchForCPU/behav/xsim'
+ERROR: [Vivado 12-106] *** Exception: java.lang.NullPointerException (See E:/BKU/year_3/SEMESTER 1/project_HDL/codes/vivado_pid9232.debug)
+ERROR: [Common 17-39] 'set_property' failed due to earlier errors.
+
+    while executing
+"rdi::set_property sim_mode behavioral testbenchForCPU"
+    invoked from within
+"set_property sim_mode "behavioral" $fs_obj"
+    (procedure "xcs_set_simulation_flow" line 24)
+    invoked from within
+"xcs_set_simulation_flow $a_sim_vars(s_simset) $a_sim_vars(s_mode) $a_sim_vars(s_type) a_sim_vars(s_flow_dir_key) a_sim_vars(s_simulation_flow)"
+    (procedure "usf_xsim_setup_simulation" line 9)
+    invoked from within
+"usf_xsim_setup_simulation"
+    (procedure "tclapp::xilinx::xsim::setup" line 24)
+    invoked from within
+"tclapp::xilinx::xsim::setup { -simset testbenchForCPU -mode behavioral -run_dir {E:/BKU/year_3/SEMESTER 1/project_HDL/codes/project_1.sim/testbenchFor..."
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:15 . Memory (MB): peak = 1349.453 ; gain = 0.000
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
 exit
-INFO: [Common 17-206] Exiting Vivado at Wed Dec 11 22:50:11 2024...
+INFO: [Common 17-206] Exiting Vivado at Fri Dec 13 20:42:59 2024...
