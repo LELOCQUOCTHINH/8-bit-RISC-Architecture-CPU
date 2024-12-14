@@ -36,11 +36,12 @@ module controller #(parameter WIDTH_REG = 8, //width of register
         output reg [WIDTH_REG - 1 : 0] in_memory,
         output reg enable_load_acc,
         output reg enable_ALU,
+        output reg enable_load_IR,
         output reg stop,
         input is_zero,
         input [WIDTH_REG - 1 : 0] accumulator,
         input [WIDTH_REG - 1 : 0] data_in,
-        input [WIDTH_REG - OPCODE : 0] pc_out,//address for next instruct
+        input [WIDTH_REG - OPCODE - 1 : 0] pc_out,//address for next instruct
         input [OPCODE - 1 : 0] opcode,
         input [WIDTH_REG - OPCODE - 1 : 0] address_decoded,//address after decoded
         input [WIDTH_REG - OPCODE : 0] instr_address, //address for load instruction
@@ -72,21 +73,20 @@ module controller #(parameter WIDTH_REG = 8, //width of register
             skip <= 1'b0; //reset skip
             jump <= 1'b0; //reset jump
             operand_address <= 0; //reset operand_address
-            select <= 1'b0; //select instruction segment
+            select <= 1'b1; //select instruction segment
             load_or_execute_instrc <= 1'b1; //choose load command mode
             in_memory <= 0; //input of memory = 0
-            enable_memory <= 1'b0; //don't enable to load to memory
+            enable_memory <= 1'b1; //don't enable to load to memory
             read_write_memory <= 1'b1; //choose read mode in memory because of don't load anything
             enable_PC <= 1'b0;
             enable_load_acc <= 1'b1; //load ALU_out to accumulator
-//            enable_load_IR <= 1'b0; //not load command to Instruction Register
         end
         else if(load_instruction_flag == 1'b1) //load instrct
         begin
-            if(instr_address + 1 < 2**WIDTH_ADDRESS_BIT) //>= 32 so exceed 5 bit
+            if(instr_address + 1 < 2**WIDTH_ADDRESS_BIT) 
                 enable_memory <= 1'b1;
-            else    
-                enable_memory <= 1'b0; //enable manipulate with memory 
+            else  //>= 32 so exceed 5 bit 
+                enable_memory <= 1'b0; //not enable manipulate with memory 
             stop <= 1'b0; //reset stop to load command
             enable_load_acc <= 1'b1; //load ALU_out to accumulator
             enable_PC <= 1'b0;
@@ -94,27 +94,22 @@ module controller #(parameter WIDTH_REG = 8, //width of register
             select <= 1'b0; //choose instr_address in address mux
             in_memory <= data_in; //input of memory = input of user
             read_write_memory <= 1'b0; //choose write mode in memory to load command
-//            enable_load_IR <= 1'b0; 
         end
         else if(execute_instruction_flag == 1'b1)//execute instrct
         begin
             //load command state
             select <= 1'b1; //choose operand_address in address mux
             enable_load_acc <= 1'b1; //load ALU_out to accumulator
-            if(pc_out >= instr_address)
-            begin
-                stop <= 1'b1; //stop because of empty command to execute 
-                enable_memory <= 1'b0; //not enable to manipulate with memory
-            end
-            else if(load_or_execute_instrc == 1'b1)
+//            if(pc_out >= instr_address)
+//            begin
+//                stop <= 1'b1; //stop because of empty command to execute 
+//                enable_memory <= 1'b0; //not enable to manipulate with memory
+//            end
+            if(load_or_execute_instrc == 1'b1)
             //load instrc to instruction register and decode
             begin
                 enable_memory <= 1'b1; //enable manipulate with memory
-//                enable_load_IR <= 1'b0; //not enable to load instrct to IR because memory is loading command
-                operand_address <= pc_out[WIDTH_ADDRESS_BIT - 1 : 0];
-                //becaus pc_out have width is 6
-                //(used for stop program when compare with instrc_address)
-                //whereas operand_address just 5 so we should assign [4:0]
+                operand_address <= pc_out;
                 //operand_address = program_counter to load instruction, afterward decode it
                 read_write_memory <= 1'b1; //choose read mode in memory
                 load_or_execute_instrc <= 1'b0; //execute instrct
@@ -124,8 +119,6 @@ module controller #(parameter WIDTH_REG = 8, //width of register
             else if(load_or_execute_instrc == 1'b0) //executing instrc
             begin
                     enable_memory <= 1'b1; //enable manipulate with memory
-//                    enable_load_IR <= 1'b1;
-                    //enable to load command to IR because memory has loaded it already
                     operand_address <= address_decoded;
                     //choose address in instruction to load data
                     case(opcode)//set up for ALU run
@@ -187,26 +180,29 @@ module controller #(parameter WIDTH_REG = 8, //width of register
         begin
             enable_ALU <= 1'b0;
             load_instruct_or_operand <= 1'b1; //run memory to load instruction
+            enable_load_IR <= 1'b0; //not load command to Instruction Register
         end
         else if(load_instruction_flag == 1'b1) //load instrct
         begin
             enable_ALU <= 1'b0;
             load_instruct_or_operand <= 1'b1; //run memory to load instruction
+            enable_load_IR <= 1'b0; //not load command to Instruction Register
         end
         else if(execute_instruction_flag == 1'b1)//execute instrct
         begin
-            if(load_instruct_or_operand == 1'b1 //load instrct from memory
-            && read_write_memory == 1'b1) //because it be loading command so just premit read from memory
-            //used for prevent user switch state when not predict
+            if(load_instruct_or_operand == 1'b1) //load instrct from memory
             begin
                 enable_ALU <= 1'b0; //turn off ALU because of be loading command
                 load_instruct_or_operand <= 1'b0;
+                enable_load_IR <= 1'b1;
+                //enable to load command to IR because memory has loaded it already
             end
             else if(load_instruct_or_operand == 1'b0) //executing instrc which have been loaded
             begin
                 //Alu will be start execute instrcts in next clk1
                 enable_ALU <= 1'b1; //turn on ALU ready to execute command
-                load_instruct_or_operand <= 1'b1; //enable memory run to load next instrct                
+                load_instruct_or_operand <= 1'b1; //enable memory run to load next instrct 
+                enable_load_IR <= 1'b0; //not enable to load instrct to IR because memory is loading command               
             end
         end
     end

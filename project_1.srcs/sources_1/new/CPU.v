@@ -22,21 +22,19 @@
 
 module CPU #(parameter WIDTH_REG = 8, //width of register
     OPCODE = 3 //width of opcode
-    ,clock_frequency = 375 * 10**6 //frequency for clk divided
+    ,clock_frequency = 125 * 10**6 //frequency for clk divided
     )(
-        output wire [WIDTH_REG : 0] data_out, //output of alu result
-        output wire empty, //indicate memory out
+//        output wire [WIDTH_REG : 0] data_out, //output of alu result
 //        output wire [WIDTH_REG - 1 : 0] memory_test,
 //        output wire [2 : 0] opcode_test,
 //        output wire [5 : 0] instr_address_test,
-//        output wire [5 : 0] pc_out_test,
+        output wire [4 : 0] pc_out_test,
+        output wire is_zero_test,
 //        output wire LorE_test, LoadCorO_test, //load command or execute and load command or operator
-//        output wire clk1_test, clk2_test, clk_divided_test,
+        output wire clk1_test, clk2_test,
+//        output wire clk_divided_test,
         output wire stop,
-        output wire clk1, clk2,
-        output wire clk_divided,
-        output wire clk_test,
-        output wire [2:0] opcode_test,
+//        output wire clk_test,
         input [WIDTH_REG - 1 : 0] data_in,
         input load_instruction_flag, //indicate phase load instruction
         input execute_instruction_flag, //indicate phase execute instruction
@@ -73,13 +71,14 @@ module CPU #(parameter WIDTH_REG = 8, //width of register
     wire enable_load_acc;
     wire is_zero;
     wire enable_ALU;
-         
-     assign instruction_register = memory_out;
-//     reg enable_load_IR; //instruction register
-//     register #(.WIDTH_REG(WIDTH_REG))
-//     Instruction_register(.data_out(instruction_register), .load(enable_load_IR),
-//     .rst(reset), .clk(enable_load_IR), .data_in(memory_out)
-//     ); //clk and load same because of easy to control
+    
+/************************INSTRUCTION REGISTER*******************************/         
+     wire enable_load_IR; //instruction register
+     instruction_register #(.WIDTH_REG(WIDTH_REG))
+     Instruction_register(.data_out(instruction_register), .enable(enable_load_IR),
+     .rst(reset), .data_in(memory_out)
+     ); //clk and load same because of easy to control
+/************************INSTRUCTION REGISTER*******************************/
 
 /************************CLOCK DIVIDED*******************************/
 clock_divided #(.clock_frequency(clock_frequency))
@@ -105,7 +104,7 @@ Decoder #(.WIDTH_REG(WIDTH_REG), .OPCODE(OPCODE))
 /************************DECODER*******************************/
 
 /************************program_counter*******************************/
-program_counter #(.WIDTH_ADDRESS_BIT(WIDTH_ADDRESS_BIT + 1))
+program_counter #(.WIDTH_ADDRESS_BIT(WIDTH_ADDRESS_BIT))
 PC (.pc_out(pc_out), .clk(clk2), .reset(reset),
     .enable(enable_PC), .skip(skip), .jump(jump),
                  .jump_address(address_decoded));
@@ -113,7 +112,7 @@ PC (.pc_out(pc_out), .clk(clk2), .reset(reset),
 
 /*******************************MEMORY*******************************/
 memory_trang #(.WIDTH_REG(WIDTH_REG), .WIDTH_ADDRESS(WIDTH_ADDRESS_BIT))
- memory(.Data_Out(memory_out), .instr_address(instr_address), .empty(empty),
+ memory(.Data_Out(memory_out), .instr_address(instr_address),
  .clk(clk2), .enable(enable_memory), .rst(reset), .read_write(read_write_memory),
  .address(address), .Data_in(in_memory),
  .load_instruction_flag(load_instruction_flag)); 
@@ -141,7 +140,8 @@ ALU_real #(.width_bit_opcode(OPCODE), .width_bit_reg(WIDTH_REG))
     ,.skip(skip), .jump(jump), .enable_PC(enable_PC)
     ,.read_write_memory(read_write_memory), .enable_memory(enable_memory)
     ,.in_memory(in_memory), .enable_load_acc(enable_load_acc)
-    ,.enable_ALU(enable_ALU), .stop(stop)
+    ,.enable_ALU(enable_ALU), .enable_load_IR(enable_load_IR)
+    ,.stop(stop)
     ,.is_zero(is_zero), .accumulator(accumulator), .data_in(data_in)
     ,.pc_out(pc_out), .opcode(opcode), .address_decoded(address_decoded)
     ,.instr_address(instr_address), .load_instruction_flag(load_instruction_flag)
@@ -149,18 +149,20 @@ ALU_real #(.width_bit_opcode(OPCODE), .width_bit_reg(WIDTH_REG))
     ,.clk(clk1), .clk2(clk2));
 /*******************************CONTROLLER*******************************/
      
-    assign data_out[WIDTH_REG - 1 : 0] = ALU_out;
-    assign data_out [WIDTH_REG] = is_zero;
-    assign clk_test = clk;    
+    assign clk2_test = clk2;
+    assign clk1_test = clk1;     
+    assign pc_out_test = pc_out;
+    assign is_zero_test = is_zero;
+//    assign data_out[WIDTH_REG - 1 : 0] = ALU_out;
+//    assign data_out [WIDTH_REG] = is_zero;
+//    assign clk_test = clk;    
     
 //    assign memory_test = memory_out;    
-//    assign pc_out_test = pc_out;  
-    assign opcode_test = data_out[7:5];
+//    assign opcode_test = opcode;
 //    assign LorE_test = load_or_execute_instrc;
 //    assign LoadCorO_test = load_instruct_or_operand;
 //    assign instr_address_test = instr_address;
-//    assign clk2_test = clk2;
-//    assign clk1_test = clk1;
+    
 //    assign clk_divided_test = clk_divided;
     
 endmodule

@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
-| Date             : Fri Dec 13 17:45:47 2024
+| Date             : Sat Dec 14 11:05:11 2024
 | Host             : pc running 64-bit major release  (build 9200)
 | Command          : report_power -file CPU_power_routed.rpt -pb CPU_power_summary_routed.pb -rpx CPU_power_routed.rpx
 | Design           : CPU
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+----------------------------------+
-| Total On-Chip Power (W)  | 12.846 (Junction temp exceeded!) |
+| Total On-Chip Power (W)  | 14.477 (Junction temp exceeded!) |
 | Design Power Budget (W)  | Unspecified*                     |
 | Power Budget Margin (W)  | NA                               |
-| Dynamic (W)              | 11.805                           |
+| Dynamic (W)              | 13.436                           |
 | Device Static (W)        | 1.041                            |
 | Effective TJA (C/W)      | 11.5                             |
 | Max Ambient (C)          | 0.0                              |
@@ -52,17 +52,17 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Slice Logic    |     1.484 |      642 |       --- |             --- |
-|   LUT as Logic |     1.298 |      203 |     53200 |            0.38 |
-|   F7/F8 Muxes  |     0.067 |       48 |     53200 |            0.09 |
-|   BUFG         |     0.061 |        3 |        32 |            9.38 |
-|   CARRY4       |     0.030 |        9 |     13300 |            0.07 |
-|   Register     |     0.028 |      348 |    106400 |            0.33 |
+| Slice Logic    |     1.631 |      633 |       --- |             --- |
+|   LUT as Logic |     1.426 |      175 |     53200 |            0.33 |
+|   F7/F8 Muxes  |     0.073 |       48 |     53200 |            0.09 |
+|   BUFG         |     0.067 |        3 |        32 |            9.38 |
+|   Register     |     0.035 |      353 |    106400 |            0.33 |
+|   CARRY4       |     0.029 |        9 |     13300 |            0.07 |
 |   Others       |     0.000 |        8 |       --- |             --- |
-| Signals        |     1.480 |      495 |       --- |             --- |
-| I/O            |     8.841 |       30 |       125 |           24.00 |
+| Signals        |     1.595 |      488 |       --- |             --- |
+| I/O            |    10.209 |       21 |       125 |           16.80 |
 | Static Power   |     1.041 |          |           |                 |
-| Total          |    12.846 |          |           |                 |
+| Total          |    14.477 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -72,9 +72,9 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
-| Vccint    |       1.000 |     3.307 |       3.008 |      0.299 |       NA    | Unspecified | NA         |
-| Vccaux    |       1.800 |     0.422 |       0.322 |      0.100 |       NA    | Unspecified | NA         |
-| Vcco33    |       3.300 |     2.491 |       2.490 |      0.001 |       NA    | Unspecified | NA         |
+| Vccint    |       1.000 |     3.569 |       3.271 |      0.299 |       NA    | Unspecified | NA         |
+| Vccaux    |       1.800 |     0.472 |       0.372 |      0.100 |       NA    | Unspecified | NA         |
+| Vcco33    |       3.300 |     2.878 |       2.877 |      0.001 |       NA    | Unspecified | NA         |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
@@ -143,17 +143,18 @@ Table of Contents
 3.1 By Hierarchy
 ----------------
 
-+-----------------+-----------+
-| Name            | Power (W) |
-+-----------------+-----------+
-| CPU             |    11.805 |
-|   ALU           |     0.069 |
-|   Accumulator   |     0.041 |
-|   PC            |     0.025 |
-|   clk_gene      |     0.040 |
-|   clock_divided |     0.457 |
-|   controller    |     1.164 |
-|   memory        |     0.945 |
-+-----------------+-----------+
++------------------------+-----------+
+| Name                   | Power (W) |
++------------------------+-----------+
+| CPU                    |    13.436 |
+|   ALU                  |     0.058 |
+|   Accumulator          |     0.043 |
+|   Instruction_register |     0.121 |
+|   PC                   |     0.060 |
+|   clk_gene             |     0.045 |
+|   clock_divided        |     0.444 |
+|   controller           |     1.342 |
+|   memory               |     0.884 |
++------------------------+-----------+
 
 

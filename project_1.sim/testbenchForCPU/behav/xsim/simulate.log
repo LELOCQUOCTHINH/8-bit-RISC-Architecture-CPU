@@ -1,0 +1,428 @@
+Time resolution is 1 ps
+timer = 0, clk_divided = x, clk1 = x, clk2 = x, execute_instruction_flag = x, stop = x, pc_out = xxxxx, LorEinstr = x, LoIorO = x, opcode_test = xxx, memory_out = xxxxxxxx, data_out = xxxxxxxxx
+
+timer = 0, clk_divided = 0, clk1 = 0, clk2 = 0, execute_instruction_flag = 1, stop = 0, pc_out = 00000, LorEinstr = 1, LoIorO = 1, opcode_test = 000, memory_out = 00000000, data_out = 100000000
+
+timer = 2000, clk_divided = 1, clk1 = 1, clk2 = 0, execute_instruction_flag = 1, stop = 0, pc_out = 00000, LorEinstr = 0, LoIorO = 1, opcode_test = 000, memory_out = 00000000, data_out = 100000000
+
+timer = 3000, clk_divided = 0, clk1 = 1, clk2 = 0, execute_instruction_flag = 1, stop = 0, pc_out = 00000, LorEinstr = 0, LoIorO = 1, opcode_test = 000, memory_out = 00000000, data_out = 100000000
+
+timer = 4000, clk_divided = 1, clk1 = 1, clk2 = 1, execute_instruction_flag = 1, stop = 0, pc_out = 00000, LorEinstr = 0, LoIorO = 0, opcode_test = 111, memory_out = 11111110, data_out = 100000000
+
+timer = 5000, clk_divided = 0, clk1 = 1, clk2 = 1, execute_instruction_flag = 1, stop = 0, pc_out = 00000, LorEinstr = 0, LoIorO = 0, opcode_test = 111, memory_out = 11111110, data_out = 100000000
+
+timer = 6000, clk_divided = 1, clk1 = 0, clk2 = 0, execute_instruction_flag = 1, stop = 0, pc_out = 00000, LorEinstr = 0, LoIorO = 0, opcode_test = 111, memory_out = 11111110, data_out = 100000000
+
+timer = 7000, clk_divided = 0, clk1 = 0, clk2 = 0, execute_instruction_flag = 1, stop = 0, pc_out = 00000, LorEinstr = 0, LoIorO = 0, opcode_test = 111, memory_out = 11111110, data_out = 100000000
+
+timer = 8000, clk_divided = 1, clk1 = 1, clk2 = 0, execute_instruction_flag = 1, stop = 0, pc_out = 00000, LorEinstr = 1, LoIorO = 0, opcode_test = 111, memory_out = 11111110, data_out = 100000000
+
+timer = 9000, clk_divided = 0, clk1 = 1, clk2 = 0, execute_instruction_flag = 1, stop = 0, pc_out = 00000, LorEinstr = 1, LoIorO = 0, opcode_test = 111, memory_out = 11111110, data_out = 100000000
+
+timer = 10000, clk_divided = 1, clk1 = 1, clk2 = 1, execute_instruction_flag = 1, stop = 0, pc_out = 11110, LorEinstr = 1, LoIorO = 1, opcode_test = 111, memory_out = 11100011, data_out = 100000000
+
+timer = 11000, clk_divided = 0, clk1 = 1, clk2 = 1, execute_instruction_flag = 1, stop = 0, pc_out = 11110, LorEinstr = 1, LoIorO = 1, opcode_test = 111, memory_out = 11100011, data_out = 100000000
+
+timer = 12000, clk_divided = 1, clk1 = 0, clk2 = 0, execute_instruction_flag = 1, stop = 0, pc_out = 11110, LorEinstr = 1, LoIorO = 1, opcode_test = 111, memory_out = 11100011, data_out = 100000000
+
+timer = 13000, clk_divided = 0, clk1 = 0, clk2 = 0, execute_instruction_flag = 1, stop = 0, pc_out = 11110, LorEinstr = 1, LoIorO = 1, opcode_test = 111, memory_out = 11100011, data_out = 100000000
+
+timer = 14000, clk_divided = 1, clk1 = 1, clk2 = 0, execute_instruction_flag = 1, stop = 0, pc_out = 11110, LorEinstr = 0, LoIorO = 1, opcode_test = 111, memory_out = 11100011, data_out = 100000000
+
+timer = 15000, clk_divided = 0, clk1 = 1, clk2 = 0, execute_instruction_flag = 1, stop = 0, pc_out = 11110, LorEinstr = 0, LoIorO = 1, opcode_test = 111, memory_out = 11100011, data_out = 100000000
+
+timer = 16000, clk_divided = 1, clk1 = 1, clk2 = 1, execute_instruction_flag = 1, stop = 0, pc_out = 11110, LorEinstr = 0, LoIorO = 0, opcode_test = 111, memory_out = 11100011, data_out = 100000000
+
+timer = 17000, clk_divided = 0, clk1 = 1, clk2 = 1, execute_instruction_flag = 1, stop = 0, pc_out = 11110, LorEinstr = 0, LoIorO = 0, opcode_test = 111, memory_out = 11100011, data_out = 100000000
+
+timer = 18000, clk_divided = 1, clk1 = 0, clk2 = 0, execute_instruction_flag = 1, stop = 0, pc_out = 11110, LorEinstr = 0, LoIorO = 0, opcode_test = 111, memory_out = 11100011, data_out = 100000000
+
+timer = 19000, clk_divided = 0, clk1 = 0, clk2 = 0, execute_instruction_flag = 1, stop = 0, pc_out = 11110, LorEinstr = 0, LoIorO = 0, opcode_test = 111, memory_out = 11100011, data_out = 100000000
+
+timer = 20000, clk_divided = 1, clk1 = 1, clk2 = 0, execute_instruction_flag = 1, stop = 0, pc_out = 11110, LorEinstr = 1, LoIorO = 0, opcode_test = 111, memory_out = 11100011, data_out = 100000000
+
+timer = 21000, clk_divided = 0, clk1 = 1, clk2 = 0, execute_instruction_flag = 1, stop = 0, pc_out = 11110, LorEinstr = 1, LoIorO = 0, opcode_test = 111, memory_out = 11100011, data_out = 100000000
+
+timer = 22000, clk_divided = 1, clk1 = 1, clk2 = 1, execute_instruction_flag = 1, stop = 0, pc_out = 00011, LorEinstr = 1, LoIorO = 1, opcode_test = 111, memory_out = 10111010, data_out = 100000000
+
+timer = 23000, clk_divided = 0, clk1 = 1, clk2 = 1, execute_instruction_flag = 1, stop = 0, pc_out = 00011, LorEinstr = 1, LoIorO = 1, opcode_test = 111, memory_out = 10111010, data_out = 100000000
+
+timer = 24000, clk_divided = 1, clk1 = 0, clk2 = 0, execute_instruction_flag = 1, stop = 0, pc_out = 00011, LorEinstr = 1, LoIorO = 1, opcode_test = 111, memory_out = 10111010, data_out = 100000000
+
+timer = 25000, clk_divided = 0, clk1 = 0, clk2 = 0, execute_instruction_flag = 1, stop = 0, pc_out = 00011, LorEinstr = 1, LoIorO = 1, opcode_test = 111, memory_out = 10111010, data_out = 100000000
+
+timer = 26000, clk_divided = 1, clk1 = 1, clk2 = 0, execute_instruction_flag = 1, stop = 0, pc_out = 00011, LorEinstr = 0, LoIorO = 1, opcode_test = 111, memory_out = 10111010, data_out = 100000000
+
+timer = 27000, clk_divided = 0, clk1 = 1, clk2 = 0, execute_instruction_flag = 1, stop = 0, pc_out = 00011, LorEinstr = 0, LoIorO = 1, opcode_test = 111, memory_out = 10111010, data_out = 100000000
+
+timer = 28000, clk_divided = 1, clk1 = 1, clk2 = 1, execute_instruction_flag = 1, stop = 0, pc_out = 00011, LorEinstr = 0, LoIorO = 0, opcode_test = 101, memory_out = 10111010, data_out = 100000000
+
+timer = 29000, clk_divided = 0, clk1 = 1, clk2 = 1, execute_instruction_flag = 1, stop = 0, pc_out = 00011, LorEinstr = 0, LoIorO = 0, opcode_test = 101, memory_out = 10111010, data_out = 100000000
+
+timer = 30000, clk_divided = 1, clk1 = 0, clk2 = 0, execute_instruction_flag = 1, stop = 0, pc_out = 00011, LorEinstr = 0, LoIorO = 0, opcode_test = 101, memory_out = 10111010, data_out = 100000000
+
+timer = 31000, clk_divided = 0, clk1 = 0, clk2 = 0, execute_instruction_flag = 1, stop = 0, pc_out = 00011, LorEinstr = 0, LoIorO = 0, opcode_test = 101, memory_out = 10111010, data_out = 100000000
+
+timer = 32000, clk_divided = 1, clk1 = 1, clk2 = 0, execute_instruction_flag = 1, stop = 0, pc_out = 00011, LorEinstr = 1, LoIorO = 0, opcode_test = 101, memory_out = 10111010, data_out = 100000000
+
+timer = 33000, clk_divided = 0, clk1 = 1, clk2 = 0, execute_instruction_flag = 1, stop = 0, pc_out = 00011, LorEinstr = 1, LoIorO = 0, opcode_test = 101, memory_out = 10111010, data_out = 100000000
+
+timer = 34000, clk_divided = 1, clk1 = 1, clk2 = 1, execute_instruction_flag = 1, stop = 0, pc_out = 00100, LorEinstr = 1, LoIorO = 1, opcode_test = 101, memory_out = 00000000, data_out = 100000000
+
+timer = 35000, clk_divided = 0, clk1 = 1, clk2 = 1, execute_instruction_flag = 1, stop = 0, pc_out = 00100, LorEinstr = 1, LoIorO = 1, opcode_test = 101, memory_out = 00000000, data_out = 100000000
+
+timer = 36000, clk_divided = 1, clk1 = 0, clk2 = 0, execute_instruction_flag = 1, stop = 0, pc_out = 00100, LorEinstr = 1, LoIorO = 1, opcode_test = 101, memory_out = 00000000, data_out = 100000000
+
+timer = 37000, clk_divided = 0, clk1 = 0, clk2 = 0, execute_instruction_flag = 1, stop = 0, pc_out = 00100, LorEinstr = 1, LoIorO = 1, opcode_test = 101, memory_out = 00000000, data_out = 100000000
+
+timer = 38000, clk_divided = 1, clk1 = 1, clk2 = 0, execute_instruction_flag = 1, stop = 0, pc_out = 00100, LorEinstr = 0, LoIorO = 1, opcode_test = 101, memory_out = 00000000, data_out = 100000000
+
+timer = 39000, clk_divided = 0, clk1 = 1, clk2 = 0, execute_instruction_flag = 1, stop = 0, pc_out = 00100, LorEinstr = 0, LoIorO = 1, opcode_test = 101, memory_out = 00000000, data_out = 100000000
+
+timer = 40000, clk_divided = 1, clk1 = 1, clk2 = 1, execute_instruction_flag = 1, stop = 0, pc_out = 00100, LorEinstr = 0, LoIorO = 0, opcode_test = 001, memory_out = 00100000, data_out = 100000000
+
+timer = 41000, clk_divided = 0, clk1 = 1, clk2 = 1, execute_instruction_flag = 1, stop = 0, pc_out = 00100, LorEinstr = 0, LoIorO = 0, opcode_test = 001, memory_out = 00100000, data_out = 100000000
+
+timer = 42000, clk_divided = 1, clk1 = 0, clk2 = 0, execute_instruction_flag = 1, stop = 0, pc_out = 00100, LorEinstr = 0, LoIorO = 0, opcode_test = 001, memory_out = 00100000, data_out = 100000000
+
+timer = 43000, clk_divided = 0, clk1 = 0, clk2 = 0, execute_instruction_flag = 1, stop = 0, pc_out = 00100, LorEinstr = 0, LoIorO = 0, opcode_test = 001, memory_out = 00100000, data_out = 100000000
+
+timer = 44000, clk_divided = 1, clk1 = 1, clk2 = 0, execute_instruction_flag = 1, stop = 0, pc_out = 00100, LorEinstr = 1, LoIorO = 0, opcode_test = 001, memory_out = 00100000, data_out = 100000000
+
+timer = 45000, clk_divided = 0, clk1 = 1, clk2 = 0, execute_instruction_flag = 1, stop = 0, pc_out = 00100, LorEinstr = 1, LoIorO = 0, opcode_test = 001, memory_out = 00100000, data_out = 100000000
+
+timer = 46000, clk_divided = 1, clk1 = 1, clk2 = 1, execute_instruction_flag = 1, stop = 0, pc_out = 00110, LorEinstr = 1, LoIorO = 1, opcode_test = 001, memory_out = 11111110, data_out = 100000000
+
+timer = 47000, clk_divided = 0, clk1 = 1, clk2 = 1, execute_instruction_flag = 1, stop = 0, pc_out = 00110, LorEinstr = 1, LoIorO = 1, opcode_test = 001, memory_out = 11111110, data_out = 100000000
+
+timer = 48000, clk_divided = 1, clk1 = 0, clk2 = 0, execute_instruction_flag = 1, stop = 0, pc_out = 00110, LorEinstr = 1, LoIorO = 1, opcode_test = 001, memory_out = 11111110, data_out = 100000000
+
+timer = 49000, clk_divided = 0, clk1 = 0, clk2 = 0, execute_instruction_flag = 1, stop = 0, pc_out = 00110, LorEinstr = 1, LoIorO = 1, opcode_test = 001, memory_out = 11111110, data_out = 100000000
+
+timer = 50000, clk_divided = 1, clk1 = 1, clk2 = 0, execute_instruction_flag = 1, stop = 0, pc_out = 00110, LorEinstr = 0, LoIorO = 1, opcode_test = 001, memory_out = 11111110, data_out = 100000000
+
+timer = 51000, clk_divided = 0, clk1 = 1, clk2 = 0, execute_instruction_flag = 1, stop = 0, pc_out = 00110, LorEinstr = 0, LoIorO = 1, opcode_test = 001, memory_out = 11111110, data_out = 100000000
+
+timer = 52000, clk_divided = 1, clk1 = 1, clk2 = 1, execute_instruction_flag = 1, stop = 0, pc_out = 00110, LorEinstr = 0, LoIorO = 0, opcode_test = 101, memory_out = 10111011, data_out = 100000000
+
+timer = 53000, clk_divided = 0, clk1 = 1, clk2 = 1, execute_instruction_flag = 1, stop = 0, pc_out = 00110, LorEinstr = 0, LoIorO = 0, opcode_test = 101, memory_out = 10111011, data_out = 100000000
+
+timer = 54000, clk_divided = 1, clk1 = 0, clk2 = 0, execute_instruction_flag = 1, stop = 0, pc_out = 00110, LorEinstr = 0, LoIorO = 0, opcode_test = 101, memory_out = 10111011, data_out = 100000000
+
+timer = 55000, clk_divided = 0, clk1 = 0, clk2 = 0, execute_instruction_flag = 1, stop = 0, pc_out = 00110, LorEinstr = 0, LoIorO = 0, opcode_test = 101, memory_out = 10111011, data_out = 100000000
+
+timer = 56000, clk_divided = 1, clk1 = 1, clk2 = 0, execute_instruction_flag = 1, stop = 0, pc_out = 00110, LorEinstr = 1, LoIorO = 0, opcode_test = 101, memory_out = 10111011, data_out = 100000000
+
+timer = 57000, clk_divided = 0, clk1 = 1, clk2 = 0, execute_instruction_flag = 1, stop = 0, pc_out = 00110, LorEinstr = 1, LoIorO = 0, opcode_test = 101, memory_out = 10111011, data_out = 100000000
+
+timer = 58000, clk_divided = 1, clk1 = 1, clk2 = 1, execute_instruction_flag = 1, stop = 0, pc_out = 00111, LorEinstr = 1, LoIorO = 1, opcode_test = 101, memory_out = 11111111, data_out = 100000000
+
+timer = 59000, clk_divided = 0, clk1 = 1, clk2 = 1, execute_instruction_flag = 1, stop = 0, pc_out = 00111, LorEinstr = 1, LoIorO = 1, opcode_test = 101, memory_out = 11111111, data_out = 100000000
+
+timer = 60000, clk_divided = 1, clk1 = 0, clk2 = 0, execute_instruction_flag = 1, stop = 0, pc_out = 00111, LorEinstr = 1, LoIorO = 1, opcode_test = 101, memory_out = 11111111, data_out = 100000000
+
+timer = 61000, clk_divided = 0, clk1 = 0, clk2 = 0, execute_instruction_flag = 1, stop = 0, pc_out = 00111, LorEinstr = 1, LoIorO = 1, opcode_test = 101, memory_out = 11111111, data_out = 100000000
+
+timer = 62000, clk_divided = 1, clk1 = 1, clk2 = 0, execute_instruction_flag = 1, stop = 0, pc_out = 00111, LorEinstr = 0, LoIorO = 1, opcode_test = 101, memory_out = 11111111, data_out = 111111111
+
+timer = 63000, clk_divided = 0, clk1 = 1, clk2 = 0, execute_instruction_flag = 1, stop = 0, pc_out = 00111, LorEinstr = 0, LoIorO = 1, opcode_test = 101, memory_out = 11111111, data_out = 111111111
+
+timer = 64000, clk_divided = 1, clk1 = 1, clk2 = 1, execute_instruction_flag = 1, stop = 0, pc_out = 00111, LorEinstr = 0, LoIorO = 0, opcode_test = 001, memory_out = 00100000, data_out = 011111111
+
+timer = 65000, clk_divided = 0, clk1 = 1, clk2 = 1, execute_instruction_flag = 1, stop = 0, pc_out = 00111, LorEinstr = 0, LoIorO = 0, opcode_test = 001, memory_out = 00100000, data_out = 011111111
+
+timer = 66000, clk_divided = 1, clk1 = 0, clk2 = 0, execute_instruction_flag = 1, stop = 0, pc_out = 00111, LorEinstr = 0, LoIorO = 0, opcode_test = 001, memory_out = 00100000, data_out = 011111111
+
+timer = 67000, clk_divided = 0, clk1 = 0, clk2 = 0, execute_instruction_flag = 1, stop = 0, pc_out = 00111, LorEinstr = 0, LoIorO = 0, opcode_test = 001, memory_out = 00100000, data_out = 011111111
+
+timer = 68000, clk_divided = 1, clk1 = 1, clk2 = 0, execute_instruction_flag = 1, stop = 0, pc_out = 00111, LorEinstr = 1, LoIorO = 0, opcode_test = 001, memory_out = 00100000, data_out = 011111111
+
+timer = 69000, clk_divided = 0, clk1 = 1, clk2 = 0, execute_instruction_flag = 1, stop = 0, pc_out = 00111, LorEinstr = 1, LoIorO = 0, opcode_test = 001, memory_out = 00100000, data_out = 011111111
+
+timer = 70000, clk_divided = 1, clk1 = 1, clk2 = 1, execute_instruction_flag = 1, stop = 0, pc_out = 01000, LorEinstr = 1, LoIorO = 1, opcode_test = 001, memory_out = 11111110, data_out = 011111111
+
+timer = 71000, clk_divided = 0, clk1 = 1, clk2 = 1, execute_instruction_flag = 1, stop = 0, pc_out = 01000, LorEinstr = 1, LoIorO = 1, opcode_test = 001, memory_out = 11111110, data_out = 011111111
+
+timer = 72000, clk_divided = 1, clk1 = 0, clk2 = 0, execute_instruction_flag = 1, stop = 0, pc_out = 01000, LorEinstr = 1, LoIorO = 1, opcode_test = 001, memory_out = 11111110, data_out = 011111111
+
+timer = 73000, clk_divided = 0, clk1 = 0, clk2 = 0, execute_instruction_flag = 1, stop = 0, pc_out = 01000, LorEinstr = 1, LoIorO = 1, opcode_test = 001, memory_out = 11111110, data_out = 011111111
+
+timer = 74000, clk_divided = 1, clk1 = 1, clk2 = 0, execute_instruction_flag = 1, stop = 0, pc_out = 01000, LorEinstr = 0, LoIorO = 1, opcode_test = 001, memory_out = 11111110, data_out = 011111111
+
+timer = 75000, clk_divided = 0, clk1 = 1, clk2 = 0, execute_instruction_flag = 1, stop = 0, pc_out = 01000, LorEinstr = 0, LoIorO = 1, opcode_test = 001, memory_out = 11111110, data_out = 011111111
+
+timer = 76000, clk_divided = 1, clk1 = 1, clk2 = 1, execute_instruction_flag = 1, stop = 0, pc_out = 01000, LorEinstr = 0, LoIorO = 0, opcode_test = 111, memory_out = 11101010, data_out = 011111111
+
+timer = 77000, clk_divided = 0, clk1 = 1, clk2 = 1, execute_instruction_flag = 1, stop = 0, pc_out = 01000, LorEinstr = 0, LoIorO = 0, opcode_test = 111, memory_out = 11101010, data_out = 011111111
+
+timer = 78000, clk_divided = 1, clk1 = 0, clk2 = 0, execute_instruction_flag = 1, stop = 0, pc_out = 01000, LorEinstr = 0, LoIorO = 0, opcode_test = 111, memory_out = 11101010, data_out = 011111111
+
+timer = 79000, clk_divided = 0, clk1 = 0, clk2 = 0, execute_instruction_flag = 1, stop = 0, pc_out = 01000, LorEinstr = 0, LoIorO = 0, opcode_test = 111, memory_out = 11101010, data_out = 011111111
+
+timer = 80000, clk_divided = 1, clk1 = 1, clk2 = 0, execute_instruction_flag = 1, stop = 0, pc_out = 01000, LorEinstr = 1, LoIorO = 0, opcode_test = 111, memory_out = 11101010, data_out = 011111111
+
+timer = 81000, clk_divided = 0, clk1 = 1, clk2 = 0, execute_instruction_flag = 1, stop = 0, pc_out = 01000, LorEinstr = 1, LoIorO = 0, opcode_test = 111, memory_out = 11101010, data_out = 011111111
+
+timer = 82000, clk_divided = 1, clk1 = 1, clk2 = 1, execute_instruction_flag = 1, stop = 0, pc_out = 01010, LorEinstr = 1, LoIorO = 1, opcode_test = 111, memory_out = 11011100, data_out = 011111111
+
+timer = 83000, clk_divided = 0, clk1 = 1, clk2 = 1, execute_instruction_flag = 1, stop = 0, pc_out = 01010, LorEinstr = 1, LoIorO = 1, opcode_test = 111, memory_out = 11011100, data_out = 011111111
+
+timer = 84000, clk_divided = 1, clk1 = 0, clk2 = 0, execute_instruction_flag = 1, stop = 0, pc_out = 01010, LorEinstr = 1, LoIorO = 1, opcode_test = 111, memory_out = 11011100, data_out = 011111111
+
+timer = 85000, clk_divided = 0, clk1 = 0, clk2 = 0, execute_instruction_flag = 1, stop = 0, pc_out = 01010, LorEinstr = 1, LoIorO = 1, opcode_test = 111, memory_out = 11011100, data_out = 011111111
+
+timer = 86000, clk_divided = 1, clk1 = 1, clk2 = 0, execute_instruction_flag = 1, stop = 0, pc_out = 01010, LorEinstr = 0, LoIorO = 1, opcode_test = 111, memory_out = 11011100, data_out = 011111111
+
+timer = 87000, clk_divided = 0, clk1 = 1, clk2 = 0, execute_instruction_flag = 1, stop = 0, pc_out = 01010, LorEinstr = 0, LoIorO = 1, opcode_test = 111, memory_out = 11011100, data_out = 011111111
+
+timer = 88000, clk_divided = 1, clk1 = 1, clk2 = 1, execute_instruction_flag = 1, stop = 0, pc_out = 01010, LorEinstr = 0, LoIorO = 0, opcode_test = 110, memory_out = 11011100, data_out = 011111111
+
+timer = 89000, clk_divided = 0, clk1 = 1, clk2 = 1, execute_instruction_flag = 1, stop = 0, pc_out = 01010, LorEinstr = 0, LoIorO = 0, opcode_test = 110, memory_out = 11011100, data_out = 011111111
+
+timer = 90000, clk_divided = 1, clk1 = 0, clk2 = 0, execute_instruction_flag = 1, stop = 0, pc_out = 01010, LorEinstr = 0, LoIorO = 0, opcode_test = 110, memory_out = 11011100, data_out = 011111111
+
+timer = 91000, clk_divided = 0, clk1 = 0, clk2 = 0, execute_instruction_flag = 1, stop = 0, pc_out = 01010, LorEinstr = 0, LoIorO = 0, opcode_test = 110, memory_out = 11011100, data_out = 011111111
+
+timer = 92000, clk_divided = 1, clk1 = 1, clk2 = 0, execute_instruction_flag = 1, stop = 0, pc_out = 01010, LorEinstr = 1, LoIorO = 0, opcode_test = 110, memory_out = 11011100, data_out = 011111111
+
+timer = 93000, clk_divided = 0, clk1 = 1, clk2 = 0, execute_instruction_flag = 1, stop = 0, pc_out = 01010, LorEinstr = 1, LoIorO = 0, opcode_test = 110, memory_out = 11011100, data_out = 011111111
+
+timer = 94000, clk_divided = 1, clk1 = 1, clk2 = 1, execute_instruction_flag = 1, stop = 0, pc_out = 01011, LorEinstr = 1, LoIorO = 1, opcode_test = 110, memory_out = 11111111, data_out = 011111111
+
+timer = 95000, clk_divided = 0, clk1 = 1, clk2 = 1, execute_instruction_flag = 1, stop = 0, pc_out = 01011, LorEinstr = 1, LoIorO = 1, opcode_test = 110, memory_out = 11111111, data_out = 011111111
+
+timer = 96000, clk_divided = 1, clk1 = 0, clk2 = 0, execute_instruction_flag = 1, stop = 0, pc_out = 01011, LorEinstr = 1, LoIorO = 1, opcode_test = 110, memory_out = 11111111, data_out = 011111111
+
+timer = 97000, clk_divided = 0, clk1 = 0, clk2 = 0, execute_instruction_flag = 1, stop = 0, pc_out = 01011, LorEinstr = 1, LoIorO = 1, opcode_test = 110, memory_out = 11111111, data_out = 011111111
+
+timer = 98000, clk_divided = 1, clk1 = 1, clk2 = 0, execute_instruction_flag = 1, stop = 0, pc_out = 01011, LorEinstr = 0, LoIorO = 1, opcode_test = 110, memory_out = 11111111, data_out = 011111111
+
+timer = 99000, clk_divided = 0, clk1 = 1, clk2 = 0, execute_instruction_flag = 1, stop = 0, pc_out = 01011, LorEinstr = 0, LoIorO = 1, opcode_test = 110, memory_out = 11111111, data_out = 011111111
+
+timer = 100000, clk_divided = 1, clk1 = 1, clk2 = 1, execute_instruction_flag = 1, stop = 0, pc_out = 01011, LorEinstr = 0, LoIorO = 0, opcode_test = 101, memory_out = 10111010, data_out = 011111111
+
+timer = 101000, clk_divided = 0, clk1 = 1, clk2 = 1, execute_instruction_flag = 1, stop = 0, pc_out = 01011, LorEinstr = 0, LoIorO = 0, opcode_test = 101, memory_out = 10111010, data_out = 011111111
+
+timer = 102000, clk_divided = 1, clk1 = 0, clk2 = 0, execute_instruction_flag = 1, stop = 0, pc_out = 01011, LorEinstr = 0, LoIorO = 0, opcode_test = 101, memory_out = 10111010, data_out = 011111111
+
+timer = 103000, clk_divided = 0, clk1 = 0, clk2 = 0, execute_instruction_flag = 1, stop = 0, pc_out = 01011, LorEinstr = 0, LoIorO = 0, opcode_test = 101, memory_out = 10111010, data_out = 011111111
+
+timer = 104000, clk_divided = 1, clk1 = 1, clk2 = 0, execute_instruction_flag = 1, stop = 0, pc_out = 01011, LorEinstr = 1, LoIorO = 0, opcode_test = 101, memory_out = 10111010, data_out = 011111111
+
+timer = 105000, clk_divided = 0, clk1 = 1, clk2 = 0, execute_instruction_flag = 1, stop = 0, pc_out = 01011, LorEinstr = 1, LoIorO = 0, opcode_test = 101, memory_out = 10111010, data_out = 011111111
+
+timer = 106000, clk_divided = 1, clk1 = 1, clk2 = 1, execute_instruction_flag = 1, stop = 0, pc_out = 01100, LorEinstr = 1, LoIorO = 1, opcode_test = 101, memory_out = 00000000, data_out = 011111111
+
+timer = 107000, clk_divided = 0, clk1 = 1, clk2 = 1, execute_instruction_flag = 1, stop = 0, pc_out = 01100, LorEinstr = 1, LoIorO = 1, opcode_test = 101, memory_out = 00000000, data_out = 011111111
+
+timer = 108000, clk_divided = 1, clk1 = 0, clk2 = 0, execute_instruction_flag = 1, stop = 0, pc_out = 01100, LorEinstr = 1, LoIorO = 1, opcode_test = 101, memory_out = 00000000, data_out = 011111111
+
+timer = 109000, clk_divided = 0, clk1 = 0, clk2 = 0, execute_instruction_flag = 1, stop = 0, pc_out = 01100, LorEinstr = 1, LoIorO = 1, opcode_test = 101, memory_out = 00000000, data_out = 011111111
+
+timer = 110000, clk_divided = 1, clk1 = 1, clk2 = 0, execute_instruction_flag = 1, stop = 0, pc_out = 01100, LorEinstr = 0, LoIorO = 1, opcode_test = 101, memory_out = 00000000, data_out = 000000000
+
+timer = 111000, clk_divided = 0, clk1 = 1, clk2 = 0, execute_instruction_flag = 1, stop = 0, pc_out = 01100, LorEinstr = 0, LoIorO = 1, opcode_test = 101, memory_out = 00000000, data_out = 000000000
+
+timer = 112000, clk_divided = 1, clk1 = 1, clk2 = 1, execute_instruction_flag = 1, stop = 0, pc_out = 01100, LorEinstr = 0, LoIorO = 0, opcode_test = 110, memory_out = 11011100, data_out = 100000000
+
+timer = 113000, clk_divided = 0, clk1 = 1, clk2 = 1, execute_instruction_flag = 1, stop = 0, pc_out = 01100, LorEinstr = 0, LoIorO = 0, opcode_test = 110, memory_out = 11011100, data_out = 100000000
+
+timer = 114000, clk_divided = 1, clk1 = 0, clk2 = 0, execute_instruction_flag = 1, stop = 0, pc_out = 01100, LorEinstr = 0, LoIorO = 0, opcode_test = 110, memory_out = 11011100, data_out = 100000000
+
+timer = 115000, clk_divided = 0, clk1 = 0, clk2 = 0, execute_instruction_flag = 1, stop = 0, pc_out = 01100, LorEinstr = 0, LoIorO = 0, opcode_test = 110, memory_out = 11011100, data_out = 100000000
+
+timer = 116000, clk_divided = 1, clk1 = 1, clk2 = 0, execute_instruction_flag = 1, stop = 0, pc_out = 01100, LorEinstr = 1, LoIorO = 0, opcode_test = 110, memory_out = 11011100, data_out = 100000000
+
+timer = 117000, clk_divided = 0, clk1 = 1, clk2 = 0, execute_instruction_flag = 1, stop = 0, pc_out = 01100, LorEinstr = 1, LoIorO = 0, opcode_test = 110, memory_out = 11011100, data_out = 100000000
+
+timer = 118000, clk_divided = 1, clk1 = 1, clk2 = 1, execute_instruction_flag = 1, stop = 0, pc_out = 01101, LorEinstr = 1, LoIorO = 1, opcode_test = 110, memory_out = 00000000, data_out = 100000000
+
+timer = 119000, clk_divided = 0, clk1 = 1, clk2 = 1, execute_instruction_flag = 1, stop = 0, pc_out = 01101, LorEinstr = 1, LoIorO = 1, opcode_test = 110, memory_out = 00000000, data_out = 100000000
+
+timer = 120000, clk_divided = 1, clk1 = 0, clk2 = 0, execute_instruction_flag = 1, stop = 0, pc_out = 01101, LorEinstr = 1, LoIorO = 1, opcode_test = 110, memory_out = 00000000, data_out = 100000000
+
+timer = 121000, clk_divided = 0, clk1 = 0, clk2 = 0, execute_instruction_flag = 1, stop = 0, pc_out = 01101, LorEinstr = 1, LoIorO = 1, opcode_test = 110, memory_out = 00000000, data_out = 100000000
+
+timer = 122000, clk_divided = 1, clk1 = 1, clk2 = 0, execute_instruction_flag = 1, stop = 0, pc_out = 01101, LorEinstr = 0, LoIorO = 1, opcode_test = 110, memory_out = 00000000, data_out = 100000000
+
+timer = 123000, clk_divided = 0, clk1 = 1, clk2 = 0, execute_instruction_flag = 1, stop = 0, pc_out = 01101, LorEinstr = 0, LoIorO = 1, opcode_test = 110, memory_out = 00000000, data_out = 100000000
+
+timer = 124000, clk_divided = 1, clk1 = 1, clk2 = 1, execute_instruction_flag = 1, stop = 0, pc_out = 01101, LorEinstr = 0, LoIorO = 0, opcode_test = 101, memory_out = 10111100, data_out = 100000000
+
+timer = 125000, clk_divided = 0, clk1 = 1, clk2 = 1, execute_instruction_flag = 1, stop = 0, pc_out = 01101, LorEinstr = 0, LoIorO = 0, opcode_test = 101, memory_out = 10111100, data_out = 100000000
+
+timer = 126000, clk_divided = 1, clk1 = 0, clk2 = 0, execute_instruction_flag = 1, stop = 0, pc_out = 01101, LorEinstr = 0, LoIorO = 0, opcode_test = 101, memory_out = 10111100, data_out = 100000000
+
+timer = 127000, clk_divided = 0, clk1 = 0, clk2 = 0, execute_instruction_flag = 1, stop = 0, pc_out = 01101, LorEinstr = 0, LoIorO = 0, opcode_test = 101, memory_out = 10111100, data_out = 100000000
+
+timer = 128000, clk_divided = 1, clk1 = 1, clk2 = 0, execute_instruction_flag = 1, stop = 0, pc_out = 01101, LorEinstr = 1, LoIorO = 0, opcode_test = 101, memory_out = 10111100, data_out = 100000000
+
+timer = 129000, clk_divided = 0, clk1 = 1, clk2 = 0, execute_instruction_flag = 1, stop = 0, pc_out = 01101, LorEinstr = 1, LoIorO = 0, opcode_test = 101, memory_out = 10111100, data_out = 100000000
+
+timer = 130000, clk_divided = 1, clk1 = 1, clk2 = 1, execute_instruction_flag = 1, stop = 0, pc_out = 01110, LorEinstr = 1, LoIorO = 1, opcode_test = 101, memory_out = 00000000, data_out = 100000000
+
+timer = 131000, clk_divided = 0, clk1 = 1, clk2 = 1, execute_instruction_flag = 1, stop = 0, pc_out = 01110, LorEinstr = 1, LoIorO = 1, opcode_test = 101, memory_out = 00000000, data_out = 100000000
+
+timer = 132000, clk_divided = 1, clk1 = 0, clk2 = 0, execute_instruction_flag = 1, stop = 0, pc_out = 01110, LorEinstr = 1, LoIorO = 1, opcode_test = 101, memory_out = 00000000, data_out = 100000000
+
+timer = 133000, clk_divided = 0, clk1 = 0, clk2 = 0, execute_instruction_flag = 1, stop = 0, pc_out = 01110, LorEinstr = 1, LoIorO = 1, opcode_test = 101, memory_out = 00000000, data_out = 100000000
+
+timer = 134000, clk_divided = 1, clk1 = 1, clk2 = 0, execute_instruction_flag = 1, stop = 0, pc_out = 01110, LorEinstr = 0, LoIorO = 1, opcode_test = 101, memory_out = 00000000, data_out = 100000000
+
+timer = 135000, clk_divided = 0, clk1 = 1, clk2 = 0, execute_instruction_flag = 1, stop = 0, pc_out = 01110, LorEinstr = 0, LoIorO = 1, opcode_test = 101, memory_out = 00000000, data_out = 100000000
+
+timer = 136000, clk_divided = 1, clk1 = 1, clk2 = 1, execute_instruction_flag = 1, stop = 0, pc_out = 01110, LorEinstr = 0, LoIorO = 0, opcode_test = 001, memory_out = 00100000, data_out = 100000000
+
+timer = 137000, clk_divided = 0, clk1 = 1, clk2 = 1, execute_instruction_flag = 1, stop = 0, pc_out = 01110, LorEinstr = 0, LoIorO = 0, opcode_test = 001, memory_out = 00100000, data_out = 100000000
+
+timer = 138000, clk_divided = 1, clk1 = 0, clk2 = 0, execute_instruction_flag = 1, stop = 0, pc_out = 01110, LorEinstr = 0, LoIorO = 0, opcode_test = 001, memory_out = 00100000, data_out = 100000000
+
+timer = 139000, clk_divided = 0, clk1 = 0, clk2 = 0, execute_instruction_flag = 1, stop = 0, pc_out = 01110, LorEinstr = 0, LoIorO = 0, opcode_test = 001, memory_out = 00100000, data_out = 100000000
+
+timer = 140000, clk_divided = 1, clk1 = 1, clk2 = 0, execute_instruction_flag = 1, stop = 0, pc_out = 01110, LorEinstr = 1, LoIorO = 0, opcode_test = 001, memory_out = 00100000, data_out = 100000000
+
+timer = 141000, clk_divided = 0, clk1 = 1, clk2 = 0, execute_instruction_flag = 1, stop = 0, pc_out = 01110, LorEinstr = 1, LoIorO = 0, opcode_test = 001, memory_out = 00100000, data_out = 100000000
+
+timer = 142000, clk_divided = 1, clk1 = 1, clk2 = 1, execute_instruction_flag = 1, stop = 0, pc_out = 10000, LorEinstr = 1, LoIorO = 1, opcode_test = 001, memory_out = 11111110, data_out = 100000000
+
+timer = 143000, clk_divided = 0, clk1 = 1, clk2 = 1, execute_instruction_flag = 1, stop = 0, pc_out = 10000, LorEinstr = 1, LoIorO = 1, opcode_test = 001, memory_out = 11111110, data_out = 100000000
+
+timer = 144000, clk_divided = 1, clk1 = 0, clk2 = 0, execute_instruction_flag = 1, stop = 0, pc_out = 10000, LorEinstr = 1, LoIorO = 1, opcode_test = 001, memory_out = 11111110, data_out = 100000000
+
+timer = 145000, clk_divided = 0, clk1 = 0, clk2 = 0, execute_instruction_flag = 1, stop = 0, pc_out = 10000, LorEinstr = 1, LoIorO = 1, opcode_test = 001, memory_out = 11111110, data_out = 100000000
+
+timer = 146000, clk_divided = 1, clk1 = 1, clk2 = 0, execute_instruction_flag = 1, stop = 0, pc_out = 10000, LorEinstr = 0, LoIorO = 1, opcode_test = 001, memory_out = 11111110, data_out = 100000000
+
+timer = 147000, clk_divided = 0, clk1 = 1, clk2 = 0, execute_instruction_flag = 1, stop = 0, pc_out = 10000, LorEinstr = 0, LoIorO = 1, opcode_test = 001, memory_out = 11111110, data_out = 100000000
+
+timer = 148000, clk_divided = 1, clk1 = 1, clk2 = 1, execute_instruction_flag = 1, stop = 0, pc_out = 10000, LorEinstr = 0, LoIorO = 0, opcode_test = 100, memory_out = 10011011, data_out = 100000000
+
+timer = 149000, clk_divided = 0, clk1 = 1, clk2 = 1, execute_instruction_flag = 1, stop = 0, pc_out = 10000, LorEinstr = 0, LoIorO = 0, opcode_test = 100, memory_out = 10011011, data_out = 100000000
+
+timer = 150000, clk_divided = 1, clk1 = 0, clk2 = 0, execute_instruction_flag = 1, stop = 0, pc_out = 10000, LorEinstr = 0, LoIorO = 0, opcode_test = 100, memory_out = 10011011, data_out = 100000000
+
+timer = 151000, clk_divided = 0, clk1 = 0, clk2 = 0, execute_instruction_flag = 1, stop = 0, pc_out = 10000, LorEinstr = 0, LoIorO = 0, opcode_test = 100, memory_out = 10011011, data_out = 100000000
+
+timer = 152000, clk_divided = 1, clk1 = 1, clk2 = 0, execute_instruction_flag = 1, stop = 0, pc_out = 10000, LorEinstr = 1, LoIorO = 0, opcode_test = 100, memory_out = 10011011, data_out = 100000000
+
+timer = 153000, clk_divided = 0, clk1 = 1, clk2 = 0, execute_instruction_flag = 1, stop = 0, pc_out = 10000, LorEinstr = 1, LoIorO = 0, opcode_test = 100, memory_out = 10011011, data_out = 100000000
+
+timer = 154000, clk_divided = 1, clk1 = 1, clk2 = 1, execute_instruction_flag = 1, stop = 0, pc_out = 10001, LorEinstr = 1, LoIorO = 1, opcode_test = 100, memory_out = 11111111, data_out = 100000000
+
+timer = 155000, clk_divided = 0, clk1 = 1, clk2 = 1, execute_instruction_flag = 1, stop = 0, pc_out = 10001, LorEinstr = 1, LoIorO = 1, opcode_test = 100, memory_out = 11111111, data_out = 100000000
+
+timer = 156000, clk_divided = 1, clk1 = 0, clk2 = 0, execute_instruction_flag = 1, stop = 0, pc_out = 10001, LorEinstr = 1, LoIorO = 1, opcode_test = 100, memory_out = 11111111, data_out = 100000000
+
+timer = 157000, clk_divided = 0, clk1 = 0, clk2 = 0, execute_instruction_flag = 1, stop = 0, pc_out = 10001, LorEinstr = 1, LoIorO = 1, opcode_test = 100, memory_out = 11111111, data_out = 100000000
+
+timer = 158000, clk_divided = 1, clk1 = 1, clk2 = 0, execute_instruction_flag = 1, stop = 0, pc_out = 10001, LorEinstr = 0, LoIorO = 1, opcode_test = 100, memory_out = 11111111, data_out = 111111111
+
+timer = 159000, clk_divided = 0, clk1 = 1, clk2 = 0, execute_instruction_flag = 1, stop = 0, pc_out = 10001, LorEinstr = 0, LoIorO = 1, opcode_test = 100, memory_out = 11111111, data_out = 111111111
+
+timer = 160000, clk_divided = 1, clk1 = 1, clk2 = 1, execute_instruction_flag = 1, stop = 0, pc_out = 10001, LorEinstr = 0, LoIorO = 0, opcode_test = 001, memory_out = 00100000, data_out = 011111111
+
+timer = 161000, clk_divided = 0, clk1 = 1, clk2 = 1, execute_instruction_flag = 1, stop = 0, pc_out = 10001, LorEinstr = 0, LoIorO = 0, opcode_test = 001, memory_out = 00100000, data_out = 011111111
+
+timer = 162000, clk_divided = 1, clk1 = 0, clk2 = 0, execute_instruction_flag = 1, stop = 0, pc_out = 10001, LorEinstr = 0, LoIorO = 0, opcode_test = 001, memory_out = 00100000, data_out = 011111111
+
+timer = 163000, clk_divided = 0, clk1 = 0, clk2 = 0, execute_instruction_flag = 1, stop = 0, pc_out = 10001, LorEinstr = 0, LoIorO = 0, opcode_test = 001, memory_out = 00100000, data_out = 011111111
+
+timer = 164000, clk_divided = 1, clk1 = 1, clk2 = 0, execute_instruction_flag = 1, stop = 0, pc_out = 10001, LorEinstr = 1, LoIorO = 0, opcode_test = 001, memory_out = 00100000, data_out = 011111111
+
+timer = 165000, clk_divided = 0, clk1 = 1, clk2 = 0, execute_instruction_flag = 1, stop = 0, pc_out = 10001, LorEinstr = 1, LoIorO = 0, opcode_test = 001, memory_out = 00100000, data_out = 011111111
+
+timer = 166000, clk_divided = 1, clk1 = 1, clk2 = 1, execute_instruction_flag = 1, stop = 0, pc_out = 10010, LorEinstr = 1, LoIorO = 1, opcode_test = 001, memory_out = 11111110, data_out = 011111111
+
+timer = 167000, clk_divided = 0, clk1 = 1, clk2 = 1, execute_instruction_flag = 1, stop = 0, pc_out = 10010, LorEinstr = 1, LoIorO = 1, opcode_test = 001, memory_out = 11111110, data_out = 011111111
+
+timer = 168000, clk_divided = 1, clk1 = 0, clk2 = 0, execute_instruction_flag = 1, stop = 0, pc_out = 10010, LorEinstr = 1, LoIorO = 1, opcode_test = 001, memory_out = 11111110, data_out = 011111111
+
+timer = 169000, clk_divided = 0, clk1 = 0, clk2 = 0, execute_instruction_flag = 1, stop = 0, pc_out = 10010, LorEinstr = 1, LoIorO = 1, opcode_test = 001, memory_out = 11111110, data_out = 011111111
+
+timer = 170000, clk_divided = 1, clk1 = 1, clk2 = 0, execute_instruction_flag = 1, stop = 0, pc_out = 10010, LorEinstr = 0, LoIorO = 1, opcode_test = 001, memory_out = 11111110, data_out = 011111111
+
+timer = 171000, clk_divided = 0, clk1 = 1, clk2 = 0, execute_instruction_flag = 1, stop = 0, pc_out = 10010, LorEinstr = 0, LoIorO = 1, opcode_test = 001, memory_out = 11111110, data_out = 011111111
+
+timer = 172000, clk_divided = 1, clk1 = 1, clk2 = 1, execute_instruction_flag = 1, stop = 0, pc_out = 10010, LorEinstr = 0, LoIorO = 0, opcode_test = 111, memory_out = 11110100, data_out = 011111111
+
+timer = 173000, clk_divided = 0, clk1 = 1, clk2 = 1, execute_instruction_flag = 1, stop = 0, pc_out = 10010, LorEinstr = 0, LoIorO = 0, opcode_test = 111, memory_out = 11110100, data_out = 011111111
+
+timer = 174000, clk_divided = 1, clk1 = 0, clk2 = 0, execute_instruction_flag = 1, stop = 0, pc_out = 10010, LorEinstr = 0, LoIorO = 0, opcode_test = 111, memory_out = 11110100, data_out = 011111111
+
+timer = 175000, clk_divided = 0, clk1 = 0, clk2 = 0, execute_instruction_flag = 1, stop = 0, pc_out = 10010, LorEinstr = 0, LoIorO = 0, opcode_test = 111, memory_out = 11110100, data_out = 011111111
+
+timer = 176000, clk_divided = 1, clk1 = 1, clk2 = 0, execute_instruction_flag = 1, stop = 0, pc_out = 10010, LorEinstr = 1, LoIorO = 0, opcode_test = 111, memory_out = 11110100, data_out = 011111111
+
+timer = 177000, clk_divided = 0, clk1 = 1, clk2 = 0, execute_instruction_flag = 1, stop = 0, pc_out = 10010, LorEinstr = 1, LoIorO = 0, opcode_test = 111, memory_out = 11110100, data_out = 011111111
+
+timer = 178000, clk_divided = 1, clk1 = 1, clk2 = 1, execute_instruction_flag = 1, stop = 0, pc_out = 10100, LorEinstr = 1, LoIorO = 1, opcode_test = 111, memory_out = 10011011, data_out = 011111111
+
+timer = 179000, clk_divided = 0, clk1 = 1, clk2 = 1, execute_instruction_flag = 1, stop = 0, pc_out = 10100, LorEinstr = 1, LoIorO = 1, opcode_test = 111, memory_out = 10011011, data_out = 011111111
+
+timer = 180000, clk_divided = 1, clk1 = 0, clk2 = 0, execute_instruction_flag = 1, stop = 0, pc_out = 10100, LorEinstr = 1, LoIorO = 1, opcode_test = 111, memory_out = 10011011, data_out = 011111111
+
+timer = 181000, clk_divided = 0, clk1 = 0, clk2 = 0, execute_instruction_flag = 1, stop = 0, pc_out = 10100, LorEinstr = 1, LoIorO = 1, opcode_test = 111, memory_out = 10011011, data_out = 011111111
+
+timer = 182000, clk_divided = 1, clk1 = 1, clk2 = 0, execute_instruction_flag = 1, stop = 0, pc_out = 10100, LorEinstr = 0, LoIorO = 1, opcode_test = 111, memory_out = 10011011, data_out = 011111111
+
+timer = 183000, clk_divided = 0, clk1 = 1, clk2 = 0, execute_instruction_flag = 1, stop = 0, pc_out = 10100, LorEinstr = 0, LoIorO = 1, opcode_test = 111, memory_out = 10011011, data_out = 011111111
+
+timer = 184000, clk_divided = 1, clk1 = 1, clk2 = 1, execute_instruction_flag = 1, stop = 0, pc_out = 10100, LorEinstr = 0, LoIorO = 0, opcode_test = 100, memory_out = 10011011, data_out = 011111111
+
+timer = 185000, clk_divided = 0, clk1 = 1, clk2 = 1, execute_instruction_flag = 1, stop = 0, pc_out = 10100, LorEinstr = 0, LoIorO = 0, opcode_test = 100, memory_out = 10011011, data_out = 011111111
+
+timer = 186000, clk_divided = 1, clk1 = 0, clk2 = 0, execute_instruction_flag = 1, stop = 0, pc_out = 10100, LorEinstr = 0, LoIorO = 0, opcode_test = 100, memory_out = 10011011, data_out = 011111111
+
+timer = 187000, clk_divided = 0, clk1 = 0, clk2 = 0, execute_instruction_flag = 1, stop = 0, pc_out = 10100, LorEinstr = 0, LoIorO = 0, opcode_test = 100, memory_out = 10011011, data_out = 011111111
+
+timer = 188000, clk_divided = 1, clk1 = 1, clk2 = 0, execute_instruction_flag = 1, stop = 0, pc_out = 10100, LorEinstr = 1, LoIorO = 0, opcode_test = 100, memory_out = 10011011, data_out = 011111111
+
+timer = 189000, clk_divided = 0, clk1 = 1, clk2 = 0, execute_instruction_flag = 1, stop = 0, pc_out = 10100, LorEinstr = 1, LoIorO = 0, opcode_test = 100, memory_out = 10011011, data_out = 011111111
+
+timer = 190000, clk_divided = 1, clk1 = 1, clk2 = 1, execute_instruction_flag = 1, stop = 0, pc_out = 10101, LorEinstr = 1, LoIorO = 1, opcode_test = 100, memory_out = 11111111, data_out = 011111111
+
+timer = 191000, clk_divided = 0, clk1 = 1, clk2 = 1, execute_instruction_flag = 1, stop = 0, pc_out = 10101, LorEinstr = 1, LoIorO = 1, opcode_test = 100, memory_out = 11111111, data_out = 011111111
+
+timer = 192000, clk_divided = 1, clk1 = 0, clk2 = 0, execute_instruction_flag = 1, stop = 0, pc_out = 10101, LorEinstr = 1, LoIorO = 1, opcode_test = 100, memory_out = 11111111, data_out = 011111111
+
+timer = 193000, clk_divided = 0, clk1 = 0, clk2 = 0, execute_instruction_flag = 1, stop = 0, pc_out = 10101, LorEinstr = 1, LoIorO = 1, opcode_test = 100, memory_out = 11111111, data_out = 011111111
+
+timer = 194000, clk_divided = 1, clk1 = 1, clk2 = 0, execute_instruction_flag = 1, stop = 0, pc_out = 10101, LorEinstr = 0, LoIorO = 1, opcode_test = 100, memory_out = 11111111, data_out = 000000000
+
+timer = 195000, clk_divided = 0, clk1 = 1, clk2 = 0, execute_instruction_flag = 1, stop = 0, pc_out = 10101, LorEinstr = 0, LoIorO = 1, opcode_test = 100, memory_out = 11111111, data_out = 000000000
+
+timer = 196000, clk_divided = 1, clk1 = 1, clk2 = 1, execute_instruction_flag = 1, stop = 0, pc_out = 10101, LorEinstr = 0, LoIorO = 0, opcode_test = 001, memory_out = 00100000, data_out = 100000000
+
+timer = 197000, clk_divided = 0, clk1 = 1, clk2 = 1, execute_instruction_flag = 1, stop = 0, pc_out = 10101, LorEinstr = 0, LoIorO = 0, opcode_test = 001, memory_out = 00100000, data_out = 100000000
+
+timer = 198000, clk_divided = 1, clk1 = 0, clk2 = 0, execute_instruction_flag = 1, stop = 0, pc_out = 10101, LorEinstr = 0, LoIorO = 0, opcode_test = 001, memory_out = 00100000, data_out = 100000000
+
+timer = 199000, clk_divided = 0, clk1 = 0, clk2 = 0, execute_instruction_flag = 1, stop = 0, pc_out = 10101, LorEinstr = 0, LoIorO = 0, opcode_test = 001, memory_out = 00100000, data_out = 100000000
+
+timer = 200000, clk_divided = 1, clk1 = 1, clk2 = 0, execute_instruction_flag = 1, stop = 0, pc_out = 10101, LorEinstr = 1, LoIorO = 0, opcode_test = 001, memory_out = 00100000, data_out = 100000000
+
+timer = 201000, clk_divided = 0, clk1 = 1, clk2 = 0, execute_instruction_flag = 1, stop = 0, pc_out = 10101, LorEinstr = 1, LoIorO = 0, opcode_test = 001, memory_out = 00100000, data_out = 100000000
+
+timer = 202000, clk_divided = 1, clk1 = 1, clk2 = 1, execute_instruction_flag = 1, stop = 0, pc_out = 10111, LorEinstr = 1, LoIorO = 1, opcode_test = 001, memory_out = 11111110, data_out = 100000000
+
+timer = 203000, clk_divided = 0, clk1 = 1, clk2 = 1, execute_instruction_flag = 1, stop = 0, pc_out = 10111, LorEinstr = 1, LoIorO = 1, opcode_test = 001, memory_out = 11111110, data_out = 100000000
+
+timer = 204000, clk_divided = 1, clk1 = 0, clk2 = 0, execute_instruction_flag = 1, stop = 0, pc_out = 10111, LorEinstr = 1, LoIorO = 1, opcode_test = 001, memory_out = 11111110, data_out = 100000000
+
+timer = 205000, clk_divided = 0, clk1 = 0, clk2 = 0, execute_instruction_flag = 1, stop = 0, pc_out = 10111, LorEinstr = 1, LoIorO = 1, opcode_test = 001, memory_out = 11111110, data_out = 100000000
+
+timer = 206000, clk_divided = 1, clk1 = 1, clk2 = 0, execute_instruction_flag = 1, stop = 0, pc_out = 10111, LorEinstr = 0, LoIorO = 1, opcode_test = 001, memory_out = 11111110, data_out = 100000000
+
+timer = 207000, clk_divided = 0, clk1 = 1, clk2 = 0, execute_instruction_flag = 1, stop = 0, pc_out = 10111, LorEinstr = 0, LoIorO = 1, opcode_test = 001, memory_out = 11111110, data_out = 100000000
+
+timer = 208000, clk_divided = 1, clk1 = 1, clk2 = 1, execute_instruction_flag = 1, stop = 0, pc_out = 10111, LorEinstr = 0, LoIorO = 0, opcode_test = 000, memory_out = 00000000, data_out = 100000000
+
+timer = 209000, clk_divided = 0, clk1 = 1, clk2 = 1, execute_instruction_flag = 1, stop = 0, pc_out = 10111, LorEinstr = 0, LoIorO = 0, opcode_test = 000, memory_out = 00000000, data_out = 100000000
+
+timer = 210000, clk_divided = 1, clk1 = 0, clk2 = 0, execute_instruction_flag = 1, stop = 0, pc_out = 10111, LorEinstr = 0, LoIorO = 0, opcode_test = 000, memory_out = 00000000, data_out = 100000000
+
+timer = 211000, clk_divided = 0, clk1 = 0, clk2 = 0, execute_instruction_flag = 1, stop = 0, pc_out = 10111, LorEinstr = 0, LoIorO = 0, opcode_test = 000, memory_out = 00000000, data_out = 100000000
+
+timer = 212000, clk_divided = 0, clk1 = 0, clk2 = 0, execute_instruction_flag = 1, stop = 1, pc_out = 10111, LorEinstr = 1, LoIorO = 0, opcode_test = 000, memory_out = 00000000, data_out = 100000000
+
+$stop called at time : 501100 ps : File "E:/BKU/year_3/SEMESTER 1/project_HDL/codes/project_1.srcs/sources_1/new/CPU_testbench.v" Line 51

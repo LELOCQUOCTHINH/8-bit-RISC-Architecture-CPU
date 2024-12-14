@@ -24,6 +24,7 @@ module program_counter#(
     parameter WIDTH_ADDRESS_BIT = 5 
 )(
     output reg [WIDTH_ADDRESS_BIT - 1 : 0] pc_out,
+    //pc_out must be greater than 1 bit because pc_out can point to address 32 to stop program
     input clk,
     input enable,
     input reset,
@@ -37,7 +38,9 @@ module program_counter#(
         else if(enable == 1'b1)
         begin
             if (jump == 1'b1) //more process
+            begin
                 pc_out <= jump_address;
+            end
             else if (skip == 1'b1)
                 pc_out <= pc_out + 2;
             else

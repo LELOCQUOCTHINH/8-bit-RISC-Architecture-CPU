@@ -12,6 +12,7 @@ verilog xil_defaultlib  \
 "../../../../project_1.srcs/sources_1/new/CPU_testbench.v" \
 "../../../../project_1.srcs/sources_1/new/clock_divided.v" \
 "../../../../project_1.srcs/sources_1/new/CPU.v" \
+"../../../../project_1.srcs/sources_1/new/instruction_register.v" \
 
 # compile glbl module
 verilog xil_defaultlib "glbl.v"

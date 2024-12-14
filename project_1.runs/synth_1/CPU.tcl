@@ -71,9 +71,7 @@ proc create_report { reportName command } {
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
 set_param checkpoint.writeSynthRtdsInDcp 1
-set_param chipscope.maxJobs 5
-set_param synth.incrementalSynthesisCache C:/Users/84898/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-5016-pc/incrSyn
-set_param xicom.use_bs_reader 1
+set_param synth.incrementalSynthesisCache C:/Users/84898/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-3620-pc/incrSyn
 set_msg_config -id {Synth 8-256} -limit 10000
 set_msg_config -id {Synth 8-638} -limit 10000
 OPTRACE "Creating in-memory project" START { }
@@ -103,6 +101,7 @@ read_verilog -library xil_defaultlib {
   {E:/BKU/year_3/SEMESTER 1/project_HDL/codes/project_1.srcs/sources_1/new/CPU_testbench.v}
   {E:/BKU/year_3/SEMESTER 1/project_HDL/codes/project_1.srcs/sources_1/new/clock_divided.v}
   {E:/BKU/year_3/SEMESTER 1/project_HDL/codes/project_1.srcs/sources_1/new/CPU.v}
+  {E:/BKU/year_3/SEMESTER 1/project_HDL/codes/project_1.srcs/sources_1/new/instruction_register.v}
 }
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being

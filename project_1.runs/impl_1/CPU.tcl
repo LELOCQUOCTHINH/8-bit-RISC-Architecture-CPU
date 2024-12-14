@@ -127,8 +127,6 @@ set rc [catch {
   create_msg_db write_bitstream.pb
   set_param checkpoint.writeSynthRtdsInDcp 1
   set_param chipscope.maxJobs 5
-  set_param synth.incrementalSynthesisCache C:/Users/84898/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-5016-pc/incrSyn
-  set_param xicom.use_bs_reader 1
   open_checkpoint CPU_routed.dcp
   set_property webtalk.parent_dir {E:/BKU/year_3/SEMESTER 1/project_HDL/codes/project_1.cache/wt} [current_project]
 set_property TOP CPU [current_fileset]
