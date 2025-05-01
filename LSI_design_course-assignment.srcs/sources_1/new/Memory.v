@@ -21,7 +21,23 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module Memory(
+module Memory
+#(parameter WIDTH_ADDRESS_BIT = 5, WIDTH_REG = 8)
+(
+    output reg [WIDTH_REG-1:0] DATA_out,
+    input [WIDTH_REG-1:0] DATA_in,
+    input [WIDTH_ADDRESS_BIT-1:0] ADDRESS,
+    input read_write, //1 for read, 0 for write
+    input clk
+);
 
-    );
+reg [WIDTH_REG-1:0] MEMORY [0:(2**WIDTH_ADDRESS_BIT)-1];
+
+always@(posedge clk)
+begin
+    if(read_write) //read_write high => read
+        DATA_out <= MEMORY [ADDRESS];
+    else //read_write low => write
+        MEMORY [ADDRESS] <= DATA_in;
+end
 endmodule

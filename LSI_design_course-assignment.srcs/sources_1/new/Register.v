@@ -21,7 +21,22 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module Register(
+module Register
+#(parameter WIDTH_REG = 8)
+(
+output reg [WIDTH_REG-1:0] register_out,
+input [WIDTH_REG-1:0] register_in,
+input clk,
+input rst,
+input load
+);
 
-    );
+always@(posedge clk)
+begin
+    if(rst) //reset high and synchorous
+        register_out <= 0;
+    else if(load) //load high => assign a value
+        register_out <= register_in;
+end
+
 endmodule

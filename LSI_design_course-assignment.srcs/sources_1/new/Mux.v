@@ -21,7 +21,15 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module Mux(
+module Mux
+#(parameter WIDTH_MUX = 5)
+(
+output [WIDTH_MUX-1:0] MUX_out,
+input [WIDTH_MUX-1:0] inA,
+input [WIDTH_MUX-1:0] inB,
+input select //select signal   
+);
 
-    );
+    assign MUX_out = (select) ? inA : inB ; //if select is 1, choose inA. Otherwise, choose inB
+
 endmodule
