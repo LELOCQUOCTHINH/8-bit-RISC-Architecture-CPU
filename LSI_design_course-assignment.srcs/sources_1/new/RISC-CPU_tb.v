@@ -10,7 +10,7 @@
 // Target Devices: 
 // Tool Versions: 
 // Description: 
-// Testbench for the RISC_CPU module with 2 inputs (clk, rst) and 2 outputs (accumulator_register, is_zero)
+// Testbench for the RISC_CPU module
 // 
 // Dependencies: 
 // RISC_CPU.v, Controller.v, ALU.v, Memory.v, Mux.v, PC.v, Register.v, Decoder.v
