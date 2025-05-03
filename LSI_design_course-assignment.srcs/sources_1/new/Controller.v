@@ -22,7 +22,7 @@
 
 
 module Controller
-#(parameter CONTROLLER_PHASE_BIT = 3, WIDTH_ADDRESS_BIT = 5)
+#(parameter WIDTH_OPCODE_BIT = 3)
 (
     output reg sel, //Select signal for the Address Mux (chooses between instruction or operand address).
     output reg rd, //Memory read enable signal.
@@ -33,7 +33,7 @@ module Controller
     output reg ld_pc, //Load Program Counter signal (loads a new address into the PC, e.g., for JMP).
     output reg wr, //Memory write enable signal.
     output reg data_e, //Data enable signal (enables data transfer, e.g., for STO instruction).
-    input [CONTROLLER_PHASE_BIT - 1:0] opcode,
+    input [WIDTH_OPCODE_BIT - 1:0] opcode,
     input is_zero, //used to skip command
 //    input BOOT_MODE, 
     input clk, rst
@@ -41,6 +41,7 @@ module Controller
 
 /* -------------------------------------------------- start local parameter -------------------------*/
 //this is local parameters which stand for stages of the controller
+    localparam CONTROLLER_PHASE_BIT = 3; //8 phase
     localparam INST_ADDR = 3'b000; //Sets up the address for fetching the instruction.
     localparam INST_FETCH = 3'b001; //Reads the instruction from memory.
     localparam INST_LOAD = 3'b010; //Loads the fetched instruction into the Instruction Register (IR).
@@ -52,6 +53,7 @@ module Controller
 /* --------------------------------------------------- end local parameter -------------------------*/
 
 reg [CONTROLLER_PHASE_BIT - 1:0] controller_phase;
+
 
 always@(posedge clk)
 begin
@@ -110,7 +112,7 @@ begin
                 data_e <= 0;
             end
             
-            IDLE: //idle to synchorous and decode the instruction into opcode & operand
+            IDLE: //idle to load the instruction to the memory output and decode the instruction into opcode & operand
             begin
                 sel <= 1;
                 rd <= 1;

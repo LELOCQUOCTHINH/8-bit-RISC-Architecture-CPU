@@ -26,11 +26,11 @@ module Controller_tb;
 
     // Parameters
     parameter CONTROLLER_PHASE_BIT = 3;
-    parameter WIDTH_ADDRESS_BIT = 5;
+    parameter WIDTH_OPCODE_BIT = 3;
     parameter CLK_PERIOD = 10; // 10ns clock period
 
     // Inputs
-    reg [CONTROLLER_PHASE_BIT-1:0] opcode;
+    reg [WIDTH_OPCODE_BIT-1:0] opcode;
     reg is_zero;
     reg clk;
     reg rst;
@@ -47,7 +47,7 @@ module Controller_tb;
     wire data_e;
 
     // Instantiate the Unit Under Test (UUT)
-    Controller #(.CONTROLLER_PHASE_BIT(CONTROLLER_PHASE_BIT), .WIDTH_ADDRESS_BIT(WIDTH_ADDRESS_BIT)) uut (
+    Controller #(.CONTROLLER_PHASE_BIT(CONTROLLER_PHASE_BIT), .WIDTH_OPCODE_BIT(WIDTH_OPCODE_BIT)) uut (
         .sel(sel),
         .rd(rd),
         .ld_ir(ld_ir),

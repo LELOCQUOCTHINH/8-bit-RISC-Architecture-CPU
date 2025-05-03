@@ -29,7 +29,8 @@ module ALU
     input [WIDTH_REG_BIT - 1:0] inA,
     input [WIDTH_REG_BIT - 1:0] inB,
     input [WIDTH_OPCODE_BIT - 1:0] opcode,
-    input clk, enable, rst
+    input clk
+    , input rst
 );
 
  /* -------------------------------------------------- start local parameter -------------------------*/
@@ -44,13 +45,13 @@ module ALU
 /* --------------------------------------------------- end local parameter -------------------------*/
     
     assign is_zero = ~|inA;
-    always@(posedge clk, posedge rst)
+    always@(posedge clk)
     begin
     if(rst) //rst active high
         ALU_out <= 0;
         
-    else if(enable == 1'b1) //enable active
-        begin
+//    else if(enable == 1'b1) //enable active
+//        begin
             case(opcode)
                 HLT:
                 begin
@@ -86,6 +87,6 @@ module ALU
                 end
 //                not infer the latch because edge sensitive            
             endcase
-        end //end of if(enable == 1'b1)
+//        end //end of if(enable == 1'b1)
     end //end of always@(posedge clk)
 endmodule

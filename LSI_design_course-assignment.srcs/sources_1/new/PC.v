@@ -38,16 +38,17 @@ input [WIDTH_ADDRESS_BIT-1:0] PC_in, //input assign to program counter
 input clk, //clock signal
 input rst, //reset signal active high
 input load, //load signal be used to indicate that the user wants to assign PC_in to Program counter
-input enable //Enable signal enables program counter active
+input increase //increment signal enables program counter increase
+, input stop
 );
 
 always@(posedge clk, posedge rst)
 begin
     if(rst) //reset high
         PC_out <= 0;
-    else if(enable && load) //enable high and load high => load mode
+    else if(load && !stop) //stop low and load high => load mode
         PC_out <= PC_in;
-    else if(enable && !load) //enable high and low load => normal mode
+    else if(increase && !stop) //stop low and increase high => normal mode
         PC_out <= PC_out + 1;
 end
 
