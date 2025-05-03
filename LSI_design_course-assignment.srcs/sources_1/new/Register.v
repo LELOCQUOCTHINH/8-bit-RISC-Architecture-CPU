@@ -22,10 +22,10 @@
 
 
 module Register
-#(parameter WIDTH_REG = 8)
+#(parameter WIDTH_REG_BIT = 8)
 (
-output reg [WIDTH_REG-1:0] register_out,
-input [WIDTH_REG-1:0] register_in,
+output reg [WIDTH_REG_BIT-1:0] register_out,
+input [WIDTH_REG_BIT-1:0] register_in,
 input clk,
 input rst,
 input load

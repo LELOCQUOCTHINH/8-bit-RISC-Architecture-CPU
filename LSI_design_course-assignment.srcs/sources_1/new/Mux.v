@@ -22,11 +22,11 @@
 
 
 module Mux
-#(parameter WIDTH_MUX = 5)
+#(parameter WIDTH_MUX_BIT = 5)
 (
-output [WIDTH_MUX-1:0] MUX_out,
-input [WIDTH_MUX-1:0] inA,
-input [WIDTH_MUX-1:0] inB,
+output [WIDTH_MUX_BIT-1:0] MUX_out,
+input [WIDTH_MUX_BIT-1:0] inA,
+input [WIDTH_MUX_BIT-1:0] inB,
 input select //select signal   
 );
 
