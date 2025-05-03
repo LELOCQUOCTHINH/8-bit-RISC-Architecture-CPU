@@ -6,7 +6,7 @@ This project implements a simple 8-bit RISC (Reduced Instruction Set Computer) C
 ## Project Objectives
 - Enhance understanding of digital system design, including CPU architecture, instruction execution, and control signals.
 - Simulate and verify the CPU's functionality using testbenches.
-- enhance the familiar with cadence tools.
+- Enhance the familiar with cadence tools.
 
 ## Features
 - **Instruction Set**: Supports 8 instructions (3-bit opcode, 5-bit address):

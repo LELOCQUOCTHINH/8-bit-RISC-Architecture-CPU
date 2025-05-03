@@ -1,7 +1,7 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
 // Company: 
-// Engineer: 
+// Engineer: Le Loc Quoc Thinh
 // 
 // Create Date: 05/03/2025
 // Design Name: Clock Divider Testbench
