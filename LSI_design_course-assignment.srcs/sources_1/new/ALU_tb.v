@@ -1,7 +1,7 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
 // Company: 
-// Engineer: Le Loc Quoc Thinh
+// Engineer: 
 // 
 // Create Date: 05/03/2025
 // Design Name: ALU Testbench
@@ -19,6 +19,7 @@
 // Revision 0.01 - File Created
 // Additional Comments:
 // Tests HLT, SKZ, ADD, AND, XOR, LDA, STO, JMP operations and is_zero signal
+// Note: rst is commented out in the design, so no reset behavior is tested
 // 
 //////////////////////////////////////////////////////////////////////////////////
 
@@ -35,7 +36,6 @@ module ALU_tb;
     reg [WIDTH_REG_BIT-1:0] inB;
     reg [WIDTH_OPCODE_BIT-1:0] opcode;
     reg clk;
-    reg rst;
 
     // Outputs
     wire [WIDTH_REG_BIT-1:0] ALU_out;
@@ -50,8 +50,7 @@ module ALU_tb;
         .inA(inA),
         .inB(inB),
         .opcode(opcode),
-        .clk(clk),
-        .rst(rst)
+        .clk(clk)
     );
 
     // Clock generation
@@ -66,21 +65,18 @@ module ALU_tb;
         inA = 0;
         inB = 0;
         opcode = 0;
-        rst = 0;
 
         // Wait for initial setup
         #100;
 
-        // Test Case 1: Reset
-        rst = 1;
+        // Test Case 1: Initial State (No Reset)
+        // Note: Since rst is commented out, ALU_out may start as X
         @(posedge clk);
         #1;
-        if (ALU_out !== 0)
-            $display("Test Case 1 Failed: ALU_out=%h, expected 0x00", ALU_out);
+        if (ALU_out !== inA)
+            $display("Test Case 1 Failed: ALU_out=%h at start, expected inA (halt command)", ALU_out);
         else
-            $display("Test Case 1 Passed: ALU_out=%h", ALU_out);
-        rst = 0;
-        #10;
+            $display("Test Case 1 Passed: ALU_out=%h=inA at start because opcode=0", ALU_out);
 
         // Test Case 2: HLT (opcode 000)
         inA = 8'hAA;
@@ -117,79 +113,89 @@ module ALU_tb;
         else
             $display("Test Case 4 Passed: ALU_out=%h for ADD", ALU_out);
 
-        // Test Case 5: AND (opcode 011)
+        // Test Case 5: ADD with Overflow
+        inA = 8'hFF;
+        inB = 8'h01;
+        @(posedge clk);
+        #1;
+        if (ALU_out !== 8'h00) // Expect wrap-around
+            $display("Test Case 5 Failed: ALU_out=%h for ADD overflow, expected 0x00", ALU_out);
+        else
+            $display("Test Case 5 Passed: ALU_out=%h for ADD overflow", ALU_out);
+
+        // Test Case 6: AND (opcode 011)
         inA = 8'hF0;
         inB = 8'h0F;
         opcode = 3'b011;
         @(posedge clk);
         #1;
         if (ALU_out !== 8'h00)
-            $display("Test Case 5 Failed: ALU_out=%h for AND, expected 0x00", ALU_out);
+            $display("Test Case 6 Failed: ALU_out=%h for AND, expected 0x00", ALU_out);
         else
-            $display("Test Case 5 Passed: ALU_out=%h for AND", ALU_out);
+            $display("Test Case 6 Passed: ALU_out=%h for AND", ALU_out);
         if (is_zero !== 0)
-            $display("Test Case 5 Failed: is_zero=%b, expected 0", is_zero);
+            $display("Test Case 6 Failed: is_zero=%b, expected 0", is_zero);
         else
-            $display("Test Case 5 Passed: is_zero=%b", is_zero);
+            $display("Test Case 6 Passed: is_zero=%b", is_zero);
 
-        // Test Case 6: XOR (opcode 100)
+        // Test Case 7: XOR (opcode 100)
         inA = 8'hFF;
         inB = 8'hFF;
         opcode = 3'b100;
         @(posedge clk);
         #1;
         if (ALU_out !== 8'h00)
-            $display("Test Case 6 Failed: ALU_out=%h for XOR, expected 0x00", ALU_out);
+            $display("Test Case 7 Failed: ALU_out=%h for XOR, expected 0x00", ALU_out);
         else
-            $display("Test Case 6 Passed: ALU_out=%h for XOR", ALU_out);
+            $display("Test Case 7 Passed: ALU_out=%h for XOR", ALU_out);
         if (is_zero !== 0)
-            $display("Test Case 6 Failed: is_zero=%b, expected 0", is_zero);
+            $display("Test Case 7 Failed: is_zero=%b, expected 0", is_zero);
         else
-            $display("Test Case 6 Passed: is_zero=%b", is_zero);
+            $display("Test Case 7 Passed: is_zero=%b", is_zero);
 
-        // Test Case 7: LDA (opcode 101)
+        // Test Case 8: LDA (opcode 101)
         inA = 8'hAA;
         inB = 8'h55;
         opcode = 3'b101;
         @(posedge clk);
         #1;
         if (ALU_out !== 8'h55)
-            $display("Test Case 7 Failed: ALU_out=%h for LDA, expected 0x55", ALU_out);
+            $display("Test Case 8 Failed: ALU_out=%h for LDA, expected 0x55", ALU_out);
         else
-            $display("Test Case 7 Passed: ALU_out=%h for LDA", ALU_out);
+            $display("Test Case 8 Passed: ALU_out=%h for LDA", ALU_out);
 
-        // Test Case 8: STO (opcode 110)
+        // Test Case 9: STO (opcode 110)
         opcode = 3'b110;
         @(posedge clk);
         #1;
         if (ALU_out !== 8'hAA)
-            $display("Test Case 8 Failed: ALU_out=%h for STO, expected 0xAA", ALU_out);
+            $display("Test Case 9 Failed: ALU_out=%h for STO, expected 0xAA", ALU_out);
         else
-            $display("Test Case 8 Passed: ALU_out=%h for STO", ALU_out);
+            $display("Test Case 9 Passed: ALU_out=%h for STO", ALU_out);
 
-        // Test Case 9: JMP (opcode 111)
+        // Test Case 10: JMP (opcode 111)
         opcode = 3'b111;
         @(posedge clk);
         #1;
         if (ALU_out !== 8'hAA)
-            $display("Test Case 9 Failed: ALU_out=%h for JMP, expected 0xAA", ALU_out);
+            $display("Test Case 10 Failed: ALU_out=%h for JMP, expected 0xAA", ALU_out);
         else
-            $display("Test Case 9 Passed: ALU_out=%h for JMP", ALU_out);
+            $display("Test Case 10 Passed: ALU_out=%h for JMP", ALU_out);
 
-        // Test Case 10: is_zero with zero input
+        // Test Case 11: is_zero with Zero Input
         inA = 8'h00;
         inB = 8'hFF;
         opcode = 3'b000; // HLT to pass inA
         @(posedge clk);
         #1;
         if (ALU_out !== 8'h00)
-            $display("Test Case 10 Failed: ALU_out=%h for HLT, expected 0x00", ALU_out);
+            $display("Test Case 11 Failed: ALU_out=%h for HLT, expected 0x00", ALU_out);
         else
-            $display("Test Case 10 Passed: ALU_out=%h for HLT", ALU_out);
+            $display("Test Case 11 Passed: ALU_out=%h for HLT", ALU_out);
         if (is_zero !== 1)
-            $display("Test Case 10 Failed: is_zero=%b, expected 1", is_zero);
+            $display("Test Case 11 Failed: is_zero=%b, expected 1", is_zero);
         else
-            $display("Test Case 10 Passed: is_zero=%b", is_zero);
+            $display("Test Case 11 Passed: is_zero=%b", is_zero);
 
         // End simulation
         #100;
@@ -199,8 +205,8 @@ module ALU_tb;
 
     // Monitor signals
     initial begin
-        $monitor("Time=%0t clk=%b rst=%b opcode=%b inA=%h inB=%h ALU_out=%h is_zero=%b",
-                 $time, clk, rst, opcode, inA, inB, ALU_out, is_zero);
+        $monitor("Time=%0t clk=%b opcode=%b inA=%h inB=%h ALU_out=%h is_zero=%b",
+                 $time, clk, opcode, inA, inB, ALU_out, is_zero);
     end
 
 endmodule

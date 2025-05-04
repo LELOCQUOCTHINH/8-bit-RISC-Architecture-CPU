@@ -136,7 +136,6 @@ module RISC_CPU
         .inA(accumulator_register),
         .inB(memory_out),     
         .opcode(opcode),
-        .rst(rst),
         .clk(clk)
     );
     /*******************************ALU*******************************/

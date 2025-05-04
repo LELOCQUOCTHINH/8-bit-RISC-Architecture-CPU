@@ -1,0 +1,637 @@
+xrun(64): 24.03-s011: (c) Copyright 1995-2025 Cadence Design Systems, Inc.
+TOOL:	xrun(64)	24.03-s011: Started on May 04, 2025 at 13:44:42 +07
+xrun
+	-access rw
+	-licqueue
+	-64BIT
+	-l run.log
+	RISC-CPU_tb.v
+	RISC-CPU.v
+	Register.v
+	PC.v
+	Mux.v
+	Memory.v
+	Decoder.v
+	Controller.v
+	ALU.v
+Recompiling... reason: file './RISC-CPU_tb.v' is newer than expected.
+	expected: Sun May  4 13:42:17 2025
+	actual:   Sun May  4 13:44:36 2025
+file: RISC-CPU_tb.v
+	module worklib.RISC_CPU_tb:v
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		RISC_CPU_tb
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.RISC_CPU_tb:v <0x1520c684>
+			streams:   6, words: 43538
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                 Instances  Unique
+		Modules:                10       9
+		Registers:              18      17
+		Scalar wires:           12       -
+		Vectored wires:          8       -
+		Always blocks:           6       5
+		Initial blocks:          3       3
+		Cont. assignments:       3       4
+		Pseudo assignments:      2       -
+		Process Clocks:          6       2
+		Simulation timescale:  1ps
+	Writing initial simulation snapshot: worklib.RISC_CPU_tb:v
+Loading snapshot worklib.RISC_CPU_tb:v .................... Done
+xcelium> source /home/share_file/cadence/installs/XCELIUM2403/tools/xcelium/files/xmsimrc
+xcelium> run
+Time=0 clk=0 rst=0 Controller_phase=x accumulator_register=xxxxxxxx is_zero=x PC=xx halt=x memory_out=xxxxxxxx
+Time=1000 clk=1 rst=0 Controller_phase=x accumulator_register=xxxxxxxx is_zero=x PC=xx halt=x memory_out=xxxxxxxx
+Time=2000 clk=0 rst=0 Controller_phase=x accumulator_register=xxxxxxxx is_zero=x PC=xx halt=x memory_out=xxxxxxxx
+Time=3000 clk=1 rst=0 Controller_phase=x accumulator_register=xxxxxxxx is_zero=x PC=xx halt=x memory_out=xxxxxxxx
+Time=4000 clk=0 rst=0 Controller_phase=x accumulator_register=xxxxxxxx is_zero=x PC=xx halt=x memory_out=xxxxxxxx
+Time=5000 clk=1 rst=0 Controller_phase=x accumulator_register=xxxxxxxx is_zero=x PC=xx halt=x memory_out=xxxxxxxx
+Time=6000 clk=0 rst=0 Controller_phase=x accumulator_register=xxxxxxxx is_zero=x PC=xx halt=x memory_out=xxxxxxxx
+Time=7000 clk=1 rst=0 Controller_phase=x accumulator_register=xxxxxxxx is_zero=x PC=xx halt=x memory_out=xxxxxxxx
+Time=8000 clk=0 rst=0 Controller_phase=x accumulator_register=xxxxxxxx is_zero=x PC=xx halt=x memory_out=xxxxxxxx
+Time=9000 clk=1 rst=0 Controller_phase=x accumulator_register=xxxxxxxx is_zero=x PC=xx halt=x memory_out=xxxxxxxx
+Time=10000 clk=0 rst=0 Controller_phase=x accumulator_register=xxxxxxxx is_zero=x PC=xx halt=x memory_out=xxxxxxxx
+Time=11000 clk=1 rst=0 Controller_phase=x accumulator_register=xxxxxxxx is_zero=x PC=xx halt=x memory_out=xxxxxxxx
+Time=12000 clk=0 rst=0 Controller_phase=x accumulator_register=xxxxxxxx is_zero=x PC=xx halt=x memory_out=xxxxxxxx
+Time=13000 clk=1 rst=0 Controller_phase=x accumulator_register=xxxxxxxx is_zero=x PC=xx halt=x memory_out=xxxxxxxx
+Time=14000 clk=0 rst=0 Controller_phase=x accumulator_register=xxxxxxxx is_zero=x PC=xx halt=x memory_out=xxxxxxxx
+Time=15000 clk=1 rst=0 Controller_phase=x accumulator_register=xxxxxxxx is_zero=x PC=xx halt=x memory_out=xxxxxxxx
+Time=16000 clk=0 rst=0 Controller_phase=x accumulator_register=xxxxxxxx is_zero=x PC=xx halt=x memory_out=xxxxxxxx
+Time=17000 clk=1 rst=0 Controller_phase=x accumulator_register=xxxxxxxx is_zero=x PC=xx halt=x memory_out=xxxxxxxx
+Time=18000 clk=0 rst=0 Controller_phase=x accumulator_register=xxxxxxxx is_zero=x PC=xx halt=x memory_out=xxxxxxxx
+Time=19000 clk=1 rst=0 Controller_phase=x accumulator_register=xxxxxxxx is_zero=x PC=xx halt=x memory_out=xxxxxxxx
+Time=20000 clk=0 rst=0 Controller_phase=x accumulator_register=xxxxxxxx is_zero=x PC=xx halt=x memory_out=xxxxxxxx
+Time=21000 clk=1 rst=0 Controller_phase=x accumulator_register=xxxxxxxx is_zero=x PC=xx halt=x memory_out=xxxxxxxx
+Time=22000 clk=0 rst=0 Controller_phase=x accumulator_register=xxxxxxxx is_zero=x PC=xx halt=x memory_out=xxxxxxxx
+Time=23000 clk=1 rst=0 Controller_phase=x accumulator_register=xxxxxxxx is_zero=x PC=xx halt=x memory_out=xxxxxxxx
+Time=24000 clk=0 rst=0 Controller_phase=x accumulator_register=xxxxxxxx is_zero=x PC=xx halt=x memory_out=xxxxxxxx
+Time=25000 clk=1 rst=0 Controller_phase=x accumulator_register=xxxxxxxx is_zero=x PC=xx halt=x memory_out=xxxxxxxx
+Time=26000 clk=0 rst=0 Controller_phase=x accumulator_register=xxxxxxxx is_zero=x PC=xx halt=x memory_out=xxxxxxxx
+Time=27000 clk=1 rst=0 Controller_phase=x accumulator_register=xxxxxxxx is_zero=x PC=xx halt=x memory_out=xxxxxxxx
+Time=28000 clk=0 rst=0 Controller_phase=x accumulator_register=xxxxxxxx is_zero=x PC=xx halt=x memory_out=xxxxxxxx
+Time=29000 clk=1 rst=0 Controller_phase=x accumulator_register=xxxxxxxx is_zero=x PC=xx halt=x memory_out=xxxxxxxx
+Time=30000 clk=0 rst=0 Controller_phase=x accumulator_register=xxxxxxxx is_zero=x PC=xx halt=x memory_out=xxxxxxxx
+Time=31000 clk=1 rst=0 Controller_phase=x accumulator_register=xxxxxxxx is_zero=x PC=xx halt=x memory_out=xxxxxxxx
+Time=32000 clk=0 rst=0 Controller_phase=x accumulator_register=xxxxxxxx is_zero=x PC=xx halt=x memory_out=xxxxxxxx
+Time=33000 clk=1 rst=0 Controller_phase=x accumulator_register=xxxxxxxx is_zero=x PC=xx halt=x memory_out=xxxxxxxx
+Time=34000 clk=0 rst=0 Controller_phase=x accumulator_register=xxxxxxxx is_zero=x PC=xx halt=x memory_out=xxxxxxxx
+Time=35000 clk=1 rst=0 Controller_phase=x accumulator_register=xxxxxxxx is_zero=x PC=xx halt=x memory_out=xxxxxxxx
+Time=36000 clk=0 rst=0 Controller_phase=x accumulator_register=xxxxxxxx is_zero=x PC=xx halt=x memory_out=xxxxxxxx
+Time=37000 clk=1 rst=0 Controller_phase=x accumulator_register=xxxxxxxx is_zero=x PC=xx halt=x memory_out=xxxxxxxx
+Time=38000 clk=0 rst=0 Controller_phase=x accumulator_register=xxxxxxxx is_zero=x PC=xx halt=x memory_out=xxxxxxxx
+Time=39000 clk=1 rst=0 Controller_phase=x accumulator_register=xxxxxxxx is_zero=x PC=xx halt=x memory_out=xxxxxxxx
+Time=40000 clk=0 rst=0 Controller_phase=x accumulator_register=xxxxxxxx is_zero=x PC=xx halt=x memory_out=xxxxxxxx
+Time=41000 clk=1 rst=0 Controller_phase=x accumulator_register=xxxxxxxx is_zero=x PC=xx halt=x memory_out=xxxxxxxx
+Time=42000 clk=0 rst=0 Controller_phase=x accumulator_register=xxxxxxxx is_zero=x PC=xx halt=x memory_out=xxxxxxxx
+Time=43000 clk=1 rst=0 Controller_phase=x accumulator_register=xxxxxxxx is_zero=x PC=xx halt=x memory_out=xxxxxxxx
+Time=44000 clk=0 rst=0 Controller_phase=x accumulator_register=xxxxxxxx is_zero=x PC=xx halt=x memory_out=xxxxxxxx
+Time=45000 clk=1 rst=0 Controller_phase=x accumulator_register=xxxxxxxx is_zero=x PC=xx halt=x memory_out=xxxxxxxx
+Time=46000 clk=0 rst=0 Controller_phase=x accumulator_register=xxxxxxxx is_zero=x PC=xx halt=x memory_out=xxxxxxxx
+Time=47000 clk=1 rst=0 Controller_phase=x accumulator_register=xxxxxxxx is_zero=x PC=xx halt=x memory_out=xxxxxxxx
+Time=48000 clk=0 rst=0 Controller_phase=x accumulator_register=xxxxxxxx is_zero=x PC=xx halt=x memory_out=xxxxxxxx
+Time=49000 clk=1 rst=0 Controller_phase=x accumulator_register=xxxxxxxx is_zero=x PC=xx halt=x memory_out=xxxxxxxx
+Time=50000 clk=0 rst=0 Controller_phase=x accumulator_register=xxxxxxxx is_zero=x PC=xx halt=x memory_out=xxxxxxxx
+Time=51000 clk=1 rst=0 Controller_phase=x accumulator_register=xxxxxxxx is_zero=x PC=xx halt=x memory_out=xxxxxxxx
+Time=52000 clk=0 rst=0 Controller_phase=x accumulator_register=xxxxxxxx is_zero=x PC=xx halt=x memory_out=xxxxxxxx
+Time=53000 clk=1 rst=0 Controller_phase=x accumulator_register=xxxxxxxx is_zero=x PC=xx halt=x memory_out=xxxxxxxx
+Time=54000 clk=0 rst=0 Controller_phase=x accumulator_register=xxxxxxxx is_zero=x PC=xx halt=x memory_out=xxxxxxxx
+Time=55000 clk=1 rst=0 Controller_phase=x accumulator_register=xxxxxxxx is_zero=x PC=xx halt=x memory_out=xxxxxxxx
+Time=56000 clk=0 rst=0 Controller_phase=x accumulator_register=xxxxxxxx is_zero=x PC=xx halt=x memory_out=xxxxxxxx
+Time=57000 clk=1 rst=0 Controller_phase=x accumulator_register=xxxxxxxx is_zero=x PC=xx halt=x memory_out=xxxxxxxx
+Time=58000 clk=0 rst=0 Controller_phase=x accumulator_register=xxxxxxxx is_zero=x PC=xx halt=x memory_out=xxxxxxxx
+Time=59000 clk=1 rst=0 Controller_phase=x accumulator_register=xxxxxxxx is_zero=x PC=xx halt=x memory_out=xxxxxxxx
+Time=60000 clk=0 rst=0 Controller_phase=x accumulator_register=xxxxxxxx is_zero=x PC=xx halt=x memory_out=xxxxxxxx
+Time=61000 clk=1 rst=0 Controller_phase=x accumulator_register=xxxxxxxx is_zero=x PC=xx halt=x memory_out=xxxxxxxx
+Time=62000 clk=0 rst=0 Controller_phase=x accumulator_register=xxxxxxxx is_zero=x PC=xx halt=x memory_out=xxxxxxxx
+Time=63000 clk=1 rst=0 Controller_phase=x accumulator_register=xxxxxxxx is_zero=x PC=xx halt=x memory_out=xxxxxxxx
+Time=64000 clk=0 rst=0 Controller_phase=x accumulator_register=xxxxxxxx is_zero=x PC=xx halt=x memory_out=xxxxxxxx
+Time=65000 clk=1 rst=0 Controller_phase=x accumulator_register=xxxxxxxx is_zero=x PC=xx halt=x memory_out=xxxxxxxx
+Time=66000 clk=0 rst=0 Controller_phase=x accumulator_register=xxxxxxxx is_zero=x PC=xx halt=x memory_out=xxxxxxxx
+Time=67000 clk=1 rst=0 Controller_phase=x accumulator_register=xxxxxxxx is_zero=x PC=xx halt=x memory_out=xxxxxxxx
+Time=68000 clk=0 rst=0 Controller_phase=x accumulator_register=xxxxxxxx is_zero=x PC=xx halt=x memory_out=xxxxxxxx
+Time=69000 clk=1 rst=0 Controller_phase=x accumulator_register=xxxxxxxx is_zero=x PC=xx halt=x memory_out=xxxxxxxx
+Time=70000 clk=0 rst=0 Controller_phase=x accumulator_register=xxxxxxxx is_zero=x PC=xx halt=x memory_out=xxxxxxxx
+Time=71000 clk=1 rst=0 Controller_phase=x accumulator_register=xxxxxxxx is_zero=x PC=xx halt=x memory_out=xxxxxxxx
+Time=72000 clk=0 rst=0 Controller_phase=x accumulator_register=xxxxxxxx is_zero=x PC=xx halt=x memory_out=xxxxxxxx
+Time=73000 clk=1 rst=0 Controller_phase=x accumulator_register=xxxxxxxx is_zero=x PC=xx halt=x memory_out=xxxxxxxx
+Time=74000 clk=0 rst=0 Controller_phase=x accumulator_register=xxxxxxxx is_zero=x PC=xx halt=x memory_out=xxxxxxxx
+Time=75000 clk=1 rst=0 Controller_phase=x accumulator_register=xxxxxxxx is_zero=x PC=xx halt=x memory_out=xxxxxxxx
+Time=76000 clk=0 rst=0 Controller_phase=x accumulator_register=xxxxxxxx is_zero=x PC=xx halt=x memory_out=xxxxxxxx
+Time=77000 clk=1 rst=0 Controller_phase=x accumulator_register=xxxxxxxx is_zero=x PC=xx halt=x memory_out=xxxxxxxx
+Time=78000 clk=0 rst=0 Controller_phase=x accumulator_register=xxxxxxxx is_zero=x PC=xx halt=x memory_out=xxxxxxxx
+Time=79000 clk=1 rst=0 Controller_phase=x accumulator_register=xxxxxxxx is_zero=x PC=xx halt=x memory_out=xxxxxxxx
+Time=80000 clk=0 rst=0 Controller_phase=x accumulator_register=xxxxxxxx is_zero=x PC=xx halt=x memory_out=xxxxxxxx
+Time=81000 clk=1 rst=0 Controller_phase=x accumulator_register=xxxxxxxx is_zero=x PC=xx halt=x memory_out=xxxxxxxx
+Time=82000 clk=0 rst=0 Controller_phase=x accumulator_register=xxxxxxxx is_zero=x PC=xx halt=x memory_out=xxxxxxxx
+Time=83000 clk=1 rst=0 Controller_phase=x accumulator_register=xxxxxxxx is_zero=x PC=xx halt=x memory_out=xxxxxxxx
+Time=84000 clk=0 rst=0 Controller_phase=x accumulator_register=xxxxxxxx is_zero=x PC=xx halt=x memory_out=xxxxxxxx
+Time=85000 clk=1 rst=0 Controller_phase=x accumulator_register=xxxxxxxx is_zero=x PC=xx halt=x memory_out=xxxxxxxx
+Time=86000 clk=0 rst=0 Controller_phase=x accumulator_register=xxxxxxxx is_zero=x PC=xx halt=x memory_out=xxxxxxxx
+Time=87000 clk=1 rst=0 Controller_phase=x accumulator_register=xxxxxxxx is_zero=x PC=xx halt=x memory_out=xxxxxxxx
+Time=88000 clk=0 rst=0 Controller_phase=x accumulator_register=xxxxxxxx is_zero=x PC=xx halt=x memory_out=xxxxxxxx
+Time=89000 clk=1 rst=0 Controller_phase=x accumulator_register=xxxxxxxx is_zero=x PC=xx halt=x memory_out=xxxxxxxx
+Time=90000 clk=0 rst=0 Controller_phase=x accumulator_register=xxxxxxxx is_zero=x PC=xx halt=x memory_out=xxxxxxxx
+Time=91000 clk=1 rst=0 Controller_phase=x accumulator_register=xxxxxxxx is_zero=x PC=xx halt=x memory_out=xxxxxxxx
+Time=92000 clk=0 rst=0 Controller_phase=x accumulator_register=xxxxxxxx is_zero=x PC=xx halt=x memory_out=xxxxxxxx
+Time=93000 clk=1 rst=0 Controller_phase=x accumulator_register=xxxxxxxx is_zero=x PC=xx halt=x memory_out=xxxxxxxx
+Time=94000 clk=0 rst=0 Controller_phase=x accumulator_register=xxxxxxxx is_zero=x PC=xx halt=x memory_out=xxxxxxxx
+Time=95000 clk=1 rst=0 Controller_phase=x accumulator_register=xxxxxxxx is_zero=x PC=xx halt=x memory_out=xxxxxxxx
+Time=96000 clk=0 rst=0 Controller_phase=x accumulator_register=xxxxxxxx is_zero=x PC=xx halt=x memory_out=xxxxxxxx
+Time=97000 clk=1 rst=0 Controller_phase=x accumulator_register=xxxxxxxx is_zero=x PC=xx halt=x memory_out=xxxxxxxx
+Time=98000 clk=0 rst=0 Controller_phase=x accumulator_register=xxxxxxxx is_zero=x PC=xx halt=x memory_out=xxxxxxxx
+Time=99000 clk=1 rst=0 Controller_phase=x accumulator_register=xxxxxxxx is_zero=x PC=xx halt=x memory_out=xxxxxxxx
+Time=100000 clk=0 rst=1 Controller_phase=x accumulator_register=xxxxxxxx is_zero=x PC=00 halt=x memory_out=xxxxxxxx
+Time=101000 clk=1 rst=1 Controller_phase=0 accumulator_register=00000000 is_zero=1 PC=00 halt=0 memory_out=00000000
+Time=102000 clk=0 rst=1 Controller_phase=0 accumulator_register=00000000 is_zero=1 PC=00 halt=0 memory_out=00000000
+Test Case 1 Passed: accumulator_register=00, is_zero=1
+Time=103000 clk=1 rst=0 Controller_phase=1 accumulator_register=00000000 is_zero=1 PC=00 halt=0 memory_out=00000000
+Time=104000 clk=0 rst=0 Controller_phase=1 accumulator_register=00000000 is_zero=1 PC=00 halt=0 memory_out=00000000
+Time=105000 clk=1 rst=0 Controller_phase=2 accumulator_register=00000000 is_zero=1 PC=00 halt=0 memory_out=00000000
+Time=106000 clk=0 rst=0 Controller_phase=2 accumulator_register=00000000 is_zero=1 PC=00 halt=0 memory_out=00000000
+Time=107000 clk=1 rst=0 Controller_phase=3 accumulator_register=00000000 is_zero=1 PC=00 halt=0 memory_out=11111110
+Time=108000 clk=0 rst=0 Controller_phase=3 accumulator_register=00000000 is_zero=1 PC=00 halt=0 memory_out=11111110
+Time=109000 clk=1 rst=0 Controller_phase=4 accumulator_register=00000000 is_zero=1 PC=00 halt=0 memory_out=11111110
+Time=110000 clk=0 rst=0 Controller_phase=4 accumulator_register=00000000 is_zero=1 PC=00 halt=0 memory_out=11111110
+Time=111000 clk=1 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=00 halt=0 memory_out=11111110
+Time=112000 clk=0 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=00 halt=0 memory_out=11111110
+Time=113000 clk=1 rst=0 Controller_phase=6 accumulator_register=00000000 is_zero=1 PC=01 halt=0 memory_out=11111110
+Time=114000 clk=0 rst=0 Controller_phase=6 accumulator_register=00000000 is_zero=1 PC=01 halt=0 memory_out=11111110
+Time=115000 clk=1 rst=0 Controller_phase=7 accumulator_register=00000000 is_zero=1 PC=01 halt=0 memory_out=11111110
+Time=116000 clk=0 rst=0 Controller_phase=7 accumulator_register=00000000 is_zero=1 PC=01 halt=0 memory_out=11111110
+Time=117000 clk=1 rst=0 Controller_phase=0 accumulator_register=00000000 is_zero=1 PC=1e halt=0 memory_out=11111110
+Time=118000 clk=0 rst=0 Controller_phase=0 accumulator_register=00000000 is_zero=1 PC=1e halt=0 memory_out=11111110
+Time=119000 clk=1 rst=0 Controller_phase=1 accumulator_register=00000000 is_zero=1 PC=1e halt=0 memory_out=11111110
+Time=120000 clk=0 rst=0 Controller_phase=1 accumulator_register=00000000 is_zero=1 PC=1e halt=0 memory_out=11111110
+Time=121000 clk=1 rst=0 Controller_phase=2 accumulator_register=00000000 is_zero=1 PC=1e halt=0 memory_out=11111110
+Time=122000 clk=0 rst=0 Controller_phase=2 accumulator_register=00000000 is_zero=1 PC=1e halt=0 memory_out=11111110
+Time=123000 clk=1 rst=0 Controller_phase=3 accumulator_register=00000000 is_zero=1 PC=1e halt=0 memory_out=11100011
+Time=124000 clk=0 rst=0 Controller_phase=3 accumulator_register=00000000 is_zero=1 PC=1e halt=0 memory_out=11100011
+Time=125000 clk=1 rst=0 Controller_phase=4 accumulator_register=00000000 is_zero=1 PC=1e halt=0 memory_out=11100011
+Time=126000 clk=0 rst=0 Controller_phase=4 accumulator_register=00000000 is_zero=1 PC=1e halt=0 memory_out=11100011
+Time=127000 clk=1 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=1e halt=0 memory_out=11100011
+Time=128000 clk=0 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=1e halt=0 memory_out=11100011
+Time=129000 clk=1 rst=0 Controller_phase=6 accumulator_register=00000000 is_zero=1 PC=1f halt=0 memory_out=11100011
+Time=130000 clk=0 rst=0 Controller_phase=6 accumulator_register=00000000 is_zero=1 PC=1f halt=0 memory_out=11100011
+Time=131000 clk=1 rst=0 Controller_phase=7 accumulator_register=00000000 is_zero=1 PC=1f halt=0 memory_out=11100011
+Time=132000 clk=0 rst=0 Controller_phase=7 accumulator_register=00000000 is_zero=1 PC=1f halt=0 memory_out=11100011
+Time=133000 clk=1 rst=0 Controller_phase=0 accumulator_register=00000000 is_zero=1 PC=03 halt=0 memory_out=11100011
+Time=134000 clk=0 rst=0 Controller_phase=0 accumulator_register=00000000 is_zero=1 PC=03 halt=0 memory_out=11100011
+Test Case 2 Passed: program_counter=03 after JMP 0x1E and JMP 0x03
+Time=135000 clk=1 rst=0 Controller_phase=1 accumulator_register=00000000 is_zero=1 PC=03 halt=0 memory_out=11100011
+Time=136000 clk=0 rst=0 Controller_phase=1 accumulator_register=00000000 is_zero=1 PC=03 halt=0 memory_out=11100011
+Time=137000 clk=1 rst=0 Controller_phase=2 accumulator_register=00000000 is_zero=1 PC=03 halt=0 memory_out=11100011
+Time=138000 clk=0 rst=0 Controller_phase=2 accumulator_register=00000000 is_zero=1 PC=03 halt=0 memory_out=11100011
+Time=139000 clk=1 rst=0 Controller_phase=3 accumulator_register=00000000 is_zero=1 PC=03 halt=0 memory_out=10111010
+Time=140000 clk=0 rst=0 Controller_phase=3 accumulator_register=00000000 is_zero=1 PC=03 halt=0 memory_out=10111010
+Time=141000 clk=1 rst=0 Controller_phase=4 accumulator_register=00000000 is_zero=1 PC=03 halt=0 memory_out=10111010
+Time=142000 clk=0 rst=0 Controller_phase=4 accumulator_register=00000000 is_zero=1 PC=03 halt=0 memory_out=10111010
+Time=143000 clk=1 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=03 halt=0 memory_out=10111010
+Time=144000 clk=0 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=03 halt=0 memory_out=10111010
+Time=145000 clk=1 rst=0 Controller_phase=6 accumulator_register=00000000 is_zero=1 PC=04 halt=0 memory_out=10111010
+Time=146000 clk=0 rst=0 Controller_phase=6 accumulator_register=00000000 is_zero=1 PC=04 halt=0 memory_out=10111010
+Time=147000 clk=1 rst=0 Controller_phase=7 accumulator_register=00000000 is_zero=1 PC=04 halt=0 memory_out=00000000
+Time=148000 clk=0 rst=0 Controller_phase=7 accumulator_register=00000000 is_zero=1 PC=04 halt=0 memory_out=00000000
+Time=149000 clk=1 rst=0 Controller_phase=0 accumulator_register=00000000 is_zero=1 PC=04 halt=0 memory_out=00000000
+Time=150000 clk=0 rst=0 Controller_phase=0 accumulator_register=00000000 is_zero=1 PC=04 halt=0 memory_out=00000000
+Test Case 3 Passed: accumulator_register=00 after LDA 0x1A
+Test Case 3 Passed: is_zero=1
+Time=151000 clk=1 rst=0 Controller_phase=1 accumulator_register=00000000 is_zero=1 PC=04 halt=0 memory_out=00000000
+Time=152000 clk=0 rst=0 Controller_phase=1 accumulator_register=00000000 is_zero=1 PC=04 halt=0 memory_out=00000000
+Time=153000 clk=1 rst=0 Controller_phase=2 accumulator_register=00000000 is_zero=1 PC=04 halt=0 memory_out=00000000
+Time=154000 clk=0 rst=0 Controller_phase=2 accumulator_register=00000000 is_zero=1 PC=04 halt=0 memory_out=00000000
+Time=155000 clk=1 rst=0 Controller_phase=3 accumulator_register=00000000 is_zero=1 PC=04 halt=0 memory_out=00100000
+Time=156000 clk=0 rst=0 Controller_phase=3 accumulator_register=00000000 is_zero=1 PC=04 halt=0 memory_out=00100000
+Time=157000 clk=1 rst=0 Controller_phase=4 accumulator_register=00000000 is_zero=1 PC=04 halt=0 memory_out=00100000
+Time=158000 clk=0 rst=0 Controller_phase=4 accumulator_register=00000000 is_zero=1 PC=04 halt=0 memory_out=00100000
+Time=159000 clk=1 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=04 halt=0 memory_out=00100000
+Time=160000 clk=0 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=04 halt=0 memory_out=00100000
+Time=161000 clk=1 rst=0 Controller_phase=6 accumulator_register=00000000 is_zero=1 PC=05 halt=0 memory_out=00100000
+Time=162000 clk=0 rst=0 Controller_phase=6 accumulator_register=00000000 is_zero=1 PC=05 halt=0 memory_out=00100000
+Time=163000 clk=1 rst=0 Controller_phase=7 accumulator_register=00000000 is_zero=1 PC=05 halt=0 memory_out=00100000
+Time=164000 clk=0 rst=0 Controller_phase=7 accumulator_register=00000000 is_zero=1 PC=05 halt=0 memory_out=00100000
+Time=165000 clk=1 rst=0 Controller_phase=0 accumulator_register=00000000 is_zero=1 PC=06 halt=0 memory_out=00100000
+Time=166000 clk=0 rst=0 Controller_phase=0 accumulator_register=00000000 is_zero=1 PC=06 halt=0 memory_out=00100000
+Time=167000 clk=1 rst=0 Controller_phase=1 accumulator_register=00000000 is_zero=1 PC=06 halt=0 memory_out=00100000
+Time=168000 clk=0 rst=0 Controller_phase=1 accumulator_register=00000000 is_zero=1 PC=06 halt=0 memory_out=00100000
+Time=169000 clk=1 rst=0 Controller_phase=2 accumulator_register=00000000 is_zero=1 PC=06 halt=0 memory_out=00100000
+Time=170000 clk=0 rst=0 Controller_phase=2 accumulator_register=00000000 is_zero=1 PC=06 halt=0 memory_out=00100000
+Time=171000 clk=1 rst=0 Controller_phase=3 accumulator_register=00000000 is_zero=1 PC=06 halt=0 memory_out=10111011
+Time=172000 clk=0 rst=0 Controller_phase=3 accumulator_register=00000000 is_zero=1 PC=06 halt=0 memory_out=10111011
+Time=173000 clk=1 rst=0 Controller_phase=4 accumulator_register=00000000 is_zero=1 PC=06 halt=0 memory_out=10111011
+Time=174000 clk=0 rst=0 Controller_phase=4 accumulator_register=00000000 is_zero=1 PC=06 halt=0 memory_out=10111011
+Time=175000 clk=1 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=06 halt=0 memory_out=10111011
+Time=176000 clk=0 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=06 halt=0 memory_out=10111011
+Time=177000 clk=1 rst=0 Controller_phase=6 accumulator_register=00000000 is_zero=1 PC=07 halt=0 memory_out=10111011
+Time=178000 clk=0 rst=0 Controller_phase=6 accumulator_register=00000000 is_zero=1 PC=07 halt=0 memory_out=10111011
+Time=179000 clk=1 rst=0 Controller_phase=7 accumulator_register=00000000 is_zero=1 PC=07 halt=0 memory_out=11111111
+Time=180000 clk=0 rst=0 Controller_phase=7 accumulator_register=00000000 is_zero=1 PC=07 halt=0 memory_out=11111111
+Time=181000 clk=1 rst=0 Controller_phase=0 accumulator_register=00000000 is_zero=1 PC=07 halt=0 memory_out=11111111
+Time=182000 clk=0 rst=0 Controller_phase=0 accumulator_register=00000000 is_zero=1 PC=07 halt=0 memory_out=11111111
+Time=183000 clk=1 rst=0 Controller_phase=1 accumulator_register=11111111 is_zero=0 PC=07 halt=0 memory_out=11111111
+Time=184000 clk=0 rst=0 Controller_phase=1 accumulator_register=11111111 is_zero=0 PC=07 halt=0 memory_out=11111111
+Test Case 4 Passed: accumulator_register=ff after LDA 0x1B
+Test Case 4 Passed: is_zero=0
+Time=185000 clk=1 rst=0 Controller_phase=2 accumulator_register=11111111 is_zero=0 PC=07 halt=0 memory_out=11111111
+Time=186000 clk=0 rst=0 Controller_phase=2 accumulator_register=11111111 is_zero=0 PC=07 halt=0 memory_out=11111111
+Time=187000 clk=1 rst=0 Controller_phase=3 accumulator_register=11111111 is_zero=0 PC=07 halt=0 memory_out=00100000
+Time=188000 clk=0 rst=0 Controller_phase=3 accumulator_register=11111111 is_zero=0 PC=07 halt=0 memory_out=00100000
+Time=189000 clk=1 rst=0 Controller_phase=4 accumulator_register=11111111 is_zero=0 PC=07 halt=0 memory_out=00100000
+Time=190000 clk=0 rst=0 Controller_phase=4 accumulator_register=11111111 is_zero=0 PC=07 halt=0 memory_out=00100000
+Time=191000 clk=1 rst=0 Controller_phase=5 accumulator_register=11111111 is_zero=0 PC=07 halt=0 memory_out=00100000
+Time=192000 clk=0 rst=0 Controller_phase=5 accumulator_register=11111111 is_zero=0 PC=07 halt=0 memory_out=00100000
+Time=193000 clk=1 rst=0 Controller_phase=6 accumulator_register=11111111 is_zero=0 PC=08 halt=0 memory_out=00100000
+Time=194000 clk=0 rst=0 Controller_phase=6 accumulator_register=11111111 is_zero=0 PC=08 halt=0 memory_out=00100000
+Time=195000 clk=1 rst=0 Controller_phase=7 accumulator_register=11111111 is_zero=0 PC=08 halt=0 memory_out=00100000
+Time=196000 clk=0 rst=0 Controller_phase=7 accumulator_register=11111111 is_zero=0 PC=08 halt=0 memory_out=00100000
+Time=197000 clk=1 rst=0 Controller_phase=0 accumulator_register=11111111 is_zero=0 PC=08 halt=0 memory_out=00100000
+Time=198000 clk=0 rst=0 Controller_phase=0 accumulator_register=11111111 is_zero=0 PC=08 halt=0 memory_out=00100000
+Test Case 5 Passed: program_counter=08 after SKZ with is_zero = 0
+Time=199000 clk=1 rst=0 Controller_phase=1 accumulator_register=11111111 is_zero=0 PC=08 halt=0 memory_out=00100000
+Time=200000 clk=0 rst=0 Controller_phase=1 accumulator_register=11111111 is_zero=0 PC=08 halt=0 memory_out=00100000
+Time=201000 clk=1 rst=0 Controller_phase=2 accumulator_register=11111111 is_zero=0 PC=08 halt=0 memory_out=00100000
+Time=202000 clk=0 rst=0 Controller_phase=2 accumulator_register=11111111 is_zero=0 PC=08 halt=0 memory_out=00100000
+Time=203000 clk=1 rst=0 Controller_phase=3 accumulator_register=11111111 is_zero=0 PC=08 halt=0 memory_out=11101010
+Time=204000 clk=0 rst=0 Controller_phase=3 accumulator_register=11111111 is_zero=0 PC=08 halt=0 memory_out=11101010
+Time=205000 clk=1 rst=0 Controller_phase=4 accumulator_register=11111111 is_zero=0 PC=08 halt=0 memory_out=11101010
+Time=206000 clk=0 rst=0 Controller_phase=4 accumulator_register=11111111 is_zero=0 PC=08 halt=0 memory_out=11101010
+Time=207000 clk=1 rst=0 Controller_phase=5 accumulator_register=11111111 is_zero=0 PC=08 halt=0 memory_out=11101010
+Time=208000 clk=0 rst=0 Controller_phase=5 accumulator_register=11111111 is_zero=0 PC=08 halt=0 memory_out=11101010
+Time=209000 clk=1 rst=0 Controller_phase=6 accumulator_register=11111111 is_zero=0 PC=09 halt=0 memory_out=11101010
+Time=210000 clk=0 rst=0 Controller_phase=6 accumulator_register=11111111 is_zero=0 PC=09 halt=0 memory_out=11101010
+Time=211000 clk=1 rst=0 Controller_phase=7 accumulator_register=11111111 is_zero=0 PC=09 halt=0 memory_out=11101010
+Time=212000 clk=0 rst=0 Controller_phase=7 accumulator_register=11111111 is_zero=0 PC=09 halt=0 memory_out=11101010
+Time=213000 clk=1 rst=0 Controller_phase=0 accumulator_register=11111111 is_zero=0 PC=0a halt=0 memory_out=11101010
+Time=214000 clk=0 rst=0 Controller_phase=0 accumulator_register=11111111 is_zero=0 PC=0a halt=0 memory_out=11101010
+Test Case 6 Passed: program_counter=0a after JMP 0x0A
+Time=215000 clk=1 rst=0 Controller_phase=1 accumulator_register=11111111 is_zero=0 PC=0a halt=0 memory_out=11101010
+Time=216000 clk=0 rst=0 Controller_phase=1 accumulator_register=11111111 is_zero=0 PC=0a halt=0 memory_out=11101010
+Time=217000 clk=1 rst=0 Controller_phase=2 accumulator_register=11111111 is_zero=0 PC=0a halt=0 memory_out=11101010
+Time=218000 clk=0 rst=0 Controller_phase=2 accumulator_register=11111111 is_zero=0 PC=0a halt=0 memory_out=11101010
+Time=219000 clk=1 rst=0 Controller_phase=3 accumulator_register=11111111 is_zero=0 PC=0a halt=0 memory_out=11011100
+Time=220000 clk=0 rst=0 Controller_phase=3 accumulator_register=11111111 is_zero=0 PC=0a halt=0 memory_out=11011100
+Time=221000 clk=1 rst=0 Controller_phase=4 accumulator_register=11111111 is_zero=0 PC=0a halt=0 memory_out=11011100
+Time=222000 clk=0 rst=0 Controller_phase=4 accumulator_register=11111111 is_zero=0 PC=0a halt=0 memory_out=11011100
+Time=223000 clk=1 rst=0 Controller_phase=5 accumulator_register=11111111 is_zero=0 PC=0a halt=0 memory_out=11011100
+Time=224000 clk=0 rst=0 Controller_phase=5 accumulator_register=11111111 is_zero=0 PC=0a halt=0 memory_out=11011100
+Time=225000 clk=1 rst=0 Controller_phase=6 accumulator_register=11111111 is_zero=0 PC=0b halt=0 memory_out=11011100
+Time=226000 clk=0 rst=0 Controller_phase=6 accumulator_register=11111111 is_zero=0 PC=0b halt=0 memory_out=11011100
+Time=227000 clk=1 rst=0 Controller_phase=7 accumulator_register=11111111 is_zero=0 PC=0b halt=0 memory_out=11011100
+Time=228000 clk=0 rst=0 Controller_phase=7 accumulator_register=11111111 is_zero=0 PC=0b halt=0 memory_out=11011100
+Time=229000 clk=1 rst=0 Controller_phase=0 accumulator_register=11111111 is_zero=0 PC=0b halt=0 memory_out=11011100
+Time=230000 clk=0 rst=0 Controller_phase=0 accumulator_register=11111111 is_zero=0 PC=0b halt=0 memory_out=11011100
+Time=231000 clk=1 rst=0 Controller_phase=1 accumulator_register=11111111 is_zero=0 PC=0b halt=0 memory_out=11011100
+Time=232000 clk=0 rst=0 Controller_phase=1 accumulator_register=11111111 is_zero=0 PC=0b halt=0 memory_out=11011100
+Time=233000 clk=1 rst=0 Controller_phase=2 accumulator_register=11111111 is_zero=0 PC=0b halt=0 memory_out=11011100
+Time=234000 clk=0 rst=0 Controller_phase=2 accumulator_register=11111111 is_zero=0 PC=0b halt=0 memory_out=11011100
+Time=235000 clk=1 rst=0 Controller_phase=3 accumulator_register=11111111 is_zero=0 PC=0b halt=0 memory_out=10111010
+Time=236000 clk=0 rst=0 Controller_phase=3 accumulator_register=11111111 is_zero=0 PC=0b halt=0 memory_out=10111010
+Time=237000 clk=1 rst=0 Controller_phase=4 accumulator_register=11111111 is_zero=0 PC=0b halt=0 memory_out=10111010
+Time=238000 clk=0 rst=0 Controller_phase=4 accumulator_register=11111111 is_zero=0 PC=0b halt=0 memory_out=10111010
+Time=239000 clk=1 rst=0 Controller_phase=5 accumulator_register=11111111 is_zero=0 PC=0b halt=0 memory_out=10111010
+Time=240000 clk=0 rst=0 Controller_phase=5 accumulator_register=11111111 is_zero=0 PC=0b halt=0 memory_out=10111010
+Time=241000 clk=1 rst=0 Controller_phase=6 accumulator_register=11111111 is_zero=0 PC=0c halt=0 memory_out=10111010
+Time=242000 clk=0 rst=0 Controller_phase=6 accumulator_register=11111111 is_zero=0 PC=0c halt=0 memory_out=10111010
+Time=243000 clk=1 rst=0 Controller_phase=7 accumulator_register=11111111 is_zero=0 PC=0c halt=0 memory_out=00000000
+Time=244000 clk=0 rst=0 Controller_phase=7 accumulator_register=11111111 is_zero=0 PC=0c halt=0 memory_out=00000000
+Time=245000 clk=1 rst=0 Controller_phase=0 accumulator_register=11111111 is_zero=0 PC=0c halt=0 memory_out=00000000
+Time=246000 clk=0 rst=0 Controller_phase=0 accumulator_register=11111111 is_zero=0 PC=0c halt=0 memory_out=00000000
+Time=247000 clk=1 rst=0 Controller_phase=1 accumulator_register=00000000 is_zero=1 PC=0c halt=0 memory_out=00000000
+Time=248000 clk=0 rst=0 Controller_phase=1 accumulator_register=00000000 is_zero=1 PC=0c halt=0 memory_out=00000000
+Test Case 7 Passed: accumulator_register=00 after LDA 0x1A
+Test Case 7 Passed: is_zero=1
+Time=249000 clk=1 rst=0 Controller_phase=2 accumulator_register=00000000 is_zero=1 PC=0c halt=0 memory_out=00000000
+Time=250000 clk=0 rst=0 Controller_phase=2 accumulator_register=00000000 is_zero=1 PC=0c halt=0 memory_out=00000000
+Time=251000 clk=1 rst=0 Controller_phase=3 accumulator_register=00000000 is_zero=1 PC=0c halt=0 memory_out=11011100
+Time=252000 clk=0 rst=0 Controller_phase=3 accumulator_register=00000000 is_zero=1 PC=0c halt=0 memory_out=11011100
+Time=253000 clk=1 rst=0 Controller_phase=4 accumulator_register=00000000 is_zero=1 PC=0c halt=0 memory_out=11011100
+Time=254000 clk=0 rst=0 Controller_phase=4 accumulator_register=00000000 is_zero=1 PC=0c halt=0 memory_out=11011100
+Time=255000 clk=1 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=0c halt=0 memory_out=11011100
+Time=256000 clk=0 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=0c halt=0 memory_out=11011100
+Time=257000 clk=1 rst=0 Controller_phase=6 accumulator_register=00000000 is_zero=1 PC=0d halt=0 memory_out=11011100
+Time=258000 clk=0 rst=0 Controller_phase=6 accumulator_register=00000000 is_zero=1 PC=0d halt=0 memory_out=11011100
+Time=259000 clk=1 rst=0 Controller_phase=7 accumulator_register=00000000 is_zero=1 PC=0d halt=0 memory_out=11011100
+Time=260000 clk=0 rst=0 Controller_phase=7 accumulator_register=00000000 is_zero=1 PC=0d halt=0 memory_out=11011100
+Time=261000 clk=1 rst=0 Controller_phase=0 accumulator_register=00000000 is_zero=1 PC=0d halt=0 memory_out=11011100
+Time=262000 clk=0 rst=0 Controller_phase=0 accumulator_register=00000000 is_zero=1 PC=0d halt=0 memory_out=11011100
+Time=263000 clk=1 rst=0 Controller_phase=1 accumulator_register=00000000 is_zero=1 PC=0d halt=0 memory_out=11011100
+Time=264000 clk=0 rst=0 Controller_phase=1 accumulator_register=00000000 is_zero=1 PC=0d halt=0 memory_out=11011100
+Time=265000 clk=1 rst=0 Controller_phase=2 accumulator_register=00000000 is_zero=1 PC=0d halt=0 memory_out=11011100
+Time=266000 clk=0 rst=0 Controller_phase=2 accumulator_register=00000000 is_zero=1 PC=0d halt=0 memory_out=11011100
+Time=267000 clk=1 rst=0 Controller_phase=3 accumulator_register=00000000 is_zero=1 PC=0d halt=0 memory_out=10111100
+Time=268000 clk=0 rst=0 Controller_phase=3 accumulator_register=00000000 is_zero=1 PC=0d halt=0 memory_out=10111100
+Time=269000 clk=1 rst=0 Controller_phase=4 accumulator_register=00000000 is_zero=1 PC=0d halt=0 memory_out=10111100
+Time=270000 clk=0 rst=0 Controller_phase=4 accumulator_register=00000000 is_zero=1 PC=0d halt=0 memory_out=10111100
+Time=271000 clk=1 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=0d halt=0 memory_out=10111100
+Time=272000 clk=0 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=0d halt=0 memory_out=10111100
+Time=273000 clk=1 rst=0 Controller_phase=6 accumulator_register=00000000 is_zero=1 PC=0e halt=0 memory_out=10111100
+Time=274000 clk=0 rst=0 Controller_phase=6 accumulator_register=00000000 is_zero=1 PC=0e halt=0 memory_out=10111100
+Time=275000 clk=1 rst=0 Controller_phase=7 accumulator_register=00000000 is_zero=1 PC=0e halt=0 memory_out=00000000
+Time=276000 clk=0 rst=0 Controller_phase=7 accumulator_register=00000000 is_zero=1 PC=0e halt=0 memory_out=00000000
+Time=277000 clk=1 rst=0 Controller_phase=0 accumulator_register=00000000 is_zero=1 PC=0e halt=0 memory_out=00000000
+Time=278000 clk=0 rst=0 Controller_phase=0 accumulator_register=00000000 is_zero=1 PC=0e halt=0 memory_out=00000000
+Test Case 8 Passed: accumulator_register=00 after LDA 0x1C
+Test Case 8 Passed: is_zero=1
+Time=279000 clk=1 rst=0 Controller_phase=1 accumulator_register=00000000 is_zero=1 PC=0e halt=0 memory_out=00000000
+Time=280000 clk=0 rst=0 Controller_phase=1 accumulator_register=00000000 is_zero=1 PC=0e halt=0 memory_out=00000000
+Time=281000 clk=1 rst=0 Controller_phase=2 accumulator_register=00000000 is_zero=1 PC=0e halt=0 memory_out=00000000
+Time=282000 clk=0 rst=0 Controller_phase=2 accumulator_register=00000000 is_zero=1 PC=0e halt=0 memory_out=00000000
+Time=283000 clk=1 rst=0 Controller_phase=3 accumulator_register=00000000 is_zero=1 PC=0e halt=0 memory_out=00100000
+Time=284000 clk=0 rst=0 Controller_phase=3 accumulator_register=00000000 is_zero=1 PC=0e halt=0 memory_out=00100000
+Time=285000 clk=1 rst=0 Controller_phase=4 accumulator_register=00000000 is_zero=1 PC=0e halt=0 memory_out=00100000
+Time=286000 clk=0 rst=0 Controller_phase=4 accumulator_register=00000000 is_zero=1 PC=0e halt=0 memory_out=00100000
+Time=287000 clk=1 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=0e halt=0 memory_out=00100000
+Time=288000 clk=0 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=0e halt=0 memory_out=00100000
+Time=289000 clk=1 rst=0 Controller_phase=6 accumulator_register=00000000 is_zero=1 PC=0f halt=0 memory_out=00100000
+Time=290000 clk=0 rst=0 Controller_phase=6 accumulator_register=00000000 is_zero=1 PC=0f halt=0 memory_out=00100000
+Time=291000 clk=1 rst=0 Controller_phase=7 accumulator_register=00000000 is_zero=1 PC=0f halt=0 memory_out=00100000
+Time=292000 clk=0 rst=0 Controller_phase=7 accumulator_register=00000000 is_zero=1 PC=0f halt=0 memory_out=00100000
+Time=293000 clk=1 rst=0 Controller_phase=0 accumulator_register=00000000 is_zero=1 PC=10 halt=0 memory_out=00100000
+Time=294000 clk=0 rst=0 Controller_phase=0 accumulator_register=00000000 is_zero=1 PC=10 halt=0 memory_out=00100000
+Test Case 9 Passed: program_counter=10 after SKZ with is_zero = 1
+Test Case 9 Passed: is_zero=1
+Time=295000 clk=1 rst=0 Controller_phase=1 accumulator_register=00000000 is_zero=1 PC=10 halt=0 memory_out=00100000
+Time=296000 clk=0 rst=0 Controller_phase=1 accumulator_register=00000000 is_zero=1 PC=10 halt=0 memory_out=00100000
+Time=297000 clk=1 rst=0 Controller_phase=2 accumulator_register=00000000 is_zero=1 PC=10 halt=0 memory_out=00100000
+Time=298000 clk=0 rst=0 Controller_phase=2 accumulator_register=00000000 is_zero=1 PC=10 halt=0 memory_out=00100000
+Time=299000 clk=1 rst=0 Controller_phase=3 accumulator_register=00000000 is_zero=1 PC=10 halt=0 memory_out=10011011
+Time=300000 clk=0 rst=0 Controller_phase=3 accumulator_register=00000000 is_zero=1 PC=10 halt=0 memory_out=10011011
+Time=301000 clk=1 rst=0 Controller_phase=4 accumulator_register=00000000 is_zero=1 PC=10 halt=0 memory_out=10011011
+Time=302000 clk=0 rst=0 Controller_phase=4 accumulator_register=00000000 is_zero=1 PC=10 halt=0 memory_out=10011011
+Time=303000 clk=1 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=10 halt=0 memory_out=10011011
+Time=304000 clk=0 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=10 halt=0 memory_out=10011011
+Time=305000 clk=1 rst=0 Controller_phase=6 accumulator_register=00000000 is_zero=1 PC=11 halt=0 memory_out=10011011
+Time=306000 clk=0 rst=0 Controller_phase=6 accumulator_register=00000000 is_zero=1 PC=11 halt=0 memory_out=10011011
+Time=307000 clk=1 rst=0 Controller_phase=7 accumulator_register=00000000 is_zero=1 PC=11 halt=0 memory_out=11111111
+Time=308000 clk=0 rst=0 Controller_phase=7 accumulator_register=00000000 is_zero=1 PC=11 halt=0 memory_out=11111111
+Time=309000 clk=1 rst=0 Controller_phase=0 accumulator_register=00000000 is_zero=1 PC=11 halt=0 memory_out=11111111
+Time=310000 clk=0 rst=0 Controller_phase=0 accumulator_register=00000000 is_zero=1 PC=11 halt=0 memory_out=11111111
+Time=311000 clk=1 rst=0 Controller_phase=1 accumulator_register=11111111 is_zero=0 PC=11 halt=0 memory_out=11111111
+Time=312000 clk=0 rst=0 Controller_phase=1 accumulator_register=11111111 is_zero=0 PC=11 halt=0 memory_out=11111111
+Test Case 10 Passed: accumulator_register=ff after XOR 0x1B
+Test Case 10 Passed: is_zero=0
+Time=313000 clk=1 rst=0 Controller_phase=2 accumulator_register=11111111 is_zero=0 PC=11 halt=0 memory_out=11111111
+Time=314000 clk=0 rst=0 Controller_phase=2 accumulator_register=11111111 is_zero=0 PC=11 halt=0 memory_out=11111111
+Time=315000 clk=1 rst=0 Controller_phase=3 accumulator_register=11111111 is_zero=0 PC=11 halt=0 memory_out=00100000
+Time=316000 clk=0 rst=0 Controller_phase=3 accumulator_register=11111111 is_zero=0 PC=11 halt=0 memory_out=00100000
+Time=317000 clk=1 rst=0 Controller_phase=4 accumulator_register=11111111 is_zero=0 PC=11 halt=0 memory_out=00100000
+Time=318000 clk=0 rst=0 Controller_phase=4 accumulator_register=11111111 is_zero=0 PC=11 halt=0 memory_out=00100000
+Time=319000 clk=1 rst=0 Controller_phase=5 accumulator_register=11111111 is_zero=0 PC=11 halt=0 memory_out=00100000
+Time=320000 clk=0 rst=0 Controller_phase=5 accumulator_register=11111111 is_zero=0 PC=11 halt=0 memory_out=00100000
+Time=321000 clk=1 rst=0 Controller_phase=6 accumulator_register=11111111 is_zero=0 PC=12 halt=0 memory_out=00100000
+Time=322000 clk=0 rst=0 Controller_phase=6 accumulator_register=11111111 is_zero=0 PC=12 halt=0 memory_out=00100000
+Time=323000 clk=1 rst=0 Controller_phase=7 accumulator_register=11111111 is_zero=0 PC=12 halt=0 memory_out=00100000
+Time=324000 clk=0 rst=0 Controller_phase=7 accumulator_register=11111111 is_zero=0 PC=12 halt=0 memory_out=00100000
+Time=325000 clk=1 rst=0 Controller_phase=0 accumulator_register=11111111 is_zero=0 PC=12 halt=0 memory_out=00100000
+Time=326000 clk=0 rst=0 Controller_phase=0 accumulator_register=11111111 is_zero=0 PC=12 halt=0 memory_out=00100000
+Time=327000 clk=1 rst=0 Controller_phase=1 accumulator_register=11111111 is_zero=0 PC=12 halt=0 memory_out=00100000
+Time=328000 clk=0 rst=0 Controller_phase=1 accumulator_register=11111111 is_zero=0 PC=12 halt=0 memory_out=00100000
+Time=329000 clk=1 rst=0 Controller_phase=2 accumulator_register=11111111 is_zero=0 PC=12 halt=0 memory_out=00100000
+Time=330000 clk=0 rst=0 Controller_phase=2 accumulator_register=11111111 is_zero=0 PC=12 halt=0 memory_out=00100000
+Test Case 11 Passed: program_counter=12 after SKZ with is_zero = 0
+Test Case 11 Passed: is_zero=0
+Time=331000 clk=1 rst=0 Controller_phase=3 accumulator_register=11111111 is_zero=0 PC=12 halt=0 memory_out=11110100
+Time=332000 clk=0 rst=0 Controller_phase=3 accumulator_register=11111111 is_zero=0 PC=12 halt=0 memory_out=11110100
+Time=333000 clk=1 rst=0 Controller_phase=4 accumulator_register=11111111 is_zero=0 PC=12 halt=0 memory_out=11110100
+Time=334000 clk=0 rst=0 Controller_phase=4 accumulator_register=11111111 is_zero=0 PC=12 halt=0 memory_out=11110100
+Time=335000 clk=1 rst=0 Controller_phase=5 accumulator_register=11111111 is_zero=0 PC=12 halt=0 memory_out=11110100
+Time=336000 clk=0 rst=0 Controller_phase=5 accumulator_register=11111111 is_zero=0 PC=12 halt=0 memory_out=11110100
+Time=337000 clk=1 rst=0 Controller_phase=6 accumulator_register=11111111 is_zero=0 PC=13 halt=0 memory_out=11110100
+Time=338000 clk=0 rst=0 Controller_phase=6 accumulator_register=11111111 is_zero=0 PC=13 halt=0 memory_out=11110100
+Time=339000 clk=1 rst=0 Controller_phase=7 accumulator_register=11111111 is_zero=0 PC=13 halt=0 memory_out=11110100
+Time=340000 clk=0 rst=0 Controller_phase=7 accumulator_register=11111111 is_zero=0 PC=13 halt=0 memory_out=11110100
+Time=341000 clk=1 rst=0 Controller_phase=0 accumulator_register=11111111 is_zero=0 PC=14 halt=0 memory_out=11110100
+Time=342000 clk=0 rst=0 Controller_phase=0 accumulator_register=11111111 is_zero=0 PC=14 halt=0 memory_out=11110100
+Time=343000 clk=1 rst=0 Controller_phase=1 accumulator_register=11111111 is_zero=0 PC=14 halt=0 memory_out=11110100
+Time=344000 clk=0 rst=0 Controller_phase=1 accumulator_register=11111111 is_zero=0 PC=14 halt=0 memory_out=11110100
+Test Case 12 Passed: program_counter=14 after JMP 0x14
+Time=345000 clk=1 rst=0 Controller_phase=2 accumulator_register=11111111 is_zero=0 PC=14 halt=0 memory_out=11110100
+Time=346000 clk=0 rst=0 Controller_phase=2 accumulator_register=11111111 is_zero=0 PC=14 halt=0 memory_out=11110100
+Time=347000 clk=1 rst=0 Controller_phase=3 accumulator_register=11111111 is_zero=0 PC=14 halt=0 memory_out=10011011
+Time=348000 clk=0 rst=0 Controller_phase=3 accumulator_register=11111111 is_zero=0 PC=14 halt=0 memory_out=10011011
+Time=349000 clk=1 rst=0 Controller_phase=4 accumulator_register=11111111 is_zero=0 PC=14 halt=0 memory_out=10011011
+Time=350000 clk=0 rst=0 Controller_phase=4 accumulator_register=11111111 is_zero=0 PC=14 halt=0 memory_out=10011011
+Time=351000 clk=1 rst=0 Controller_phase=5 accumulator_register=11111111 is_zero=0 PC=14 halt=0 memory_out=10011011
+Time=352000 clk=0 rst=0 Controller_phase=5 accumulator_register=11111111 is_zero=0 PC=14 halt=0 memory_out=10011011
+Time=353000 clk=1 rst=0 Controller_phase=6 accumulator_register=11111111 is_zero=0 PC=15 halt=0 memory_out=10011011
+Time=354000 clk=0 rst=0 Controller_phase=6 accumulator_register=11111111 is_zero=0 PC=15 halt=0 memory_out=10011011
+Time=355000 clk=1 rst=0 Controller_phase=7 accumulator_register=11111111 is_zero=0 PC=15 halt=0 memory_out=11111111
+Time=356000 clk=0 rst=0 Controller_phase=7 accumulator_register=11111111 is_zero=0 PC=15 halt=0 memory_out=11111111
+Time=357000 clk=1 rst=0 Controller_phase=0 accumulator_register=11111111 is_zero=0 PC=15 halt=0 memory_out=11111111
+Time=358000 clk=0 rst=0 Controller_phase=0 accumulator_register=11111111 is_zero=0 PC=15 halt=0 memory_out=11111111
+Time=359000 clk=1 rst=0 Controller_phase=1 accumulator_register=00000000 is_zero=1 PC=15 halt=0 memory_out=11111111
+Time=360000 clk=0 rst=0 Controller_phase=1 accumulator_register=00000000 is_zero=1 PC=15 halt=0 memory_out=11111111
+Time=361000 clk=1 rst=0 Controller_phase=2 accumulator_register=00000000 is_zero=1 PC=15 halt=0 memory_out=11111111
+Time=362000 clk=0 rst=0 Controller_phase=2 accumulator_register=00000000 is_zero=1 PC=15 halt=0 memory_out=11111111
+Test Case 13 Passed: accumulator_register=00 after XOR 0x1B
+Test Case 13 Passed: is_zero=1
+Time=363000 clk=1 rst=0 Controller_phase=3 accumulator_register=00000000 is_zero=1 PC=15 halt=0 memory_out=00100000
+Time=364000 clk=0 rst=0 Controller_phase=3 accumulator_register=00000000 is_zero=1 PC=15 halt=0 memory_out=00100000
+Time=365000 clk=1 rst=0 Controller_phase=4 accumulator_register=00000000 is_zero=1 PC=15 halt=0 memory_out=00100000
+Time=366000 clk=0 rst=0 Controller_phase=4 accumulator_register=00000000 is_zero=1 PC=15 halt=0 memory_out=00100000
+Time=367000 clk=1 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=15 halt=0 memory_out=00100000
+Time=368000 clk=0 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=15 halt=0 memory_out=00100000
+Time=369000 clk=1 rst=0 Controller_phase=6 accumulator_register=00000000 is_zero=1 PC=16 halt=0 memory_out=00100000
+Time=370000 clk=0 rst=0 Controller_phase=6 accumulator_register=00000000 is_zero=1 PC=16 halt=0 memory_out=00100000
+Time=371000 clk=1 rst=0 Controller_phase=7 accumulator_register=00000000 is_zero=1 PC=16 halt=0 memory_out=00100000
+Time=372000 clk=0 rst=0 Controller_phase=7 accumulator_register=00000000 is_zero=1 PC=16 halt=0 memory_out=00100000
+Time=373000 clk=1 rst=0 Controller_phase=0 accumulator_register=00000000 is_zero=1 PC=17 halt=0 memory_out=00100000
+Time=374000 clk=0 rst=0 Controller_phase=0 accumulator_register=00000000 is_zero=1 PC=17 halt=0 memory_out=00100000
+Time=375000 clk=1 rst=0 Controller_phase=1 accumulator_register=00000000 is_zero=1 PC=17 halt=0 memory_out=00100000
+Time=376000 clk=0 rst=0 Controller_phase=1 accumulator_register=00000000 is_zero=1 PC=17 halt=0 memory_out=00100000
+Time=377000 clk=1 rst=0 Controller_phase=2 accumulator_register=00000000 is_zero=1 PC=17 halt=0 memory_out=00100000
+Time=378000 clk=0 rst=0 Controller_phase=2 accumulator_register=00000000 is_zero=1 PC=17 halt=0 memory_out=00100000
+Time=379000 clk=1 rst=0 Controller_phase=3 accumulator_register=00000000 is_zero=1 PC=17 halt=0 memory_out=00000000
+Time=380000 clk=0 rst=0 Controller_phase=3 accumulator_register=00000000 is_zero=1 PC=17 halt=0 memory_out=00000000
+Time=381000 clk=1 rst=0 Controller_phase=4 accumulator_register=00000000 is_zero=1 PC=17 halt=0 memory_out=00000000
+Time=382000 clk=0 rst=0 Controller_phase=4 accumulator_register=00000000 is_zero=1 PC=17 halt=0 memory_out=00000000
+Time=383000 clk=1 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=17 halt=1 memory_out=00000000
+Time=384000 clk=0 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=17 halt=1 memory_out=00000000
+Time=385000 clk=1 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=17 halt=1 memory_out=00000000
+Time=386000 clk=0 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=17 halt=1 memory_out=00000000
+Time=387000 clk=1 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=17 halt=1 memory_out=00000000
+Time=388000 clk=0 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=17 halt=1 memory_out=00000000
+Time=389000 clk=1 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=17 halt=1 memory_out=00000000
+Time=390000 clk=0 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=17 halt=1 memory_out=00000000
+Time=391000 clk=1 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=17 halt=1 memory_out=00000000
+Time=392000 clk=0 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=17 halt=1 memory_out=00000000
+Time=393000 clk=1 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=17 halt=1 memory_out=00000000
+Time=394000 clk=0 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=17 halt=1 memory_out=00000000
+Time=395000 clk=1 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=17 halt=1 memory_out=00000000
+Time=396000 clk=0 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=17 halt=1 memory_out=00000000
+Time=397000 clk=1 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=17 halt=1 memory_out=00000000
+Time=398000 clk=0 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=17 halt=1 memory_out=00000000
+Time=399000 clk=1 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=17 halt=1 memory_out=00000000
+Time=400000 clk=0 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=17 halt=1 memory_out=00000000
+Time=401000 clk=1 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=17 halt=1 memory_out=00000000
+Time=402000 clk=0 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=17 halt=1 memory_out=00000000
+Time=403000 clk=1 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=17 halt=1 memory_out=00000000
+Time=404000 clk=0 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=17 halt=1 memory_out=00000000
+Time=405000 clk=1 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=17 halt=1 memory_out=00000000
+Time=406000 clk=0 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=17 halt=1 memory_out=00000000
+Time=407000 clk=1 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=17 halt=1 memory_out=00000000
+Time=408000 clk=0 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=17 halt=1 memory_out=00000000
+Time=409000 clk=1 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=17 halt=1 memory_out=00000000
+Time=410000 clk=0 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=17 halt=1 memory_out=00000000
+Time=411000 clk=1 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=17 halt=1 memory_out=00000000
+Time=412000 clk=0 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=17 halt=1 memory_out=00000000
+Time=413000 clk=1 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=17 halt=1 memory_out=00000000
+Time=414000 clk=0 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=17 halt=1 memory_out=00000000
+Time=415000 clk=1 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=17 halt=1 memory_out=00000000
+Time=416000 clk=0 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=17 halt=1 memory_out=00000000
+Time=417000 clk=1 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=17 halt=1 memory_out=00000000
+Time=418000 clk=0 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=17 halt=1 memory_out=00000000
+Time=419000 clk=1 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=17 halt=1 memory_out=00000000
+Time=420000 clk=0 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=17 halt=1 memory_out=00000000
+Time=421000 clk=1 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=17 halt=1 memory_out=00000000
+Time=422000 clk=0 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=17 halt=1 memory_out=00000000
+Time=423000 clk=1 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=17 halt=1 memory_out=00000000
+Time=424000 clk=0 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=17 halt=1 memory_out=00000000
+Time=425000 clk=1 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=17 halt=1 memory_out=00000000
+Time=426000 clk=0 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=17 halt=1 memory_out=00000000
+Time=427000 clk=1 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=17 halt=1 memory_out=00000000
+Time=428000 clk=0 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=17 halt=1 memory_out=00000000
+Time=429000 clk=1 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=17 halt=1 memory_out=00000000
+Time=430000 clk=0 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=17 halt=1 memory_out=00000000
+Time=431000 clk=1 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=17 halt=1 memory_out=00000000
+Time=432000 clk=0 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=17 halt=1 memory_out=00000000
+Time=433000 clk=1 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=17 halt=1 memory_out=00000000
+Time=434000 clk=0 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=17 halt=1 memory_out=00000000
+Time=435000 clk=1 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=17 halt=1 memory_out=00000000
+Time=436000 clk=0 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=17 halt=1 memory_out=00000000
+Time=437000 clk=1 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=17 halt=1 memory_out=00000000
+Time=438000 clk=0 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=17 halt=1 memory_out=00000000
+Time=439000 clk=1 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=17 halt=1 memory_out=00000000
+Time=440000 clk=0 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=17 halt=1 memory_out=00000000
+Time=441000 clk=1 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=17 halt=1 memory_out=00000000
+Time=442000 clk=0 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=17 halt=1 memory_out=00000000
+Time=443000 clk=1 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=17 halt=1 memory_out=00000000
+Time=444000 clk=0 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=17 halt=1 memory_out=00000000
+Time=445000 clk=1 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=17 halt=1 memory_out=00000000
+Time=446000 clk=0 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=17 halt=1 memory_out=00000000
+Time=447000 clk=1 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=17 halt=1 memory_out=00000000
+Time=448000 clk=0 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=17 halt=1 memory_out=00000000
+Time=449000 clk=1 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=17 halt=1 memory_out=00000000
+Time=450000 clk=0 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=17 halt=1 memory_out=00000000
+Time=451000 clk=1 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=17 halt=1 memory_out=00000000
+Time=452000 clk=0 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=17 halt=1 memory_out=00000000
+Time=453000 clk=1 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=17 halt=1 memory_out=00000000
+Time=454000 clk=0 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=17 halt=1 memory_out=00000000
+Time=455000 clk=1 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=17 halt=1 memory_out=00000000
+Time=456000 clk=0 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=17 halt=1 memory_out=00000000
+Time=457000 clk=1 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=17 halt=1 memory_out=00000000
+Time=458000 clk=0 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=17 halt=1 memory_out=00000000
+Time=459000 clk=1 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=17 halt=1 memory_out=00000000
+Time=460000 clk=0 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=17 halt=1 memory_out=00000000
+Time=461000 clk=1 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=17 halt=1 memory_out=00000000
+Time=462000 clk=0 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=17 halt=1 memory_out=00000000
+Time=463000 clk=1 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=17 halt=1 memory_out=00000000
+Time=464000 clk=0 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=17 halt=1 memory_out=00000000
+Time=465000 clk=1 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=17 halt=1 memory_out=00000000
+Time=466000 clk=0 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=17 halt=1 memory_out=00000000
+Time=467000 clk=1 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=17 halt=1 memory_out=00000000
+Time=468000 clk=0 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=17 halt=1 memory_out=00000000
+Time=469000 clk=1 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=17 halt=1 memory_out=00000000
+Time=470000 clk=0 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=17 halt=1 memory_out=00000000
+Time=471000 clk=1 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=17 halt=1 memory_out=00000000
+Time=472000 clk=0 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=17 halt=1 memory_out=00000000
+Time=473000 clk=1 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=17 halt=1 memory_out=00000000
+Time=474000 clk=0 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=17 halt=1 memory_out=00000000
+Time=475000 clk=1 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=17 halt=1 memory_out=00000000
+Time=476000 clk=0 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=17 halt=1 memory_out=00000000
+Time=477000 clk=1 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=17 halt=1 memory_out=00000000
+Time=478000 clk=0 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=17 halt=1 memory_out=00000000
+Time=479000 clk=1 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=17 halt=1 memory_out=00000000
+Time=480000 clk=0 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=17 halt=1 memory_out=00000000
+Time=481000 clk=1 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=17 halt=1 memory_out=00000000
+Time=482000 clk=0 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=17 halt=1 memory_out=00000000
+Time=483000 clk=1 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=17 halt=1 memory_out=00000000
+Time=484000 clk=0 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=17 halt=1 memory_out=00000000
+Time=485000 clk=1 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=17 halt=1 memory_out=00000000
+Time=486000 clk=0 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=17 halt=1 memory_out=00000000
+Time=487000 clk=1 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=17 halt=1 memory_out=00000000
+Time=488000 clk=0 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=17 halt=1 memory_out=00000000
+Time=489000 clk=1 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=17 halt=1 memory_out=00000000
+Time=490000 clk=0 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=17 halt=1 memory_out=00000000
+Time=491000 clk=1 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=17 halt=1 memory_out=00000000
+Time=492000 clk=0 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=17 halt=1 memory_out=00000000
+Time=493000 clk=1 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=17 halt=1 memory_out=00000000
+Time=494000 clk=0 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=17 halt=1 memory_out=00000000
+Time=495000 clk=1 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=17 halt=1 memory_out=00000000
+Time=496000 clk=0 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=17 halt=1 memory_out=00000000
+Time=497000 clk=1 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=17 halt=1 memory_out=00000000
+Time=498000 clk=0 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=17 halt=1 memory_out=00000000
+Time=499000 clk=1 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=17 halt=1 memory_out=00000000
+Time=500000 clk=0 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=17 halt=1 memory_out=00000000
+Time=501000 clk=1 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=17 halt=1 memory_out=00000000
+Time=502000 clk=0 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=17 halt=1 memory_out=00000000
+Time=503000 clk=1 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=17 halt=1 memory_out=00000000
+Time=504000 clk=0 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=17 halt=1 memory_out=00000000
+Time=505000 clk=1 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=17 halt=1 memory_out=00000000
+Time=506000 clk=0 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=17 halt=1 memory_out=00000000
+Time=507000 clk=1 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=17 halt=1 memory_out=00000000
+Time=508000 clk=0 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=17 halt=1 memory_out=00000000
+Time=509000 clk=1 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=17 halt=1 memory_out=00000000
+Time=510000 clk=0 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=17 halt=1 memory_out=00000000
+Time=511000 clk=1 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=17 halt=1 memory_out=00000000
+Time=512000 clk=0 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=17 halt=1 memory_out=00000000
+Time=513000 clk=1 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=17 halt=1 memory_out=00000000
+Time=514000 clk=0 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=17 halt=1 memory_out=00000000
+Time=515000 clk=1 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=17 halt=1 memory_out=00000000
+Time=516000 clk=0 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=17 halt=1 memory_out=00000000
+Time=517000 clk=1 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=17 halt=1 memory_out=00000000
+Time=518000 clk=0 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=17 halt=1 memory_out=00000000
+Time=519000 clk=1 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=17 halt=1 memory_out=00000000
+Time=520000 clk=0 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=17 halt=1 memory_out=00000000
+Time=521000 clk=1 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=17 halt=1 memory_out=00000000
+Time=522000 clk=0 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=17 halt=1 memory_out=00000000
+Time=523000 clk=1 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=17 halt=1 memory_out=00000000
+Time=524000 clk=0 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=17 halt=1 memory_out=00000000
+Time=525000 clk=1 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=17 halt=1 memory_out=00000000
+Time=526000 clk=0 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=17 halt=1 memory_out=00000000
+Time=527000 clk=1 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=17 halt=1 memory_out=00000000
+Time=528000 clk=0 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=17 halt=1 memory_out=00000000
+Time=529000 clk=1 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=17 halt=1 memory_out=00000000
+Time=530000 clk=0 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=17 halt=1 memory_out=00000000
+Time=531000 clk=1 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=17 halt=1 memory_out=00000000
+Time=532000 clk=0 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=17 halt=1 memory_out=00000000
+Time=533000 clk=1 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=17 halt=1 memory_out=00000000
+Time=534000 clk=0 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=17 halt=1 memory_out=00000000
+Time=535000 clk=1 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=17 halt=1 memory_out=00000000
+Time=536000 clk=0 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=17 halt=1 memory_out=00000000
+Time=537000 clk=1 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=17 halt=1 memory_out=00000000
+Time=538000 clk=0 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=17 halt=1 memory_out=00000000
+Time=539000 clk=1 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=17 halt=1 memory_out=00000000
+Time=540000 clk=0 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=17 halt=1 memory_out=00000000
+Time=541000 clk=1 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=17 halt=1 memory_out=00000000
+Time=542000 clk=0 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=17 halt=1 memory_out=00000000
+Time=543000 clk=1 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=17 halt=1 memory_out=00000000
+Time=544000 clk=0 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=17 halt=1 memory_out=00000000
+Time=545000 clk=1 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=17 halt=1 memory_out=00000000
+Time=546000 clk=0 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=17 halt=1 memory_out=00000000
+Time=547000 clk=1 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=17 halt=1 memory_out=00000000
+Time=548000 clk=0 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=17 halt=1 memory_out=00000000
+Time=549000 clk=1 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=17 halt=1 memory_out=00000000
+Time=550000 clk=0 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=17 halt=1 memory_out=00000000
+Time=551000 clk=1 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=17 halt=1 memory_out=00000000
+Time=552000 clk=0 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=17 halt=1 memory_out=00000000
+Time=553000 clk=1 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=17 halt=1 memory_out=00000000
+Time=554000 clk=0 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=17 halt=1 memory_out=00000000
+Time=555000 clk=1 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=17 halt=1 memory_out=00000000
+Time=556000 clk=0 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=17 halt=1 memory_out=00000000
+Time=557000 clk=1 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=17 halt=1 memory_out=00000000
+Time=558000 clk=0 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=17 halt=1 memory_out=00000000
+Time=559000 clk=1 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=17 halt=1 memory_out=00000000
+Time=560000 clk=0 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=17 halt=1 memory_out=00000000
+Time=561000 clk=1 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=17 halt=1 memory_out=00000000
+Time=562000 clk=0 rst=0 Controller_phase=5 accumulator_register=00000000 is_zero=1 PC=17 halt=1 memory_out=00000000
+Simulation Completed
+Simulation complete via $finish(1) at time 563 NS + 0
+./RISC-CPU_tb.v:222         $finish;
+xcelium> exit
+TOOL:	xrun(64)	24.03-s011: Exiting on May 04, 2025 at 13:44:43 +07  (total: 00:00:01)

@@ -30,7 +30,6 @@ module ALU
     input [WIDTH_REG_BIT - 1:0] inB,
     input [WIDTH_OPCODE_BIT - 1:0] opcode,
     input clk
-    , input rst
 );
 
  /* -------------------------------------------------- start local parameter -------------------------*/
@@ -47,8 +46,8 @@ module ALU
     assign is_zero = ~|inA;
     always@(posedge clk)
     begin
-    if(rst) //rst active high
-        ALU_out <= 0;
+//    if(rst) //rst active high
+//        ALU_out <= 0;
         
 //    else if(enable == 1'b1) //enable active
 //        begin
