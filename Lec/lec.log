@@ -1,0 +1,116 @@
+                          CONFORMAL (R)
+                   Version 24.10-s300 (06-Dec-2024) (64 bit executable)
+   Copyright (c) Cadence Design Systems, Inc., 1997-2024. All Rights Reserved
+
+
+This program is proprietary and confidential information belonging to
+Cadence Design Systems, Inc., and may be used and disclosed only as authorized
+in a license agreement controlling such use and disclosure.
+
+0
+CPU time     : 0.74    seconds
+Elapse time  : 20      seconds
+Memory usage : 90.61   M bytes
+// Command: read_library slow.lib -lib -revised
+// Parsing file slow.lib ...
+// Warning: (RTL9.17) Cell doesn't have any output pins or all output pins are undriven (blackboxed) (occurrence:1)
+// Note: (RTL9.26) Liberty pin with internal_node use default input_map (occurrence:16)
+// Note: Read Liberty library successfully
+0
+CPU time     : 0.95    seconds
+Elapse time  : 21      seconds
+Memory usage : 109.36  M bytes
+// Command: read_design RISC-CPU.v Controller.v Mux.v Memory.v Register.v Decoder.v PC.v ALU.v -verilog -golden
+// Parsing file RISC-CPU.v ...
+// Parsing file Controller.v ...
+// Parsing file Mux.v ...
+// Parsing file Memory.v ...
+// Parsing file Register.v ...
+// Parsing file Decoder.v ...
+// Parsing file PC.v ...
+// Parsing file ALU.v ...
+// Golden root module is set to 'RISC_CPU'
+// Warning: (RTL1.5b) Potential loss of RHS msb or carry-out bit (occurrence:3)
+// Note: (RTL1.9h) Parameter declaration with no type or range specification (occurrence:33)
+// Note: (RTL5.6) Case statement with no default (occurrence:2)
+// Warning: (RTL14) Signal has input but it has no output (occurrence:1)
+// Warning: (DIR6.1) Ignored compiler directive is detected (occurrence:8)
+// Note: Read VERILOG design successfully
+0
+CPU time     : 1.11    seconds
+Elapse time  : 26      seconds
+Memory usage : 118.48  M bytes
+// Command: read_design RISC_CPU_m.v -verilog -revised
+// Parsing file RISC_CPU_m.v ...
+// Revised root module is set to 'RISC_CPU'
+// Warning: (RTL14) Signal has input but it has no output (occurrence:3)
+// Note: Read VERILOG design successfully
+0
+CPU time     : 1.24    seconds
+Elapse time  : 29      seconds
+Memory usage : 125.62  M bytes
+// Command: set_mapping_method -name only
+0
+// Command: set_system_mode lec
+// Processing Golden ...
+// Modeling Golden ...
+// Processing Revised ...
+// Modeling Revised ...
+CPU time     : 1.59    seconds
+Elapse time  : 34      seconds
+Memory usage : 142.86  M bytes
+// Warning: Golden and Revised have different numbers of key points:
+// Golden  key points = 316
+// Revised key points = 315
+// Mapping key points ...
+================================================================================
+Mapped points: SYSTEM class
+--------------------------------------------------------------------------------
+Mapped points     PI     PO     DFF       Total   
+--------------------------------------------------------------------------------
+Golden            2      9      304       315     
+--------------------------------------------------------------------------------
+Revised           2      9      304       315     
+================================================================================
+Unmapped points:
+================================================================================
+Golden:
+--------------------------------------------------------------------------------
+Unmapped points   DFF       Total   
+--------------------------------------------------------------------------------
+Unreachable       1         1       
+================================================================================
+0
+CPU time     : 1.70    seconds
+Elapse time  : 35      seconds
+Memory usage : 143.40  M bytes
+// Command: map_key_points
+// Mapping key points ...
+================================================================================
+Mapped points: SYSTEM class
+--------------------------------------------------------------------------------
+Mapped points     PI     PO     DFF       Total   
+--------------------------------------------------------------------------------
+Golden            2      9      304       315     
+--------------------------------------------------------------------------------
+Revised           2      9      304       315     
+================================================================================
+Unmapped points:
+================================================================================
+Golden:
+--------------------------------------------------------------------------------
+Unmapped points   DFF       Total   
+--------------------------------------------------------------------------------
+Unreachable       1         1       
+================================================================================
+0
+// Command: add_compared_points -all
+// 313 compared points added to compare list
+0
+// Command: compare
+================================================================================
+Compared points      PO     DFF       Total   
+--------------------------------------------------------------------------------
+Equivalent           9      304       313     
+================================================================================
+0
