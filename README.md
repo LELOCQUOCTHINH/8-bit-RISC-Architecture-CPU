@@ -3,6 +3,10 @@
 ## Overview
 This project implements a simple 8-bit RISC (Reduced Instruction Set Computer) CPU using Verilog. The CPU features a 3-bit opcode and 5-bit operand architecture, supporting eight instructions: HLT, SKZ, ADD, AND, XOR, LDA, STO, and JMP. The design is modular, with separate components for the ALU, Controller, Program Counter, Memory, Decoder, Registers, Multiplexer, and Clock Divider, each accompanied by a testbench for verification.
 
+![RISC-CPU_block_diagram drawio](https://github.com/user-attachments/assets/3e25ee18-eadc-4c14-9cc5-4d6bfeacd3be)
+
+- You can see the `LSI_design_assignment_report.pdf` for detail.
+
 ## Project Objectives
 - Enhance understanding of digital system design, including CPU architecture, instruction execution, and control signals.
 - Simulate and verify the CPU's functionality using testbenches.
@@ -45,7 +49,7 @@ This project implements a simple 8-bit RISC (Reduced Instruction Set Computer) C
   - `Mux_tb.v`: Validates multiplexer selection.
   - `CLK_divider_tb.v`: Tests clock division, stop, and reset.
 
-- All of them can get in "LSI_design_course-assignment.srcs/sources_1/new" folder (i used the vivado GUI to create them so they have been pushed into the folder).
+- All of them can get in `LSI_design_course-assignment.srcs/sources_1/new` folder (i used the vivado GUI to create them so they have been pushed into the folder).
 
 ## Requirements
 - **Tools**: Verilog simulator (e.g., Cadence, Vivado, or Synopsys).
@@ -58,12 +62,33 @@ This project implements a simple 8-bit RISC (Reduced Instruction Set Computer) C
    git clone https://github.com/LELOCQUOCTHINH/8-bit-RISC-Architecture-CPU.git
    cd LSI_design_course-assignment.srcs/sources_1/new
    ```
-2. **Using your tools to run RISC-CPU_tb.v file or other simulation files.**
+2. **Using your tools to run RISC-CPU_tb.v file or other simulation files for Testing.**
+   
+  This is my sample, i run it by Xcelium cadence to create this waveform (but that need to a license) so you can use vivado or any simulation tool instead of.
+  
+  ![Screenshot 2025-05-04 150702](https://github.com/user-attachments/assets/6cd773d6-7f12-42fc-95e4-3d088d401cba)
+
+  You can check my `simulation` folder that include `run.log` which provides the monitor of simulation and `wave.dsn, wave.trn` for the waveform
 
 3. **Analyze Results**:
-   - Check console output for test case results (pass/fail).
-   - Inspect waveforms in GTKWave to verify signal behavior.
+   - Check console output or `simulation\run.log` file for test case results (pass/fail).
+   - Inspect waveforms in Vision tools to verify signal behavior (or inspect my `wave.dsn, wave.trn`).
    - The `RISC_CPU_tb.v` testbench monitors key signals like `accumulator_register`, `is_zero`, `PC`, `halt`, and `memory_out`.
+  
+4. **Synthesis**
+   - You can use any tool to synthesis the RISC-CPU.v but i choose the Genus because i have the license. You can check my `Synthesis` or `Low_power-Synthesis` folder to examine the synthesis result.
+   - And you also can visualize the Netlist. Here is my example with power synthesis:
+  
+![Screenshot 2025-05-04 170725](https://github.com/user-attachments/assets/62046cff-031e-4dd8-b1b8-1df53ec4b76c)
+
+and example with low power synthesis:
+
+![Screenshot 2025-05-04 190731](https://github.com/user-attachments/assets/061a537c-a5a0-4617-a17b-4343b36640bb)
+
+5. And next step, Logic Equivalent Checking using Conformal (or any tools that conform with you like conformal LOL :D)
+   
+![Screenshot 2025-05-04 175206](https://github.com/user-attachments/assets/4ff558c5-db69-4467-86a3-dc392f005a33)
+
 
 ## Preloaded Program
 The `Memory.v` module initializes a 32-byte memory with a test program starting at address `0x00`. The program executes:
